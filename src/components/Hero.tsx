@@ -90,7 +90,7 @@ export default function Hero() {
     setTypingText("");
     let i = 0;
     const full = newMsg.text;
-    const speed = 45;
+    const speed = 34;
 
     const tid = setInterval(() => {
       i++;
@@ -98,7 +98,7 @@ export default function Hero() {
       if (i >= full.length) {
         clearInterval(tid);
         // 타이핑 완료 후 다음 메시지 or 리셋
-        const pause = visible < messages.length ? 700 : 2500;
+        const pause = visible < messages.length ? 525 : 2500;
         const next = setTimeout(() => {
           if (visible < messages.length) {
             setVisible(v => v + 1);
