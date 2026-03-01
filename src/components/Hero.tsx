@@ -176,11 +176,11 @@ export default function Hero() {
 
           {/* 오른쪽 — 채팅창만 */}
           <div className="md:col-span-7">
-            <div className="rounded-2xl overflow-hidden border border-white/15 shadow-2xl"
-              style={{background:"rgba(255,255,255,0.92)",backdropFilter:"blur(20px)",boxShadow:"0 32px 80px rgba(0,0,0,0.4)"}}>
+            <div className="rounded-2xl overflow-hidden shadow-2xl" style={{border:"1px solid #ede8ff"}}
+              style={{background:"#ffffff",backdropFilter:"blur(20px)",boxShadow:"0 32px 80px rgba(0,0,0,0.4)"}}>
               {/* 헤더 */}
               <div className="flex items-center justify-between px-5 py-3.5 border-b border-white/10"
-                style={{background:"rgba(245,240,255,0.98)"}}>
+                style={{background:"#f9f7ff",borderBottom:"1px solid #ede8ff"}}>
                 <div className="flex items-center gap-2.5">
                   <div className="h-8 w-8 rounded-full overflow-hidden">
                     <img src="/images/cosmoid-avatar.png" alt="코스모이드" className="h-full w-full object-cover" />
@@ -210,11 +210,11 @@ export default function Hero() {
                       <div className={`max-w-[72%] rounded-2xl px-4 py-2.5 text-sm leading-relaxed ${
                         msg.from === "user"
                           ? "rounded-br-sm text-white"
-                          : "rounded-bl-sm text-white/85 border border-white/10"
+                          : "rounded-bl-sm"
                       }`}
                         style={msg.from === "user"
                           ? {background:"linear-gradient(135deg,#7c3aed,#8b5cf6)"}
-                          : {background:"rgba(240,235,255,0.95)"}
+                          : {background:"#f0ebff",color:"#1c1033"}
                         }
                       >
                         {msg.id === typingId ? typingText : msg.text}
@@ -226,9 +226,9 @@ export default function Hero() {
                 {visible > 0 && visible < messages.length && messages[visible - 1].from === "user" && (
                   <motion.div initial={{opacity:0}} animate={{opacity:1}} className="flex justify-start">
                     <div className="rounded-2xl rounded-bl-sm px-4 py-3 border border-white/10 flex gap-1"
-                      style={{background:"rgba(255,255,255,0.08)"}}>
+                      style={{background:"#f0ebff"}}>
                       {[0,1,2].map(i => (
-                        <span key={i} className="h-1.5 w-1.5 rounded-full bg-white/50 animate-bounce"
+                        <span key={i} className="h-1.5 w-1.5 rounded-full animate-bounce" style={{background:"#a78bfa"}}
                           style={{animationDelay:`${i*0.15}s`}} />
                       ))}
                     </div>
