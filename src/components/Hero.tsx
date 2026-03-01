@@ -176,8 +176,7 @@ export default function Hero() {
 
           {/* 오른쪽 — 채팅창만 */}
           <div className="md:col-span-7">
-            <div className="rounded-2xl overflow-hidden shadow-2xl" style={{border:"1px solid #ede8ff"}}
-              style={{background:"#ffffff",backdropFilter:"blur(20px)",boxShadow:"0 32px 80px rgba(0,0,0,0.4)"}}>
+            <div className="rounded-2xl overflow-hidden shadow-2xl" style={{background:"#ffffff",backdropFilter:"blur(20px)",boxShadow:"0 32px 80px rgba(0,0,0,0.4)",border:"1px solid #ede8ff"}}>
               {/* 헤더 */}
               <div className="flex items-center justify-between px-5 py-3.5 border-b border-white/10"
                 style={{background:"#f9f7ff",borderBottom:"1px solid #ede8ff"}}>
