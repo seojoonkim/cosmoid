@@ -61,20 +61,12 @@ export default function FAQ() {
     <section className="bg-[var(--bg-alt)] border-t border-[var(--border)] py-16 md:py-24">
       <div className="mx-auto max-w-4xl px-5 md:px-8">
         <motion.p
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, ease: "easeOut" }}
-          className="section-label"
+                    className="section-label"
         >
           자주 묻는 질문
         </motion.p>
         <motion.h2
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-80px" }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-          className="mt-4 text-3xl md:text-4xl font-extrabold tracking-tight"
+                    className="mt-4 text-3xl md:text-4xl font-extrabold tracking-tight section-title"
         >
           FAQ
         </motion.h2>

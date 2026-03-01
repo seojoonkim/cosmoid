@@ -7,20 +7,12 @@ export default function WhyCosmoid() {
     <section id="why" className="bg-[var(--bg-alt)] border-t border-[var(--border)] py-16 md:py-24">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <motion.p
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, ease: "easeOut" }}
-          className="section-label"
+                    className="section-label"
         >
           왜 Cosmoid인가요
         </motion.p>
         <motion.h2
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-80px" }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-          className="mt-4 max-w-2xl text-3xl font-extrabold leading-tight tracking-tight md:text-5xl"
+                    className="mt-4 max-w-2xl text-3xl font-extrabold leading-tight tracking-tight md:text-5xl section-title section-title"
         >
           대화형 AI를 일상에서<br />진짜 쓰게 만드는 방식
         </motion.h2>

@@ -9,20 +9,12 @@ export default function SocialProof() {
       <div className="mx-auto max-w-6xl px-5 md:px-8 flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
         <div>
           <motion.p
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, ease: "easeOut" }}
-            className="section-label"
+                        className="section-label"
           >
             소셜 프루프
           </motion.p>
           <motion.h2
-            initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-80px" }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-            className="mt-3 text-3xl md:text-4xl font-black tracking-tight whitespace-nowrap" style={{color:"var(--text)"}}
+                        className="mt-3 text-3xl md:text-4xl font-black tracking-tight whitespace-nowrap section-title"
           >
             1,247명 얼리어답터 대기 중
           </motion.h2>

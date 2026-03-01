@@ -29,20 +29,12 @@ export default function MultiAgent() {
     <section className="bg-white border-t border-[var(--border)] py-16 md:py-24">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <motion.p
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, ease: "easeOut" }}
-          className="section-label"
+                    className="section-label"
         >
           멀티 에이전트
         </motion.p>
         <motion.h2
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-80px" }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-          className="mt-4 text-3xl md:text-4xl font-extrabold tracking-tight"
+                    className="mt-4 text-3xl md:text-4xl font-extrabold tracking-tight section-title"
         >
           역할별로 나뉜 AI 팀
         </motion.h2>
