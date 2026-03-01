@@ -34,16 +34,21 @@ function TypingH1() {
     return () => clearInterval(id);
   }, [caseIdx]);
 
-  const subLines = displayed.split("\n");
+  // 항상 2줄 공간 유지 (레이아웃 안 흔들리게)
+  const line1 = displayed.split("\n")[0] ?? "";
+  const line2 = displayed.split("\n")[1] ?? "";
+  const done1 = displayed.includes("\n") && line2.length > 0;
+  const cursor = <span className="animate-pulse" style={{opacity:0.7}}>|</span>;
   return (
     <h1 className="mt-6 font-black leading-[1.12] tracking-tight text-white"
       style={{fontSize:"clamp(2.4rem, 5vw, 4rem)", wordBreak:"keep-all"}}>
       <span style={{display:"block", color:"#f59e0b"}}>카톡 한 마디에</span>
-      {subLines.map((line, i) => (
-        <span key={i} style={{display:"block", color:"white"}}>
-          {line}{i === subLines.length - 1 && <span className="animate-pulse">|</span>}
-        </span>
-      ))}
+      <span style={{display:"block", color:"white", minHeight:"1.12em"}}>
+        {line1}{!done1 && line1.length > 0 && cursor}
+      </span>
+      <span style={{display:"block", color:"white", minHeight:"1.12em"}}>
+        {line2}{line2.length > 0 && cursor}
+      </span>
     </h1>
   );
 }
