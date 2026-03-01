@@ -2,10 +2,15 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #080808;
-  --text: #ffffff;
-  --muted: #888888;
+  --bg: #faf8ff;
+  --bg-alt: #f3f0ff;
+  --surface: #ffffff;
+  --border: rgba(124, 58, 237, 0.12);
+  --text: #1a1523;
+  --muted: #6b7280;
   --purple: #7c3aed;
+  --purple-light: #a78bfa;
+  --purple-bg: rgba(124, 58, 237, 0.08);
 }
 
 * {
@@ -39,7 +44,8 @@ a {
   font-size: 0.65rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(124, 58, 237, 0.3);
+  color: var(--purple);
   padding: 2px 8px;
   border-radius: 4px;
 }
@@ -48,10 +54,10 @@ a {
   font-size: 0.72rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: var(--purple);
 }
 
 .minimal-card {
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border);
+  background: var(--surface);
 }

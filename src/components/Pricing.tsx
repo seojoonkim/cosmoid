@@ -25,33 +25,39 @@ const plans = [
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="border-t border-white/8 py-24 md:py-32">
+    <section id="pricing" className="border-t border-[var(--border)] py-16 md:py-24">
       <div className="mx-auto max-w-6xl px-6">
         <p className="section-label">요금제</p>
         <div className="mt-10 grid gap-5 md:grid-cols-3">
           {plans.map((plan) => (
             <article
               key={plan.name}
-              className={`rounded-lg border p-6 ${
-                plan.featured ? "border-white bg-white text-black" : "border-white/8 bg-black text-white"
+              className={`rounded-lg border p-4 md:p-8 ${
+                plan.featured
+                  ? "border-[var(--purple)] bg-[var(--purple)] text-white"
+                  : "border-[var(--border)] bg-[var(--surface)] text-[var(--text)]"
               }`}
             >
               <div className="flex items-center justify-between">
-                <h3 className="text-lg font-semibold">{plan.name}</h3>
-                {plan.featured && <span className="badge border-black/20 text-black">recommended</span>}
+                <h3 className="text-lg font-semibold md:text-xl">{plan.name}</h3>
+                {plan.featured && <span className="badge border-white/40 text-white">recommended</span>}
               </div>
-              <p className="mt-5 text-4xl font-extrabold">
+              <p className="mt-5 text-3xl font-extrabold md:text-4xl">
                 {plan.price}
-                <span className={`ml-1 text-sm ${plan.featured ? "text-black/70" : "text-[#888]"}`}>{plan.term}</span>
+                <span className={`ml-1 text-xs md:text-sm ${plan.featured ? "text-white/80" : "text-[var(--muted)]"}`}>
+                  {plan.term}
+                </span>
               </p>
-              <ul className={`mt-6 space-y-2 text-sm ${plan.featured ? "text-black/80" : "text-[#888]"}`}>
+              <ul className={`mt-6 space-y-2 text-sm md:text-base ${plan.featured ? "text-white/90" : "text-[var(--muted)]"}`}>
                 {plan.features.map((feature) => (
                   <li key={feature}>{feature}</li>
                 ))}
               </ul>
               <button
                 className={`mt-8 w-full rounded-md border px-4 py-2.5 text-sm font-semibold ${
-                  plan.featured ? "border-black bg-black text-white" : "border-white/15 bg-white text-black"
+                  plan.featured
+                    ? "border-white/70 bg-white text-[var(--purple)]"
+                    : "border-[var(--border)] bg-[var(--purple-bg)] text-[var(--purple)]"
                 }`}
               >
                 {plan.cta}

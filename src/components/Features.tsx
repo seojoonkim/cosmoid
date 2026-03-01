@@ -11,15 +11,15 @@ const features = [
 
 export default function Features() {
   return (
-    <section id="features" className="border-t border-white/8 py-24 md:py-32">
+    <section id="features" className="border-t border-[var(--border)] py-16 md:py-24">
       <div className="mx-auto max-w-6xl px-6">
         <p className="section-label">무엇을 해줄 수 있나</p>
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {features.map((feature) => (
-            <article key={feature.title} className="rounded-md border border-white/12 bg-[#0b0b0b] p-6">
+            <article key={feature.title} className="rounded-md border border-[var(--border)] bg-[var(--surface)] p-4 md:p-8">
               <Image src={feature.icon} alt={feature.title} width={28} height={28} className="h-7 w-7" />
-              <h3 className="mt-5 text-lg font-semibold">{feature.title}</h3>
-              <p className="mt-2 text-sm text-[#888]">{feature.desc}</p>
+              <h3 className="mt-5 text-lg font-semibold md:text-xl">{feature.title}</h3>
+              <p className="mt-2 text-sm text-[var(--muted)] md:text-base">{feature.desc}</p>
             </article>
           ))}
         </div>

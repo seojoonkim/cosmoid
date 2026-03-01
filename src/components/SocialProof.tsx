@@ -11,10 +11,10 @@ const logos = [
 
 export default function SocialProof() {
   return (
-    <section className="border-y border-white/8 py-16 md:py-20">
+    <section className="border-y border-[var(--border)] py-16 md:py-24">
       <div className="mx-auto max-w-6xl px-6">
         <p className="section-label">사회적 신뢰</p>
-        <p className="mt-4 text-4xl font-extrabold leading-tight md:text-6xl">1,247명이 대기 중</p>
+        <p className="mt-4 text-2xl font-extrabold leading-tight md:text-4xl">1,247명이 대기 중</p>
         <div className="mt-8 flex flex-wrap items-center gap-4 md:gap-5">
           {logos.map((logo) => (
             <div
