@@ -16,9 +16,9 @@ export default function Home() {
       <Nav />
       <Hero />
       <SocialProof />
-      <HowItWorks />
       <WhyCosmoid />
       <Features />
+      <HowItWorks />
       <MultiAgent />
       <FAQ />
       <Pricing />

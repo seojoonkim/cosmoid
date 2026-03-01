@@ -2,6 +2,28 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
+const H1_TEXT = "카톡 한 마디에\n치킨 주문부터\n계좌 조회까지";
+
+function TypingH1() {
+  const [displayed, setDisplayed] = useState("");
+  useEffect(() => {
+    let i = 0;
+    setDisplayed("");
+    const id = setInterval(() => {
+      i++;
+      setDisplayed(H1_TEXT.slice(0, i));
+      if (i >= H1_TEXT.length) clearInterval(id);
+    }, 60);
+    return () => clearInterval(id);
+  }, []);
+  return (
+    <h1 className="mt-6 font-black leading-[1.12] tracking-tight text-white"
+      style={{fontSize:"clamp(2.4rem, 5vw, 4rem)", wordBreak:"keep-all", whiteSpace:"pre-line"}}>
+      {displayed}<span className="animate-pulse">|</span>
+    </h1>
+  );
+}
+
 const messages = [
   { id: 1, from: "user", text: "치킨 시켜줘, 배달의민족으로 🍗" },
   { id: 2, from: "ai", text: "근처 굽네치킨 평점 4.8점이에요. 27분 도착, 18,000원 — 바로 주문할까요?" },
@@ -66,12 +88,7 @@ export default function Hero() {
             <span className="inline-block rounded-full border border-white/30 bg-white/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-white">
               Private Beta
             </span>
-            <h1 className="mt-6 font-black leading-[1.12] tracking-tight text-white"
-              style={{fontSize:"clamp(2.4rem, 5vw, 4rem)", wordBreak:"keep-all"}}>
-              카톡 한 마디에<br/>
-              치킨 주문부터<br/>
-              계좌 조회까지
-            </h1>
+            <TypingH1 />
             <p className="mt-6 max-w-lg text-base text-white/70 leading-relaxed">
               새 앱 설치 없이, 이미 쓰는 카카오톡에서 바로 시작하세요.
             </p>
