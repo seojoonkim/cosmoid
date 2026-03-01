@@ -25,7 +25,7 @@ const features = [
   {
     icon: "/icons/calendar.svg",
     title: "일정 관리",
-    image: "/images/2026-03-01-feat-calendar.png",
+    image: "/images/2026-03-01-feat-calendar-v2.png",
     bullets: ["캘린더에 자동으로 등록하고 수정해드려요", "미팅 30분 전에 미리 알려드려요", "충돌 일정을 감지해서 대안을 제안해드려요"],
   },
   {
