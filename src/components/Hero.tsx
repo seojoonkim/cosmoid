@@ -71,18 +71,19 @@ export default function Hero() {
     if (chatRef.current) {
       chatRef.current.scrollTop = chatRef.current.scrollHeight;
     }
-    // 새로 나타난 메시지가 AI면 타이핑 시작
+    // 새로 나타난 메시지 타이핑 시작 (user + ai 모두)
     const newMsg = messages[visible - 1];
-    if (newMsg && newMsg.from === "ai") {
+    if (newMsg) {
       setTypingId(newMsg.id);
       setTypingText("");
       let i = 0;
       const full = newMsg.text;
+      const speed = newMsg.from === "user" ? 60 : 90;
       const tid = setInterval(() => {
         i++;
         setTypingText(full.slice(0, i));
         if (i >= full.length) { clearInterval(tid); }
-      }, 90);
+      }, speed);
       return () => clearInterval(tid);
     }
   }, [visible]);
@@ -192,7 +193,7 @@ export default function Hero() {
                           : {background:"rgba(255,255,255,0.08)"}
                         }
                       >
-                        {msg.from === "ai" && msg.id === typingId ? typingText : msg.text}
+                        {msg.id === typingId ? typingText : msg.text}
                       </div>
                     </motion.div>
                   ))}
