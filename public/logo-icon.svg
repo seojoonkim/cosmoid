@@ -1,20 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" fill="none">
   <defs>
-    <linearGradient id="bg" x1="2" y1="2" x2="34" y2="34" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#c4b5fd"/>
-      <stop offset="50%" stop-color="#818cf8"/>
-      <stop offset="100%" stop-color="#67e8f9"/>
+    <linearGradient id="g" x1="3" y1="3" x2="33" y2="33" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="50%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
     </linearGradient>
   </defs>
-  <!-- 부드러운 육각형 -->
-  <path d="M18 3 L29.5 9.5 Q32 11 32 14 L32 22 Q32 25 29.5 26.5 L18 33 L6.5 26.5 Q4 25 4 22 L4 14 Q4 11 6.5 9.5 Z"
-        fill="url(#bg)" opacity="0.18"/>
-  <path d="M18 3 L29.5 9.5 Q32 11 32 14 L32 22 Q32 25 29.5 26.5 L18 33 L6.5 26.5 Q4 25 4 22 L4 14 Q4 11 6.5 9.5 Z"
-        stroke="url(#bg)" stroke-width="1.8" fill="none"/>
-  <!-- C자 -->
-  <path d="M22.5 13 A6.5 6.5 0 1 0 22.5 23"
-        stroke="url(#bg)" stroke-width="3.5" stroke-linecap="round" fill="none"/>
-  <!-- C 열린 부분 위아래 점 -->
-  <circle cx="22.5" cy="13" r="2" fill="url(#bg)"/>
-  <circle cx="22.5" cy="23" r="2" fill="url(#bg)"/>
+  <!-- 행성 원 -->
+  <circle cx="18" cy="18" r="7.5" stroke="url(#g)" stroke-width="3" fill="none"/>
+  <!-- 궤도 링 (기울어진 타원) -->
+  <ellipse cx="18" cy="18" rx="15" ry="5.5"
+    stroke="url(#g)" stroke-width="2.5" fill="none"
+    transform="rotate(-22 18 18)"/>
+  <!-- 작은 위성 점들 -->
+  <circle cx="5.5" cy="13" r="1.8" fill="url(#g)"/>
+  <circle cx="30" cy="9.5" r="1.2" fill="url(#g)"/>
 </svg>
