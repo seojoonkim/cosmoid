@@ -7,19 +7,19 @@ const features = [
   {
     icon: "/icons/cart.svg",
     title: "쇼핑 자동화",
-    image: "/images/2026-03-01-feat-shopping.png",
+    image: "/images/2026-03-01-feat-shopping-v2.png",
     bullets: ["쿠팡·네이버 최저가를 실시간으로 탐색해요", "리뷰 요약 후 최적 상품을 추천해드려요", "대화 한 번으로 바로 주문해드려요"],
   },
   {
     icon: "/icons/food.svg",
     title: "배달 주문",
-    image: "/images/2026-03-01-feat-delivery.png",
+    image: "/images/2026-03-01-feat-delivery-v2.png",
     bullets: ["배민·쿠팡이츠 메뉴를 자동으로 추천해드려요", "과거 주문을 기반으로 취향을 학습해요", "결제까지 대화 흐름 안에서 완결해드려요"],
   },
   {
     icon: "/icons/money.svg",
     title: "금융 요약",
-    image: "/images/2026-03-01-feat-finance.png",
+    image: "/images/2026-03-01-feat-finance-v2.png",
     bullets: ["오픈뱅킹으로 계좌 잔액을 조회해드려요", "월별 지출을 카테고리별로 분석해드려요", "이상 지출을 감지해서 알려드려요"],
   },
   {
@@ -31,13 +31,13 @@ const features = [
   {
     icon: "/icons/car.svg",
     title: "이동 지원",
-    image: "/images/2026-03-01-feat-taxi.png",
+    image: "/images/2026-03-01-feat-taxi-v2.png",
     bullets: ["카카오T 실시간 요금을 조회해드려요", "택시와 대중교통 경로를 비교해드려요", "도착 예정 시간을 카카오톡으로 공유해드려요"],
   },
   {
     icon: "/icons/search.svg",
     title: "실시간 검색",
-    image: "/images/2026-03-01-feat-search.png",
+    image: "/images/2026-03-01-feat-search-v2.png",
     bullets: ["네이버·구글 최신 뉴스를 요약해드려요", "트렌드·날씨·환율을 즉시 조회해드려요", "검색 결과를 대화체로 정리해드려요"],
   },
 ];
