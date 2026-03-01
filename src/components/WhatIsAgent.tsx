@@ -10,7 +10,7 @@ const examples = [
 
 export default function WhatIsAgent() {
   return (
-    <section className="section-bg-1 border-t border-[var(--border)] py-16 md:py-24">
+    <section className="section-bg-6 border-t border-[var(--border)] py-16 md:py-24">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <div className="grid gap-12 md:grid-cols-2 md:gap-16 items-center">
 
