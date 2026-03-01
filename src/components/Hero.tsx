@@ -181,9 +181,15 @@ export default function Hero() {
                       animate={{ opacity: 1, y: 0, scale: 1 }}
                       exit={{ opacity: 0 }}
                       transition={{ duration: 0.35, ease: "easeOut" }}
-                      className={`flex ${msg.from === "user" ? "justify-end" : "justify-start"}`}
+                      className={`flex items-end gap-2 ${msg.from === "user" ? "justify-end" : "justify-start"}`}
                     >
-                      <div className={`max-w-[78%] rounded-2xl px-4 py-2.5 text-sm leading-relaxed ${
+                      {msg.from === "ai" && (
+                        <div className="h-7 w-7 rounded-full shrink-0 flex items-center justify-center mb-0.5"
+                          style={{background:"linear-gradient(135deg,#7c3aed,#06b6d4)"}}>
+                          <img src="/logo-icon.svg" alt="C" className="h-4 w-4 object-contain" />
+                        </div>
+                      )}
+                      <div className={`max-w-[72%] rounded-2xl px-4 py-2.5 text-sm leading-relaxed ${
                         msg.from === "user"
                           ? "rounded-br-sm text-white"
                           : "rounded-bl-sm text-white/85 border border-white/10"
