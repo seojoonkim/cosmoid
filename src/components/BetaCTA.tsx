@@ -11,7 +11,8 @@ export default function BetaCTA() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, ease: "easeOut" }}
-          className="section-label" style={{background:"rgba(255,255,255,0.18)",color:"#ffffff",WebkitTextFillColor:"#ffffff",border:"1px solid rgba(255,255,255,0.3)"}}
+          className="section-label reveal"
+          style={{ color: "#ffffff", WebkitTextFillColor: "#ffffff" }}
         >
           지금 시작해보세요
         </motion.p>
@@ -20,13 +21,25 @@ export default function BetaCTA() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="mt-4 max-w-2xl text-3xl font-extrabold leading-tight tracking-tight md:text-5xl" style={{color:"white"}}
+          className="mt-4 max-w-2xl text-3xl font-extrabold leading-tight tracking-tight md:text-5xl reveal reveal-delay-1"
+          style={{ color: "white" }}
         >
           지금 등록하고
           <br className="hidden md:block" />
           가장 먼저 써보세요
         </motion.h2>
-        <form className="mt-10 flex flex-col gap-3 sm:flex-row">
+        <div className="mt-8 flex flex-col gap-3 sm:flex-row reveal reveal-delay-2">
+          <a
+            href="#"
+            className="flex items-center justify-center gap-2 rounded-full px-8 py-3.5 text-base font-bold"
+            style={{ background: "#FEE500", color: "#191919" }}
+          >
+            <img src="/logos/kakaotalk.svg" alt="" className="h-5 w-5" />
+            카카오톡으로 신청
+          </a>
+        </div>
+        <p className="mt-4 text-sm text-white/60 reveal reveal-delay-2">또는 이메일로 대기 신청</p>
+        <form className="mt-6 flex flex-col gap-3 sm:flex-row reveal reveal-delay-3">
           <input
             type="email"
             placeholder="이메일 주소 입력"

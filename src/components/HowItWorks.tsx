@@ -27,21 +27,23 @@ export default function HowItWorks() {
     <section id="how" className="section-bg-7 border-t border-[var(--border)] py-16 md:py-24">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <motion.p
-                    className="section-label"
+          className="section-label reveal"
         >
           어떻게 사용하나요
         </motion.p>
         <motion.h2
-                    className="mt-4 section-h2 section-title"
+          className="mt-4 section-h2 section-title reveal reveal-delay-1"
         >
           딱 3단계예요
         </motion.h2>
-        <p className="mt-4 section-desc">
+        <p className="mt-4 section-desc reveal reveal-delay-2">
           <strong style={{color:"#1a1a2e"}}>AI 에이전트</strong>란, 사용자 대신 앱을 조작하고 업무를 처리해주는 AI 비서예요. 주문, 예약, 검색, 결제까지 — 카카오톡에서 말 한마디로 지시하면 알아서 처리해줘요. 코딩도, 새 앱 설치도 필요 없어요.
         </p>
-        <div className="mt-10 grid gap-5 md:grid-cols-3">
+        <div className="relative mt-10">
+          <div className="absolute top-5 left-[calc(16.67%+20px)] right-[calc(16.67%+20px)] h-px bg-gradient-to-r from-[var(--purple-mid)] to-[var(--purple-mid)] hidden md:block" />
+          <div className="grid gap-5 md:grid-cols-3">
           {steps.map((step) => (
-            <article key={step.number} className="card overflow-hidden flex flex-col">
+            <article key={step.number} className="card overflow-hidden flex flex-col reveal">
               {/* 이미지 */}
               <div className="h-48 md:h-56 overflow-hidden bg-[var(--bg-alt)]">
                 <img
@@ -53,14 +55,20 @@ export default function HowItWorks() {
               </div>
               {/* 텍스트 */}
               <div className="p-5 md:p-6 flex flex-col flex-1">
-                <div className="flex items-center gap-2.5 mb-3">
-                  <span className="text-sm font-black" style={{color:"#f59e0b"}}>{step.number}</span>
-                  <h3 className="text-lg font-extrabold tracking-tight text-[var(--text)]">{step.title}</h3>
+                <div className="flex items-center gap-4 mb-4">
+                  <div
+                    className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0"
+                    style={{ background: "var(--purple)" }}
+                  >
+                    {step.number}
+                  </div>
+                  <h3 className="text-lg font-bold text-[var(--text)]">{step.title}</h3>
                 </div>
                 <p className="text-sm text-[var(--muted)] leading-relaxed">{step.description}</p>
               </div>
             </article>
           ))}
+          </div>
         </div>
       </div>
     </section>

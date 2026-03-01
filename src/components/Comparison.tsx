@@ -20,17 +20,17 @@ export default function Comparison() {
         <motion.p
           initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}
           viewport={{ once: true }} transition={{ duration: 0.5 }}
-          className="section-label"
+          className="section-label reveal"
         >비교</motion.p>
-        <h2 className="mt-4 section-h2 section-title">
+        <h2 className="mt-4 section-h2 section-title reveal reveal-delay-1">
           왜 Cosmoid인가요?
         </h2>
-        <p className="mt-4 text-base text-[var(--muted)] max-w-2xl">
+        <p className="mt-4 text-base text-[var(--muted)] max-w-2xl reveal reveal-delay-2">
           OpenClaw를 직접 설치하거나, 해외 SaaS를 쓰는 것과 무엇이 다른지 비교해보세요.
           Cosmoid는 <strong>누구나 1분 안에</strong> AI 에이전트를 최적의 환경으로 운영할 수 있도록 설계됐어요.
         </p>
 
-        <div className="mt-10 overflow-x-auto rounded-2xl border border-[var(--border)] shadow-[0_4px_24px_rgba(0,0,0,0.08)]">
+        <div className="mt-10 overflow-x-auto rounded-2xl border border-[var(--border)] shadow-[0_4px_24px_rgba(0,0,0,0.08)] reveal reveal-delay-3">
           <table className="w-full text-sm">
             <thead>
               <tr className="border-b border-[var(--border)]"
@@ -58,7 +58,7 @@ export default function Comparison() {
           </table>
         </div>
 
-        <p className="mt-6 text-center text-sm text-[var(--muted)]">
+        <p className="mt-6 text-center text-sm text-[var(--muted)] reveal reveal-delay-3">
           코딩 없이, 설치 없이 — 지금 바로 나만의 AI 에이전트를 시작하세요.
         </p>
       </div>

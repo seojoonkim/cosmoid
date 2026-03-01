@@ -18,13 +18,13 @@ export default function WhatIsAgent() {
           <motion.p
             initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}
             viewport={{ once: true }} transition={{ duration: 0.5 }}
-            className="section-label"
+            className="section-label reveal"
           >AI 에이전트란?</motion.p>
 
           <motion.h2
             initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.1 }}
-            className="mt-4 section-h2 section-title"
+            className="mt-4 section-h2 section-title reveal reveal-delay-1"
           >
             말 한마디면<br/>알아서 다 해주는 AI
           </motion.h2>
@@ -32,7 +32,7 @@ export default function WhatIsAgent() {
           <motion.p
             initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.2 }}
-            className="mt-4 section-desc mx-auto"
+            className="mt-4 section-desc mx-auto reveal reveal-delay-2"
           >
             그냥 대답만 하는 챗봇이 아니에요. 앱을 열고, 검색하고, 주문하고, 결제까지 — <strong style={{ color: "var(--text)" }}>실제로 행동하는 AI 비서</strong>예요.
             Cosmoid가 있으면 <strong style={{ color: "var(--text)" }}>누구나 1분 만에</strong> 이 AI 비서를 가질 수 있어요. 코딩도, 앱 설치도 필요 없어요.
@@ -59,7 +59,7 @@ export default function WhatIsAgent() {
               key={ex.title}
               initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }} transition={{ duration: 0.4, delay: 0.1 + i * 0.08 }}
-              className="card p-5 flex flex-col gap-3"
+              className="card p-5 flex flex-col gap-3 reveal"
             >
               <span className="text-3xl">{ex.emoji}</span>
               <p className="card-title">{ex.title}</p>

@@ -7,19 +7,19 @@ export default function WhyCosmoid() {
     <section id="why" className="section-bg-2 border-t border-[var(--border)] py-16 md:py-24">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <motion.p
-                    className="section-label"
+          className="section-label reveal"
         >
           왜 Cosmoid인가요
         </motion.p>
         <motion.h2
-                    className="mt-4 max-w-2xl text-3xl font-extrabold leading-tight tracking-tight md:text-5xl section-title section-title"
+          className="mt-4 max-w-2xl text-3xl font-extrabold leading-tight tracking-tight md:text-5xl section-title reveal reveal-delay-1"
         >
           대화형 AI를 일상에서<br />진짜 쓰게 만드는 방식
         </motion.h2>
 
         <div className="mt-10 grid gap-5 md:grid-cols-2">
           {/* 기존 방식 */}
-          <div className="card overflow-hidden flex flex-col">
+          <div className="card overflow-hidden flex flex-col reveal reveal-delay-2">
             <div className="p-6 md:p-8">
               <p className="text-xl font-black text-[var(--text)] mb-1">기존 방식</p><p className="text-sm text-[var(--muted)] mb-5">지금까지 AI 에이전트를 못 쓴 이유</p>
               <ul className="mt-5 space-y-3 text-base leading-relaxed text-[var(--muted)]">
@@ -43,7 +43,7 @@ export default function WhyCosmoid() {
           </div>
 
           {/* Cosmoid */}
-          <div className="card overflow-hidden flex flex-col">
+          <div className="card overflow-hidden flex flex-col reveal reveal-delay-3">
             <div className="p-6 md:p-8">
               <p className="text-xl font-black text-[var(--purple)] mb-1">Cosmoid</p><p className="text-sm text-[var(--muted)] mb-5">대화 하나로 실행까지</p>
               <ul className="mt-5 space-y-3 text-base leading-relaxed">

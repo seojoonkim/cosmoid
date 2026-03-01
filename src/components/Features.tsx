@@ -205,18 +205,24 @@ export default function Features() {
     <section id="features" className="section-bg-7 border-t border-[var(--border)] py-16 md:py-24">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <motion.p
-                    className="section-label"
+          className="section-label reveal"
         >
           어떤 일을 해드릴 수 있나요
         </motion.p>
         <motion.h2
-                    className="mt-4 section-h2 section-title"
+          className="mt-4 section-h2 section-title reveal reveal-delay-1"
         >
           핵심 기능 6가지
         </motion.h2>
+        <p className="mt-4 section-desc reveal reveal-delay-2">
+          메신저 대화만으로 실사용 작업을 끝내도록, 자주 쓰는 일상 시나리오를 우선 자동화했어요.
+        </p>
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {features.map((feature) => (
-            <article key={feature.title} className="card overflow-hidden flex flex-col">
+          {features.map((feature, idx) => (
+            <article
+              key={feature.title}
+              className={`card overflow-hidden flex flex-col reveal ${idx % 3 === 0 ? "" : idx % 3 === 1 ? "reveal-delay-1" : "reveal-delay-2"}`}
+            >
               {/* 이미지 영역 */}
               <div className="border-b border-[var(--border)] h-44 md:h-48 overflow-hidden bg-white">
                 <FeaturePreview title={feature.title} />

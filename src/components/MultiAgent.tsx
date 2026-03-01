@@ -29,35 +29,35 @@ export default function MultiAgent() {
     <section className="section-bg-6 border-t border-[var(--border)] py-16 md:py-24">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <motion.p
-                    className="section-label"
+          className="section-label reveal"
         >
           멀티 에이전트
         </motion.p>
         <motion.h2
-                    className="mt-4 section-h2 section-title"
+          className="mt-4 section-h2 section-title reveal reveal-delay-1"
         >
           역할별로 나뉜 AI 팀
         </motion.h2>
         <div className="mt-10 grid gap-5 md:grid-cols-3 md:items-stretch">
-          {agents.map((agent) => (
+          {agents.map((agent, idx) => (
             <article
               key={agent.title}
-  className="rounded-2xl border p-6 md:p-8 flex flex-col"
+              className={`card rounded-2xl p-6 md:p-8 flex flex-col reveal ${idx === 1 ? "reveal-delay-1" : idx === 2 ? "reveal-delay-2" : ""}`}
               style={{ background: "var(--surface)", borderColor: "var(--border)", color: "var(--text)", boxShadow: "0 4px 24px rgba(0,0,0,0.11), 0 1px 4px rgba(0,0,0,0.07)" }}
             >
-<h3 className="card-title">{agent.title}</h3>
+              <h3 className="card-title">{agent.title}</h3>
               <p className="mt-2 text-base" style={{ color: "var(--muted)" }}>
                 {agent.desc}
               </p>
               <ul className="mt-5 space-y-2">
                 {agent.bullets.map((b) => (
-<li key={b} className="flex items-start gap-2 text-sm leading-relaxed" style={{ color: "var(--muted)" }}>
+                  <li key={b} className="flex items-start gap-2 text-sm leading-relaxed" style={{ color: "var(--muted)" }}>
                     <span className="mt-1.5 h-1.5 w-1.5 rounded-full shrink-0" style={{ background: "#f59e0b" }} />
                     {b}
                   </li>
                 ))}
               </ul>
-<p className="mt-6 text-xs uppercase tracking-[0.08em]" style={{ color: "var(--muted)" }}>
+              <p className="mt-6 text-xs uppercase tracking-[0.08em]" style={{ color: "var(--muted)" }}>
                 {agent.stack}
               </p>
             </article>

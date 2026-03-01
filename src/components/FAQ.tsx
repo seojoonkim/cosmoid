@@ -61,21 +61,21 @@ export default function FAQ() {
     <section className="section-bg-1 border-t border-[var(--border)] py-16 md:py-24">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <motion.p
-                    className="section-label"
+          className="section-label reveal"
         >
           자주 묻는 질문
         </motion.p>
         <motion.h2
-                    className="mt-4 section-h2 section-title"
+          className="mt-4 section-h2 section-title reveal reveal-delay-1"
         >
           FAQ
         </motion.h2>
 
-        <div className="mt-10">
+        <div className="mt-10 reveal reveal-delay-2">
           {faqs.map((faq, idx) => {
             const isOpen = openIndex === idx;
             return (
-              <article key={faq.q} className="border-b border-[var(--border)]">
+              <article key={faq.q} className="border-b border-[var(--border)] reveal">
                 <button
                   type="button"
                   className="flex w-full items-center justify-between gap-4 text-left py-5"

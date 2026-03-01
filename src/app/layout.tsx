@@ -1,8 +1,5 @@
 import type { Metadata } from "next";
-import { Nunito } from "next/font/google";
 import "./globals.css";
-
-const nunito = Nunito({ subsets: ["latin"], weight: ["700", "800"], variable: "--font-nunito" });
 
 export const metadata: Metadata = {
   title: "Cosmoid — 카카오톡 AI 에이전트",
@@ -12,7 +9,21 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ko">
-      <body className={nunito.variable}>{children}</body>
+      <body>
+        {children}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              const obs = new IntersectionObserver((entries) => {
+                entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add("visible"); });
+              }, { threshold: 0.1, rootMargin: "0px 0px -40px 0px" });
+              document.addEventListener("DOMContentLoaded", () => {
+                document.querySelectorAll(".reveal").forEach((el) => obs.observe(el));
+              });
+            `,
+          }}
+        />
+      </body>
     </html>
   );
 }

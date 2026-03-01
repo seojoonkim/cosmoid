@@ -4,7 +4,6 @@ import SocialProof from "@/components/SocialProof";
 import WhyCosmoid from "@/components/WhyCosmoid";
 import HowItWorks from "@/components/HowItWorks";
 import Features from "@/components/Features";
-import WhatIsAgent from '@/components/WhatIsAgent';
 import Comparison from '@/components/Comparison';
 import FAQ from "@/components/FAQ";
 import Pricing from "@/components/Pricing";
@@ -16,12 +15,11 @@ export default function Home() {
     <main>
       <Nav />
       <Hero />
-      <WhatIsAgent />
       <SocialProof />
       <WhyCosmoid />
+      <Comparison />
       <Features />
       <HowItWorks />
-      <Comparison />
       <FAQ />
       <Pricing />
       <BetaCTA />

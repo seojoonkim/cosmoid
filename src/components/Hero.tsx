@@ -114,20 +114,10 @@ export default function Hero() {
 
   return (
     <section className="relative overflow-hidden py-20 md:py-28"
-      style={{background: "linear-gradient(135deg, #0f0824 0%, #1a0a3e 40%, #2d1065 70%, #1e0550 100%)"}}>
-      
-      {/* 별 파티클 */}
-      {[...Array(24)].map((_, i) => (
-        <div key={i} className="absolute rounded-full bg-white pointer-events-none"
-          style={{
-            width: `${[1,1,2,1,1,2,1,1,1,2,1,1,1,2,1,1,2,1,1,1,2,1,1,1][i]}px`,
-            height: `${[1,1,2,1,1,2,1,1,1,2,1,1,1,2,1,1,2,1,1,1,2,1,1,1][i]}px`,
-            top: `${[5,15,25,8,40,55,12,70,30,85,18,60,45,90,22,75,38,92,10,50,65,80,35,95][i]}%`,
-            left: `${[10,25,50,75,15,90,40,60,80,30,95,5,45,20,70,85,35,55,65,10,40,75,90,20][i]}%`,
-            opacity: [0.3,0.5,0.7,0.4,0.6,0.3,0.5,0.4,0.6,0.3,0.7,0.5,0.4,0.6,0.3,0.5,0.7,0.4,0.6,0.3,0.5,0.4,0.6,0.3][i],
-          }}
-        />
-      ))}
+      style={{
+        background:
+          "radial-gradient(ellipse 80% 60% at 20% 50%, rgba(109,40,217,0.18), transparent), radial-gradient(ellipse 60% 80% at 80% 20%, rgba(99,102,241,0.14), transparent), radial-gradient(ellipse 50% 50% at 50% 90%, rgba(224,148,0,0.06), transparent), linear-gradient(180deg, #0a0118 0%, #120728 100%)",
+      }}>
 
       {/* 보라 글로우 blob */}
       <div className="absolute top-[-80px] left-[-60px] h-72 w-72 rounded-full pointer-events-none"
@@ -173,62 +163,93 @@ export default function Hero() {
 
           {/* 오른쪽 — 채팅창만 */}
           <div className="md:col-span-7">
-            <div className="rounded-3xl overflow-hidden" style={{background:"#f2f2f7",boxShadow:"0 24px 60px rgba(0,0,0,0.45), 0 0 0 1px rgba(255,255,255,0.12)"}}>
-              {/* 헤더 */}
-              <div className="flex items-center justify-between px-5 py-3.5"
-                style={{background:"#ffffff",borderBottom:"1px solid #e9e0ff"}}>
-                <div className="flex items-center gap-2.5">
-                  <div className="h-8 w-8 rounded-full overflow-hidden">
-                    <img src="/images/cosmoid-avatar.png" alt="코스모이드" className="h-full w-full object-cover" />
-                  </div>
-                  <p className="text-sm font-bold" style={{color:"#1c1033"}}>코스모이드</p>
+            <div className="relative mx-auto" style={{ maxWidth: "360px" }}>
+              <div
+                style={{
+                  background: "#1a1a1a",
+                  borderRadius: "48px",
+                  padding: "14px",
+                  boxShadow:
+                    "0 24px 80px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.08), inset 0 0 0 1px rgba(255,255,255,0.05)",
+                }}
+              >
+                <div
+                  style={{
+                    width: "120px",
+                    height: "34px",
+                    background: "#000",
+                    borderRadius: "17px",
+                    margin: "0 auto 10px",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  <div style={{ width: "10px", height: "10px", background: "#222", borderRadius: "50%" }} />
                 </div>
-                <span className="flex items-center gap-1.5 text-xs font-medium" style={{color:"#34c759"}}>
-                  <span className="h-2 w-2 rounded-full animate-pulse" style={{background:"#34c759"}} />online
-                </span>
-              </div>
-              {/* 메시지 */}
-              <div ref={chatRef} className="chat-scroll px-4 py-4 space-y-3 h-[411px] md:h-[484px] overflow-y-auto scroll-smooth" style={{background:"#f2f2f7"}}>
-                <AnimatePresence>
-                  {messages.slice(0, visible).map((msg) => (
-                    <motion.div key={msg.id}
-                      initial={{ opacity: 0, y: 12, scale: 0.97 }}
-                      animate={{ opacity: 1, y: 0, scale: 1 }}
-                      exit={{ opacity: 0 }}
-                      transition={{ duration: 0.35, ease: "easeOut" }}
-                      className={`flex items-end gap-2 ${msg.from === "user" ? "justify-end" : "justify-start"}`}
-                    >
-                      {msg.from === "ai" && (
-                        <div className="h-8 w-8 rounded-full overflow-hidden shrink-0 mb-0.5">
-                          <img src="/images/cosmoid-avatar.png" alt="코스모이드" className="h-full w-full object-cover" />
-                        </div>
-                      )}
-                      <div className={`max-w-[72%] rounded-2xl px-4 py-2.5 text-sm leading-relaxed ${
-                        msg.from === "user"
-                          ? "text-white"
-                          : ""
-                      }`}
-                        style={msg.from === "user"
-                          ? {background:"#7c3aed",borderRadius:"20px 20px 4px 20px"}
-                          : {background:"#ffffff",color:"#1c1033",borderRadius:"20px 20px 20px 4px",boxShadow:"0 1px 3px rgba(0,0,0,0.08)"}
-                        }
-                      >
-                        {msg.id === typingId ? typingText : msg.text}
+                <div
+                  className="rounded-3xl overflow-hidden"
+                  style={{ background: "#f2f2f7", boxShadow: "0 24px 60px rgba(0,0,0,0.45), 0 0 0 1px rgba(255,255,255,0.12)" }}
+                >
+                  <div className="flex items-center justify-between px-5 py-3.5" style={{ background: "#ffffff", borderBottom: "1px solid #e9e0ff" }}>
+                    <div className="flex items-center gap-2.5">
+                      <div className="h-8 w-8 rounded-full overflow-hidden">
+                        <img src="/images/cosmoid-avatar.png" alt="코스모이드" className="h-full w-full object-cover" />
                       </div>
-                    </motion.div>
-                  ))}
-                </AnimatePresence>
-                {/* 타이핑 인디케이터 */}
-                {visible > 0 && visible < messages.length && messages[visible - 1].from === "user" && (
-                  <motion.div initial={{opacity:0}} animate={{opacity:1}} className="flex justify-start">
-                    <div className="px-4 py-3 flex gap-1" style={{background:"#ffffff",borderRadius:"20px 20px 20px 4px",boxShadow:"0 1px 3px rgba(0,0,0,0.08)"}}>
-                      {[0,1,2].map(i => (
-                        <span key={i} className="h-1.5 w-1.5 rounded-full animate-bounce" style={{background:"#a78bfa",animationDelay:`${i*0.15}s`}} />
-                      ))}
+                      <p className="text-sm font-bold" style={{ color: "#1c1033" }}>코스모이드</p>
                     </div>
-                  </motion.div>
-                )}
+                    <span className="flex items-center gap-1.5 text-xs font-medium" style={{ color: "#34c759" }}>
+                      <span className="h-2 w-2 rounded-full animate-pulse" style={{ background: "#34c759" }} />online
+                    </span>
+                  </div>
+                  <div
+                    ref={chatRef}
+                    className="chat-scroll px-4 py-4 space-y-3 h-[411px] md:h-[484px] overflow-y-auto scroll-smooth"
+                    style={{ background: "#f2f2f7" }}
+                  >
+                    <AnimatePresence>
+                      {messages.slice(0, visible).map((msg) => (
+                        <motion.div
+                          key={msg.id}
+                          initial={{ opacity: 0, y: 12, scale: 0.97 }}
+                          animate={{ opacity: 1, y: 0, scale: 1 }}
+                          exit={{ opacity: 0 }}
+                          transition={{ duration: 0.35, ease: "easeOut" }}
+                          className={`flex items-end gap-2 ${msg.from === "user" ? "justify-end" : "justify-start"}`}
+                        >
+                          {msg.from === "ai" && (
+                            <div className="h-8 w-8 rounded-full overflow-hidden shrink-0 mb-0.5">
+                              <img src="/images/cosmoid-avatar.png" alt="코스모이드" className="h-full w-full object-cover" />
+                            </div>
+                          )}
+                          <div
+                            className={`max-w-[72%] rounded-2xl px-4 py-2.5 text-sm leading-relaxed ${
+                              msg.from === "user" ? "text-white" : ""
+                            }`}
+                            style={
+                              msg.from === "user"
+                                ? { background: "#7c3aed", borderRadius: "20px 20px 4px 20px" }
+                                : { background: "#ffffff", color: "#1c1033", borderRadius: "20px 20px 20px 4px", boxShadow: "0 1px 3px rgba(0,0,0,0.08)" }
+                            }
+                          >
+                            {msg.id === typingId ? typingText : msg.text}
+                          </div>
+                        </motion.div>
+                      ))}
+                    </AnimatePresence>
+                    {visible > 0 && visible < messages.length && messages[visible - 1].from === "user" && (
+                      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="flex justify-start">
+                        <div className="px-4 py-3 flex gap-1" style={{ background: "#ffffff", borderRadius: "20px 20px 20px 4px", boxShadow: "0 1px 3px rgba(0,0,0,0.08)" }}>
+                          {[0, 1, 2].map((i) => (
+                            <span key={i} className="h-1.5 w-1.5 rounded-full animate-bounce" style={{ background: "#a78bfa", animationDelay: `${i * 0.15}s` }} />
+                          ))}
+                        </div>
+                      </motion.div>
+                    )}
+                  </div>
+                </div>
               </div>
+              <div style={{ width: "130px", height: "4px", background: "rgba(255,255,255,0.25)", borderRadius: "2px", margin: "10px auto 0" }} />
             </div>
           </div>
 
