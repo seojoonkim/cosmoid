@@ -1,26 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" fill="none">
-  <!-- 궤도 뒤쪽 반 (행성 뒤에 가려짐 표현) -->
-  <ellipse cx="22" cy="22" rx="20" ry="7"
-    stroke="#4c1d95" stroke-width="3" fill="none"
-    stroke-dasharray="26 34"
-    transform="rotate(-18 22 22)"/>
+  <!-- 궤도 뒤쪽 -->
+  <ellipse cx="22" cy="22" rx="21" ry="7.5"
+    stroke="#818cf8" stroke-width="2.5" fill="none"
+    stroke-dasharray="28 34"
+    transform="rotate(-20 22 22)"/>
 
-  <!-- 행성 본체 (단색) -->
-  <circle cx="22" cy="22" r="12" fill="#7c3aed"/>
+  <!-- 행성 본체 -->
+  <circle cx="22" cy="22" r="13" fill="#7c3aed"/>
 
-  <!-- 궤도 앞쪽 반 -->
-  <ellipse cx="22" cy="22" rx="20" ry="7"
-    stroke="#38bdf8" stroke-width="3" fill="none"
-    stroke-dasharray="26 34"
+  <!-- 궤도 앞쪽 -->
+  <ellipse cx="22" cy="22" rx="21" ry="7.5"
+    stroke="#38bdf8" stroke-width="2.5" fill="none"
+    stroke-dasharray="28 34"
     stroke-dashoffset="34"
-    transform="rotate(-18 22 22)"/>
+    transform="rotate(-20 22 22)"/>
 
-  <!-- 채팅 점 3개 (행성 위에) -->
-  <circle cx="16" cy="23" r="2" fill="white"/>
-  <circle cx="22" cy="23" r="2" fill="white"/>
-  <circle cx="28" cy="23" r="2" fill="white"/>
+  <!-- 채팅 점 3개 -->
+  <circle cx="15.5" cy="23" r="2.2" fill="white"/>
+  <circle cx="22" cy="23" r="2.2" fill="white"/>
+  <circle cx="28.5" cy="23" r="2.2" fill="white"/>
 
-  <!-- 작은 위성 -->
-  <circle cx="5" cy="14" r="3" fill="#a78bfa"/>
-  <circle cx="38" cy="11" r="2" fill="#38bdf8"/>
+  <!-- 위성 -->
+  <circle cx="4" cy="13" r="2.8" fill="#818cf8"/>
+  <circle cx="39" cy="12" r="1.8" fill="#38bdf8"/>
 </svg>

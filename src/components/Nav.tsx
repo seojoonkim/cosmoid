@@ -32,14 +32,14 @@ export default function Nav() {
               fontSize: "1.7rem",
               letterSpacing: "-0.03em",
               fontFamily: "var(--font-nunito, 'Nunito', system-ui)",
-              background: "linear-gradient(120deg, #a78bfa 0%, #818cf8 20%, #38bdf8 45%, #c084fc 70%, #a78bfa 100%)",
+              background: "linear-gradient(90deg, #7c3aed 0%, #6d28d9 50%, #4f46e5 100%)",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
               backgroundClip: "text",
-              backgroundSize: "300% 100%",
+              backgroundSize: "100% 100%",
             }}
-            animate={{ backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"] }}
-            transition={{ duration: 9, repeat: Infinity, ease: "easeInOut" }}
+            animate={{}}
+            transition={{}}
           >cosmoid</motion.span>
         </motion.a>
         <div className="hidden md:flex items-center gap-7 text-base text-[var(--muted)] font-medium">
