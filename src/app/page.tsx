@@ -17,8 +17,8 @@ export default function Home() {
     <main>
       <Nav />
       <Hero />
-      <SocialProof />
       <WhatIsAgent />
+      <SocialProof />
       <WhyCosmoid />
       <Features />
       <HowItWorks />
