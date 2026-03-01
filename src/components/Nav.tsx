@@ -29,7 +29,7 @@ export default function Nav() {
           <motion.span
             style={{
               fontWeight: 800,
-              fontSize: "1.45rem",
+              fontSize: "1.7rem",
               letterSpacing: "-0.03em",
               fontFamily: "var(--font-nunito, 'Nunito', system-ui)",
               background: "linear-gradient(90deg, #7c3aed 0%, #6366f1 40%, #22d3ee 100%)",

@@ -109,11 +109,6 @@ export default function Hero() {
                 <span>한국 서비스 특화</span>
               </div>
               <div className="w-px h-4 bg-white/20" />
-              <div className="flex items-center gap-1">
-                <span className="font-bold text-[#f59e0b]">1,247명</span>
-                <span>대기 중</span>
-              </div>
-              <div className="w-px h-4 bg-white/20" />
               <div>3분 설정</div>
             </div>
           </div>
