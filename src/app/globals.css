@@ -34,7 +34,7 @@ body {
   background: var(--bg);
   color: var(--text);
   overflow-x: hidden;
-  line-height: 1.6;
+  line-height: 1.75;
   word-break: keep-all;
 }
 a {
