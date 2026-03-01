@@ -1,12 +1,36 @@
 import Image from "next/image";
 
 const features = [
-  { icon: "/icons/cart.svg", title: "쇼핑 자동화", desc: "최저가 탐색 후 바로 주문" },
-  { icon: "/icons/food.svg", title: "배달 주문", desc: "메뉴 추천부터 결제까지" },
-  { icon: "/icons/money.svg", title: "금융 요약", desc: "지출 분석과 계좌 조회" },
-  { icon: "/icons/calendar.svg", title: "일정 관리", desc: "캘린더 등록과 리마인드" },
-  { icon: "/icons/car.svg", title: "이동 지원", desc: "교통 조회와 호출" },
-  { icon: "/icons/search.svg", title: "실시간 검색", desc: "뉴스, 정보, 트렌드 탐색" },
+  {
+    icon: "/icons/cart.svg",
+    title: "쇼핑 자동화",
+    bullets: ["쿠팡·네이버 최저가 실시간 탐색", "리뷰 요약 후 최적 상품 추천", "대화 한 번으로 바로 주문 완료"],
+  },
+  {
+    icon: "/icons/food.svg",
+    title: "배달 주문",
+    bullets: ["배민·쿠팡이츠 메뉴 자동 추천", "과거 주문 기반 취향 학습", "결제까지 대화 흐름 안에서 완결"],
+  },
+  {
+    icon: "/icons/money.svg",
+    title: "금융 요약",
+    bullets: ["오픈뱅킹 연동 계좌 잔액 조회", "월별 지출 카테고리 분석", "이상 지출 감지 및 알림"],
+  },
+  {
+    icon: "/icons/calendar.svg",
+    title: "일정 관리",
+    bullets: ["캘린더 자동 등록 및 수정", "미팅 전 30분 사전 리마인드", "충돌 일정 감지 및 대안 제안"],
+  },
+  {
+    icon: "/icons/car.svg",
+    title: "이동 지원",
+    bullets: ["카카오T 실시간 요금 조회", "택시·대중교통 경로 비교", "도착 예정 시간 카카오톡 공유"],
+  },
+  {
+    icon: "/icons/search.svg",
+    title: "실시간 검색",
+    bullets: ["네이버·구글 최신 뉴스 요약", "트렌드·날씨·환율 즉시 조회", "검색 결과를 대화체로 정리"],
+  },
 ];
 
 export default function Features() {
@@ -15,16 +39,22 @@ export default function Features() {
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <p className="section-label">무엇을 해줄 수 있나</p>
         <h2 className="mt-4 text-3xl md:text-4xl font-extrabold tracking-tight">핵심 기능 6가지</h2>
-        <div className="mt-8 mb-10 rounded-2xl overflow-hidden border border-[var(--border)]">
-          <img src="/images/2026-03-01-features-grid.png" alt="기능 소개" className="w-full object-cover max-h-64 object-top" />
-        </div>
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {features.map((feature, idx) => (
             <article key={feature.title} className="card p-6 md:p-8">
-              <p className="text-xs font-semibold text-[var(--purple)]">{String(idx + 1).padStart(2, "0")}</p>
-              <Image src={feature.icon} alt={feature.title} width={28} height={28} className="h-7 w-7" />
-              <h3 className="mt-5 text-lg font-semibold md:text-xl">{feature.title}</h3>
-              <p className="mt-2 text-lg text-[var(--muted)]">{feature.desc}</p>
+              <p className="text-xs font-semibold text-[var(--purple)] mb-4">{String(idx + 1).padStart(2, "0")}</p>
+              <div className="flex items-center gap-3 mb-5">
+                <Image src={feature.icon} alt={feature.title} width={28} height={28} className="h-7 w-7 shrink-0" />
+                <h3 className="text-lg font-bold text-[var(--text)]">{feature.title}</h3>
+              </div>
+              <ul className="space-y-2">
+                {feature.bullets.map((b) => (
+                  <li key={b} className="flex items-start gap-2 text-sm text-[var(--muted)] leading-relaxed">
+                    <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-[var(--purple)] shrink-0" />
+                    {b}
+                  </li>
+                ))}
+              </ul>
             </article>
           ))}
         </div>
