@@ -1,8 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" fill="none">
-  <!-- C 모양 호: 오른쪽 열림, 약 260도 -->
-  <path d="M 26.36 27.96 A 13 13 0 1 1 26.36 8.04" stroke="url(#g)" stroke-width="3" stroke-linecap="round"/>
-  <!-- 내부 점: 호 열린 쪽 -->
-  <circle cx="23" cy="18" r="2.8" fill="url(#g)"/>
+  <path d="M 26.36 27.96 A 13 13 0 1 1 26.36 8.04" stroke="url(#g)" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="23.5" cy="18" r="3.5" fill="url(#g)"/>
   <defs>
     <linearGradient id="g" x1="5" y1="5" x2="31" y2="31" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#7c3aed"/>
