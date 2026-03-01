@@ -9,18 +9,18 @@ const features = [
 
 export default function Features() {
   return (
-    <section className="py-32 px-6 bg-[#0d0d18]" id="features">
+    <section className="py-20 md:py-32 px-5 bg-[#0d0d18]" id="features">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-6xl font-black mb-6">원하는 모든 걸<br />대신 해줘요</h2>
-          <p className="text-xl text-slate-400">한국 생활에 딱 맞춘 스킬들</p>
+        <div className="text-center mb-12 md:mb-20">
+          <h2 className="text-3xl md:text-6xl font-black mb-4">원하는 모든 걸<br />대신 해줘요</h2>
+          <p className="text-base md:text-xl text-slate-400">한국 생활에 딱 맞춘 스킬들</p>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-5">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-5">
           {features.map((f) => (
-            <div key={f.title} className="glass rounded-2xl p-8 card-hover">
-              <div className="text-4xl mb-5">{f.icon}</div>
-              <h3 className="font-bold mb-3 text-lg">{f.title}</h3>
-              <p className="text-slate-400 text-sm leading-relaxed">{f.desc}</p>
+            <div key={f.title} className="glass rounded-2xl p-5 md:p-8 card-hover">
+              <div className="text-3xl mb-3">{f.icon}</div>
+              <h3 className="font-bold mb-2 text-sm md:text-lg">{f.title}</h3>
+              <p className="text-slate-400 text-xs md:text-sm leading-relaxed">{f.desc}</p>
             </div>
           ))}
         </div>
