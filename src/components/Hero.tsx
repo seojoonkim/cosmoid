@@ -70,31 +70,43 @@ export default function Hero() {
     if (chatRef.current) {
       chatRef.current.scrollTop = chatRef.current.scrollHeight;
     }
-    // 새로 나타난 메시지 타이핑 시작 (user + ai 모두)
-    const newMsg = messages[visible - 1];
-    if (newMsg) {
-      setTypingId(newMsg.id);
-      setTypingText("");
-      let i = 0;
-      const full = newMsg.text;
-      const speed = newMsg.from === "user" ? 120 : 180;
-      const tid = setInterval(() => {
-        i++;
-        setTypingText(full.slice(0, i));
-        if (i >= full.length) { clearInterval(tid); }
-      }, speed);
-      return () => clearInterval(tid);
-    }
-  }, [visible]);
 
-  useEffect(() => {
-    if (visible < messages.length) {
-      const t = setTimeout(() => setVisible(v => v + 1), 900);
-      return () => clearTimeout(t);
-    } else {
-      const t = setTimeout(() => setVisible(0), 2000);
+    if (visible === 0) {
+      // 첫 메시지 딜레이 후 시작
+      const t = setTimeout(() => setVisible(1), 600);
       return () => clearTimeout(t);
     }
+
+    const newMsg = messages[visible - 1];
+    if (!newMsg) return;
+
+    setTypingId(newMsg.id);
+    setTypingText("");
+    let i = 0;
+    const full = newMsg.text;
+    const speed = newMsg.from === "user" ? 80 : 120;
+
+    const tid = setInterval(() => {
+      i++;
+      setTypingText(full.slice(0, i));
+      if (i >= full.length) {
+        clearInterval(tid);
+        // 타이핑 완료 후 다음 메시지 or 리셋
+        const pause = visible < messages.length ? 700 : 2500;
+        const next = setTimeout(() => {
+          if (visible < messages.length) {
+            setVisible(v => v + 1);
+          } else {
+            setVisible(0);
+            setTypingText("");
+            setTypingId(null);
+          }
+        }, pause);
+        return () => clearTimeout(next);
+      }
+    }, speed);
+
+    return () => clearInterval(tid);
   }, [visible]);
 
   return (
