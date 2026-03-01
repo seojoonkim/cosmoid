@@ -16,10 +16,16 @@ function TypingH1() {
     }, 60);
     return () => clearInterval(id);
   }, []);
+  const lines = displayed.split("
+");
   return (
     <h1 className="mt-6 font-black leading-[1.12] tracking-tight text-white"
-      style={{fontSize:"clamp(2.4rem, 5vw, 4rem)", wordBreak:"keep-all", whiteSpace:"pre-line"}}>
-      {displayed}<span className="animate-pulse">|</span>
+      style={{fontSize:"clamp(2.4rem, 5vw, 4rem)", wordBreak:"keep-all"}}>
+      {lines.map((line, i) => (
+        <span key={i} style={{display:"block", color: i === 0 ? "#f59e0b" : "white"}}>
+          {line}{i === lines.length - 1 && <span className="animate-pulse">|</span>}
+        </span>
+      ))}
     </h1>
   );
 }
