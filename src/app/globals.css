@@ -103,12 +103,8 @@ a {
 }
 
 .section-title {
-  background: linear-gradient(120deg, #7c3aed 0%, #9333ea 40%, #a78bfa 70%, #7c3aed 100%);
-  background-size: 300% 100%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: title-gradient-shift 9s ease infinite;
+  color: #3b0764;
+  -webkit-text-fill-color: #3b0764;
 }
 
 @keyframes cursor-blink {
