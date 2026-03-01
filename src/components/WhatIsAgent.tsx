@@ -12,73 +12,63 @@ export default function WhatIsAgent() {
   return (
     <section className="section-bg-6 border-t border-[var(--border)] py-16 md:py-24">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
-        <div className="grid gap-12 md:grid-cols-2 md:gap-16 items-center">
 
-          {/* 왼쪽 — 설명 */}
-          <div>
-            <motion.p
-              initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}
-              viewport={{ once: true }} transition={{ duration: 0.5 }}
-              className="section-label"
-            >AI 에이전트란?</motion.p>
+        {/* 헤더 — 다른 섹션과 동일 구조 */}
+        <div className="text-center mb-12">
+          <motion.p
+            initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}
+            viewport={{ once: true }} transition={{ duration: 0.5 }}
+            className="section-label"
+          >AI 에이전트란?</motion.p>
 
-            <motion.h2
-              initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.1 }}
-              className="mt-4 section-h2 section-title"
-            >
-              말 한마디면<br/>알아서 다 해주는 AI
-            </motion.h2>
+          <motion.h2
+            initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.1 }}
+            className="mt-4 section-h2 section-title"
+          >
+            말 한마디면<br/>알아서 다 해주는 AI
+          </motion.h2>
 
-            <motion.p
-              initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.2 }}
-              className="mt-5 text-base leading-relaxed" style={{ color: "#4b5563" }}
-            >
-              <strong style={{ color: "var(--text)" }}>AI 에이전트</strong>는 단순히 질문에 답하는 챗봇이 아니에요.
-              앱을 직접 열고, 검색하고, 주문하고, 결제까지 — <strong style={{ color: "var(--text)" }}>실제 행동</strong>을 대신 해주는 디지털 비서예요.
-            </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.2 }}
+            className="mt-4 section-desc mx-auto"
+          >
+            <strong style={{ color: "var(--text)" }}>AI 에이전트</strong>는 챗봇과 달라요.
+            앱을 직접 열고, 검색하고, 주문하고, 결제까지 — <strong style={{ color: "var(--text)" }}>실제 행동</strong>을 대신 해줘요.
+            Cosmoid는 이걸 <strong style={{ color: "var(--text)" }}>누구나 1분이면</strong> 가질 수 있게 해줘요.
+          </motion.p>
 
-            <motion.p
-              initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.3 }}
-              className="mt-4 text-base leading-relaxed" style={{ color: "#4b5563" }}
-            >
-              Cosmoid는 이 AI 에이전트를 <strong style={{ color: "var(--text)" }}>누구나 1분이면</strong> 내 것으로 만들 수 있게 해줘요.
-              코딩도, 새 앱 설치도 전혀 필요 없어요. 카카오톡에서 바로 시작해요.
-            </motion.p>
-
-            <motion.div
-              initial={{ opacity: 0, y: 8 }} whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.4 }}
-              className="mt-6 inline-flex items-center gap-3 rounded-full px-6 py-3 text-base font-bold text-white"
-              style={{ background: "linear-gradient(90deg, #7c3aed, #6d28d9)", boxShadow:"0 4px 20px rgba(124,58,237,0.4)" }}
-            >
-              <span style={{opacity:0.65, fontWeight:500}}>챗봇</span>
-              <span style={{ opacity: 0.4 }}>→</span>
-              <span style={{ color: "#fbbf24", fontWeight:700 }}>AI 에이전트</span>
-              <span style={{ opacity: 0.4 }}>→</span>
-              <span style={{ color: "#ffffff", fontWeight:900, fontSize:"1.15rem", letterSpacing:"-0.01em" }}>Cosmoid ✦</span>
-            </motion.div>
-          </div>
-
-          {/* 오른쪽 — 예시 카드 4개 */}
-          <div className="grid grid-cols-2 gap-3">
-            {examples.map((ex, i) => (
-              <motion.div
-                key={ex.title}
-                initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }} transition={{ duration: 0.4, delay: 0.1 + i * 0.08 }}
-                className="card p-4 flex flex-col gap-2"
-              >
-                <span className="text-2xl">{ex.emoji}</span>
-                <p className="font-bold text-sm" style={{ color: "var(--text)" }}>{ex.title}</p>
-                <p className="text-xs leading-relaxed" style={{ color: "#6b7280" }}>{ex.desc}</p>
-              </motion.div>
-            ))}
-          </div>
-
+          <motion.div
+            initial={{ opacity: 0, y: 8 }} whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.3 }}
+            className="mt-6 inline-flex items-center gap-3 rounded-full px-6 py-3 text-base font-bold text-white"
+            style={{ background: "linear-gradient(90deg, #7c3aed, #6d28d9)", boxShadow: "0 4px 20px rgba(124,58,237,0.4)" }}
+          >
+            <span style={{opacity:0.65, fontWeight:500}}>챗봇</span>
+            <span style={{ opacity: 0.4 }}>→</span>
+            <span style={{ color: "#fbbf24", fontWeight:700 }}>AI 에이전트</span>
+            <span style={{ opacity: 0.4 }}>→</span>
+            <span style={{ color: "#ffffff", fontWeight:900, fontSize:"1.15rem", letterSpacing:"-0.01em" }}>Cosmoid ✦</span>
+          </motion.div>
         </div>
+
+        {/* 카드 4개 그리드 */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          {examples.map((ex, i) => (
+            <motion.div
+              key={ex.title}
+              initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }} transition={{ duration: 0.4, delay: 0.1 + i * 0.08 }}
+              className="card p-5 flex flex-col gap-3"
+            >
+              <span className="text-3xl">{ex.emoji}</span>
+              <p className="card-title">{ex.title}</p>
+              <p className="card-desc">{ex.desc}</p>
+            </motion.div>
+          ))}
+        </div>
+
       </div>
     </section>
   );
