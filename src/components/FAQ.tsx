@@ -59,7 +59,7 @@ export default function FAQ() {
 
   return (
     <section className="bg-[var(--bg-alt)] border-t border-[var(--border)] py-16 md:py-24">
-      <div className="mx-auto max-w-4xl px-5 md:px-8">
+      <div className="mx-auto max-w-6xl px-5 md:px-8">
         <motion.p
                     className="section-label"
         >
