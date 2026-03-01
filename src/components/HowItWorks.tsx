@@ -5,7 +5,7 @@ const steps = [
   {
     number: "01",
     title: "카카오톡 연결",
-    description: "카카오 계정으로 30초 만에 가입하세요. QR 코드 스캔 한 번으로 카카오톡에 Cosmoid가 바로 추가돼요.",
+    description: "카카오 계정으로 바로 가입해요. QR 코드 한 번 스캔하면 카카오톡에 Cosmoid가 추가돼요.",
     image: "/images/2026-03-01-step1-v3.png",
   },
   {

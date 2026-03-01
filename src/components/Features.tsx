@@ -25,13 +25,13 @@ const features = [
   },
   {
     icon: "/icons/car.svg",
-    title: "이동 지원",
+    title: "이동·교통",
     bullets: ["카카오T 실시간 요금을 조회해드려요", "택시와 대중교통 경로를 비교해드려요", "도착 예정 시간을 카카오톡으로 공유해드려요"],
   },
   {
     icon: "/icons/search.svg",
     title: "실시간 검색",
-    bullets: ["네이버·구글 최신 뉴스를 요약해드려요", "트렌드·날씨·환율을 즉시 조회해드려요", "검색 결과를 대화체로 정리해드려요"],
+    bullets: ["네이버·구글 최신 뉴스를 요약해드려요", "트렌드·날씨·환율을 즉시 조회해드려요", "검색 결과를 알기 쉽게 요약해드려요"],
   },
 ];
 
@@ -150,7 +150,7 @@ function FeaturePreview({ title }: { title: string }) {
     );
   }
 
-  if (title === "이동 지원") {
+  if (title === "이동·교통") {
     return (
       <div className="h-full bg-[var(--bg-alt)] p-4 flex flex-col">
         <div className="rounded-xl bg-white shadow-sm p-2 text-[11px] text-[var(--muted)]">성수역 2번 출구 → 코엑스 동문</div>

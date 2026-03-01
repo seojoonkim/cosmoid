@@ -9,10 +9,7 @@ const H1_CASES = [
   ["미팅 예약부터", "리마인더까지"],
   ["택시 호출부터", "도착 알림까지"],
   ["뉴스 요약부터", "환율 조회까지"],
-  ["장보기 주문부터", "배송 추적까지"],
   ["병원 예약부터", "알림 설정까지"],
-  ["쇼핑 검색부터", "가격 비교까지"],
-  ["할 일 등록부터", "완료 체크까지"],
 ];
 
 function TypingH1() {
@@ -49,15 +46,15 @@ function TypingH1() {
 
 const messages = [
   { id: 1, from: "user", text: "치킨 시켜줘, 배달의민족으로 🍗" },
-  { id: 2, from: "ai", text: "근처 굽네치킨 평점 4.8점이에요. 27분 도착, 18,000원 — 바로 주문할까요?" },
+  { id: 2, from: "ai", text: "근처 굽네치킨이 평점 4.8이에요. 18,000원, 27분이면 도착 — 바로 주문할까요?" },
   { id: 3, from: "user", text: "응, 결제도 해줘" },
-  { id: 4, from: "ai", text: "✓ 카카오페이로 결제 완료! 27분 후 도착해요.", card: { emoji: "🍗", title: "굽네치킨 볼케이노", tag: "배달의민족", rows: ["₩18,000 · 카카오페이", "27분 후 도착 예정"] } },
+  { id: 4, from: "ai", text: "✓ 카카오페이 결제 완료! 도착까지 27분이에요 🍗", card: { emoji: "🍗", title: "굽네치킨 볼케이노", tag: "배달의민족", rows: ["₩18,000 · 카카오페이", "27분 후 도착 예정"] } },
   { id: 5, from: "user", text: "내일 오전 10시 강남 미팅 캘린더에 넣어줘" },
-  { id: 6, from: "ai", text: "캘린더 등록했어요. 9:30 출발 알림 설정 완료.", card: { emoji: "📅", title: "강남 미팅", tag: "캘린더", rows: ["내일 오전 10:00", "⏰ 9:30 출발 알림"] } },
+  { id: 6, from: "ai", text: "✓ 캘린더에 넣었어요. 9:30 출발 알림도 설정해뒀어요.", card: { emoji: "📅", title: "강남 미팅", tag: "캘린더", rows: ["내일 오전 10:00", "⏰ 9:30 출발 알림"] } },
   { id: 7, from: "user", text: "ㅇㅇ 카카오T도 잡아줘. 현대카드로" },
-  { id: 8, from: "ai", text: "✓ 카카오T 예약 완료!", card: { emoji: "🚕", title: "카카오T 예약", tag: "카카오T", rows: ["9:22 픽업", "현대카드 결제"] } },
+  { id: 8, from: "ai", text: "✓ 카카오T 예약 완료! 현대카드로 결제돼요.", card: { emoji: "🚕", title: "카카오T 예약", tag: "카카오T", rows: ["9:22 픽업", "현대카드 결제"] } },
   { id: 9, from: "user", text: "쿠팡에서 에어팟 최저가 찾아줘" },
-  { id: 10, from: "ai", text: "오늘 최저가예요. 주문할까요?", card: { emoji: "🎧", title: "AirPods Pro 2세대", tag: "쿠팡 로켓배송", rows: ["₩229,000 · 오늘 최저가", "내일 도착"] } },
+  { id: 10, from: "ai", text: "에어팟 프로 2 — 289,000원, 오늘 최저가예요. 바로 주문할까요?", card: { emoji: "🎧", title: "AirPods Pro 2세대", tag: "쿠팡 로켓배송", rows: ["₩229,000 · 오늘 최저가", "내일 도착"] } },
 ];
 
 export default function Hero() {
@@ -148,7 +145,7 @@ export default function Hero() {
             </span>
             <TypingH1 />
             <p className="mt-6 max-w-lg text-base text-white/70 leading-relaxed">
-              앱 개발자 아니어도 괜찮아요. 카카오톡 친구 추가 하나로 — 나만의 AI 에이전트가 1분이면 준비돼요.
+              개발자가 아니어도 괜찮아요. 카카오톡 친구 추가만 하면 — 1분 만에 나만의 AI 에이전트가 생겨요.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <a href="#cta"
@@ -164,7 +161,7 @@ export default function Hero() {
             <div className="mt-8 flex flex-wrap gap-2.5">
               {[
                 { icon: "⚡", text: "1분 설정 완료" },
-                { icon: "👤", text: "비개발자도 OK" },
+                { icon: "👤", text: "누구나 바로 시작" },
                 { icon: "🔒", text: "대화 내용 미저장" },
               ].map((b) => (
                 <span key={b.text} className="flex items-center gap-1.5 rounded-full border border-white/20 bg-white/10 px-3.5 py-1.5 text-sm font-medium text-white/80 backdrop-blur-sm">

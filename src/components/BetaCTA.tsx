@@ -22,7 +22,7 @@ export default function BetaCTA() {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="mt-4 max-w-2xl text-3xl font-extrabold leading-tight tracking-tight md:text-5xl" style={{color:"white"}}
         >
-          베타 대기열에 등록하고
+          지금 등록하고
           <br className="hidden md:block" />
           가장 먼저 써보세요
         </motion.h2>
