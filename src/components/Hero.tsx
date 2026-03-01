@@ -18,30 +18,30 @@ const H1_CASES = [
 function TypingH1() {
   const [caseIdx, setCaseIdx] = useState(0);
   const [displayed, setDisplayed] = useState("");
-  const fullText = "카톡 한 마디에\n" + H1_CASES[caseIdx][0] + "\n" + H1_CASES[caseIdx][1];
+  const subText = H1_CASES[caseIdx][0] + "\n" + H1_CASES[caseIdx][1];
 
   useEffect(() => {
     let i = 0;
     setDisplayed("");
     const id = setInterval(() => {
       i++;
-      setDisplayed(fullText.slice(0, i));
-      if (i >= fullText.length) {
+      setDisplayed(subText.slice(0, i));
+      if (i >= subText.length) {
         clearInterval(id);
-        // 3초 후 다음 사례로
         setTimeout(() => setCaseIdx(c => (c + 1) % H1_CASES.length), 3000);
       }
     }, 55);
     return () => clearInterval(id);
   }, [caseIdx]);
 
-  const lines = displayed.split("\n");
+  const subLines = displayed.split("\n");
   return (
     <h1 className="mt-6 font-black leading-[1.12] tracking-tight text-white"
       style={{fontSize:"clamp(2.4rem, 5vw, 4rem)", wordBreak:"keep-all"}}>
-      {lines.map((line, i) => (
-        <span key={i} style={{display:"block", color: i === 0 ? "#f59e0b" : "white"}}>
-          {line}{i === lines.length - 1 && <span className="animate-pulse">|</span>}
+      <span style={{display:"block", color:"#f59e0b"}}>카톡 한 마디에</span>
+      {subLines.map((line, i) => (
+        <span key={i} style={{display:"block", color:"white"}}>
+          {line}{i === subLines.length - 1 && <span className="animate-pulse">|</span>}
         </span>
       ))}
     </h1>
