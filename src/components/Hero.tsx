@@ -173,9 +173,8 @@ export default function Hero() {
               <div className="flex items-center justify-between px-5 py-3.5 border-b border-white/10"
                 style={{background:"rgba(255,255,255,0.06)"}}>
                 <div className="flex items-center gap-2.5">
-                  <div className="h-7 w-7 rounded-full flex items-center justify-center"
-                    style={{background:"linear-gradient(135deg,#7c3aed,#06b6d4)"}}>
-                    <span className="text-white text-xs font-bold">C</span>
+                  <div className="h-8 w-8 rounded-full overflow-hidden">
+                    <img src="/images/cosmoid-avatar.png" alt="코스모이드" className="h-full w-full object-cover" />
                   </div>
                   <p className="text-sm font-semibold text-white">코스모이드</p>
                 </div>
@@ -195,9 +194,8 @@ export default function Hero() {
                       className={`flex items-end gap-2 ${msg.from === "user" ? "justify-end" : "justify-start"}`}
                     >
                       {msg.from === "ai" && (
-                        <div className="h-7 w-7 rounded-full shrink-0 flex items-center justify-center mb-0.5"
-                          style={{background:"linear-gradient(135deg,#7c3aed,#06b6d4)"}}>
-                          <img src="/logo-icon.svg" alt="C" className="h-4 w-4 object-contain" />
+                        <div className="h-8 w-8 rounded-full overflow-hidden shrink-0 mb-0.5">
+                          <img src="/images/cosmoid-avatar.png" alt="코스모이드" className="h-full w-full object-cover" />
                         </div>
                       )}
                       <div className={`max-w-[72%] rounded-2xl px-4 py-2.5 text-sm leading-relaxed ${
