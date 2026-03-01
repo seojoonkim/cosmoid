@@ -51,7 +51,7 @@ export default function MultiAgent() {
             <article
               key={agent.title}
   className="rounded-2xl border p-6 md:p-8"
-              style={{ background: "var(--surface)", borderColor: "var(--border)", color: "var(--text)" }}
+              style={{ background: "var(--surface)", borderColor: "var(--border)", color: "var(--text)", boxShadow: "0 4px 24px rgba(0,0,0,0.11), 0 1px 4px rgba(0,0,0,0.07)" }}
             >
 <h3 className="text-xl font-bold">{agent.title}</h3>
               <p className="mt-2 text-base" style={{ color: "var(--muted)" }}>
