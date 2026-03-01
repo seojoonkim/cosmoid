@@ -16,8 +16,7 @@ function TypingH1() {
     }, 60);
     return () => clearInterval(id);
   }, []);
-  const lines = displayed.split("
-");
+  const lines = displayed.split("\n");
   return (
     <h1 className="mt-6 font-black leading-[1.12] tracking-tight text-white"
       style={{fontSize:"clamp(2.4rem, 5vw, 4rem)", wordBreak:"keep-all"}}>
