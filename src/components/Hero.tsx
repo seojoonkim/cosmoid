@@ -1,18 +1,46 @@
+"use client";
+
+import { AnimatePresence, motion } from "framer-motion";
+import { useEffect, useState } from "react";
+
+const messages = [
+  { id: 1, from: "user", text: "치킨 시켜줘, 배달의민족으로" },
+  { id: 2, from: "ai", text: "근처 인기 치킨집 3곳 찾았어요. 굽네치킨 27분 도착, 18,000원. 주문할까요?" },
+  { id: 3, from: "user", text: "응" },
+  { id: 4, from: "ai", text: "✓ 주문 완료! 27분 후 도착 예정이에요 🍗" },
+  { id: 5, from: "user", text: "오늘 날씨 어때?" },
+  { id: 6, from: "ai", text: "서울 현재 15°C, 맑음 ☀️ 오후엔 바람이 좀 있을 수 있어요." },
+];
+
 export default function Hero() {
+  const [visibleCount, setVisibleCount] = useState(0);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (visibleCount < messages.length) {
+        setVisibleCount((prev) => prev + 1);
+        return;
+      }
+      setVisibleCount(0);
+    }, visibleCount < messages.length ? 800 : 1500);
+
+    return () => clearTimeout(timer);
+  }, [visibleCount]);
+
   return (
-    <section className="relative overflow-hidden bg-[var(--bg)] px-5 py-20 md:px-8 md:py-28">
+    <section className="relative overflow-hidden bg-[var(--bg)] py-20 md:py-28">
       {/* 배경 블러 blob — 더 크고 화사하게 */}
       <div className="absolute top-[-120px] left-[-100px] h-[500px] w-[500px] rounded-full bg-[var(--purple-mid)] opacity-40 blur-[100px] pointer-events-none" />
       <div className="absolute bottom-[-80px] right-[-80px] h-[400px] w-[400px] rounded-full bg-[var(--purple-soft)] opacity-50 blur-[80px] pointer-events-none" />
       <div className="absolute top-[40%] left-[40%] h-[200px] w-[200px] rounded-full bg-[#c4b5fd] opacity-20 blur-[60px] pointer-events-none" />
 
-      <div className="relative mx-auto max-w-6xl">
+      <div className="relative mx-auto max-w-6xl px-5 md:px-8">
         <div className="grid gap-12 md:grid-cols-12 md:items-center">
 
           {/* 왼쪽 텍스트 */}
-          <div className="md:col-span-6">
+          <div className="md:col-span-5">
             <span className="badge">Private Beta</span>
-            <h1 className="mt-6 text-[2.8rem] md:text-[4.2rem] font-black leading-[1.05] tracking-tight">
+            <h1 className="mt-6 text-[2.8rem] md:text-[4.2rem] font-black leading-[1.15] tracking-tight">
               말 한마디로<br />
               <span style={{background:"linear-gradient(135deg,#7c3aed,#06b6d4)",WebkitBackgroundClip:"text",WebkitTextFillColor:"transparent",backgroundClip:"text"}}>
                 모든 걸 처리하는
@@ -40,7 +68,7 @@ export default function Hero() {
               </div>
               <div className="w-px h-4 bg-[var(--border)]" />
               <div className="flex items-center gap-2">
-                <span className="font-bold text-[var(--text)]">1,247명</span>
+                <span className="font-bold" style={{color:"#f59e0b"}}>1,247명</span>
                 <span>대기 중</span>
               </div>
               <div className="w-px h-4 bg-[var(--border)]" />
@@ -49,7 +77,7 @@ export default function Hero() {
           </div>
 
           {/* 오른쪽 비주얼 */}
-          <div className="md:col-span-6">
+          <div className="md:col-span-7">
             <div className="relative">
               {/* 프리미엄 이미지 */}
               <div className="rounded-3xl overflow-hidden shadow-2xl border border-[var(--border)]"
@@ -59,7 +87,7 @@ export default function Hero() {
               </div>
 
               {/* 채팅 카드 — 이미지 아래 겹치게 */}
-              <div className="mt-4 rounded-2xl border border-[var(--border)] bg-white shadow-lg overflow-hidden"
+              <div className="mt-4 rounded-2xl border border-[var(--border)] bg-white shadow-lg overflow-hidden h-auto min-h-[400px] flex flex-col"
                 style={{boxShadow:"0 8px 32px rgba(124,58,237,0.10)"}}>
                 <div className="flex items-center justify-between px-5 py-3 bg-[var(--purple-soft)] border-b border-[var(--border)]">
                   <div className="flex items-center gap-2">
@@ -73,29 +101,30 @@ export default function Hero() {
                     <span className="h-2 w-2 rounded-full bg-emerald-500" />online
                   </span>
                 </div>
-                <div className="space-y-3 px-4 py-4 text-sm">
-                  <div className="flex justify-end">
-                    <div className="max-w-[78%] rounded-2xl rounded-br-sm px-4 py-2.5 text-white text-sm"
-                      style={{background:"linear-gradient(135deg,#7c3aed,#8b5cf6)"}}>
-                      치킨 시켜줘, 배달의민족으로
-                    </div>
-                  </div>
-                  <div className="flex justify-start">
-                    <div className="max-w-[78%] rounded-2xl rounded-bl-sm border border-[var(--border)] bg-[var(--bg)] px-4 py-2.5 text-sm text-[var(--text)]">
-                      근처 인기 치킨집 3곳 찾았어요. 굽네치킨 27분 도착, 18,000원. 주문할까요?
-                    </div>
-                  </div>
-                  <div className="flex justify-end">
-                    <div className="max-w-[78%] rounded-2xl rounded-br-sm px-4 py-2.5 text-white text-sm"
-                      style={{background:"linear-gradient(135deg,#7c3aed,#8b5cf6)"}}>
-                      응
-                    </div>
-                  </div>
-                  <div className="flex justify-start">
-                    <div className="max-w-[78%] rounded-2xl rounded-bl-sm border border-[var(--border)] bg-[var(--bg)] px-4 py-2.5 text-sm text-[var(--text)]">
-                      ✓ 주문 완료! 27분 후 도착 예정이에요 🍗
-                    </div>
-                  </div>
+                <div className="space-y-3 px-4 py-4 text-sm flex-1">
+                  <AnimatePresence mode="popLayout">
+                    {messages.slice(0, visibleCount).map((message) => (
+                      <motion.div
+                        key={message.id}
+                        initial={{ opacity: 0, y: 10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -8 }}
+                        transition={{ duration: 0.25, ease: "easeOut" }}
+                        className={message.from === "user" ? "flex justify-end" : "flex justify-start"}
+                      >
+                        <div
+                          className={
+                            message.from === "user"
+                              ? "max-w-[78%] rounded-2xl rounded-br-sm px-4 py-2.5 text-white text-sm"
+                              : "max-w-[78%] rounded-2xl rounded-bl-sm border border-[var(--border)] bg-[var(--bg)] px-4 py-2.5 text-sm text-[var(--text)]"
+                          }
+                          style={message.from === "user" ? { background: "linear-gradient(135deg,#7c3aed,#8b5cf6)" } : undefined}
+                        >
+                          {message.text}
+                        </div>
+                      </motion.div>
+                    ))}
+                  </AnimatePresence>
                 </div>
               </div>
             </div>

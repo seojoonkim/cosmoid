@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 const features = [
@@ -43,8 +46,24 @@ export default function Features() {
   return (
     <section id="features" className="bg-[var(--bg-alt)] border-t border-[var(--border)] py-16 md:py-24">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
-        <p className="section-label">무엇을 해줄 수 있나</p>
-        <h2 className="mt-4 text-3xl md:text-4xl font-extrabold tracking-tight">핵심 기능 6가지</h2>
+        <motion.p
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          className="section-label"
+        >
+          무엇을 해줄 수 있나
+        </motion.p>
+        <motion.h2
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="mt-4 text-3xl md:text-4xl font-extrabold tracking-tight"
+        >
+          핵심 기능 6가지
+        </motion.h2>
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {features.map((feature, idx) => (
             <article key={feature.title} className="card overflow-hidden flex flex-col">

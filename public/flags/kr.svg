@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600">
+  <rect width="900" height="600" fill="#fff"/>
+  <rect width="900" height="200" y="0" fill="#C60C30"/>
+  <rect width="900" height="200" y="400" fill="#003478"/>
+  <!-- 태극 원 -->
+  <circle cx="450" cy="300" r="160" fill="#C60C30"/>
+  <path d="M450,140 a160,160,0,0,1,0,320 a80,80,0,0,0,0,-160 a80,80,0,0,1,0,-160z" fill="#003478"/>
+  <!-- 괘 -->
+  <g fill="#000" transform="translate(450,300)">
+    <rect x="-270" y="-35" width="80" height="20" rx="4" transform="rotate(-56)"/>
+    <rect x="-270" y="15" width="80" height="20" rx="4" transform="rotate(-56)"/>
+    <rect x="-270" y="-5" width="80" height="20" rx="4" transform="rotate(-56)"/>
+    <rect x="190" y="-35" width="80" height="20" rx="4" transform="rotate(124)"/>
+    <rect x="190" y="15" width="80" height="20" rx="4" transform="rotate(124)"/>
+    <rect x="190" y="-5" width="80" height="20" rx="4" transform="rotate(124)"/>
+  </g>
+</svg>

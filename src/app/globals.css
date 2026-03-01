@@ -12,6 +12,8 @@
   --purple-soft: #ede9fe;
   --purple-mid: #ddd6fe;
   --cta: #7c3aed;
+  --amber: #f59e0b;
+  --amber-soft: #fef3c7;
 }
 
 *,
@@ -59,4 +61,14 @@ a {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 16px;
+}
+
+@keyframes cursor-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.input-blink:focus {
+  animation: cursor-blink 1s step-end infinite;
+  caret-color: white;
 }

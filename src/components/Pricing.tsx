@@ -1,3 +1,7 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 const plans = [
   {
     name: "Starter",
@@ -29,8 +33,24 @@ export default function Pricing() {
   return (
     <section id="pricing" className="bg-[var(--bg-alt)] border-t border-[var(--border)] py-16 md:py-24">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
-        <p className="section-label">요금제</p>
-        <h2 className="mt-4 text-3xl md:text-4xl font-extrabold tracking-tight">필요한 만큼 선택하세요</h2>
+        <motion.p
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          className="section-label"
+        >
+          요금제
+        </motion.p>
+        <motion.h2
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="mt-4 text-3xl md:text-4xl font-extrabold tracking-tight"
+        >
+          필요한 만큼 선택하세요
+        </motion.h2>
         <div className="mt-10 grid gap-5 md:grid-cols-3 md:items-start">
           {plans.map((plan) => (
             <article
