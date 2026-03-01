@@ -2,20 +2,39 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const H1_TEXT = "카톡 한 마디에\n치킨 주문부터\n계좌 조회까지";
+const H1_CASES = [
+  ["치킨 주문부터", "계좌 조회까지"],
+  ["배달 주문부터", "일정 등록까지"],
+  ["최저가 검색부터", "바로 결제까지"],
+  ["미팅 예약부터", "리마인더까지"],
+  ["택시 호출부터", "도착 알림까지"],
+  ["뉴스 요약부터", "환율 조회까지"],
+  ["장보기 주문부터", "배송 추적까지"],
+  ["병원 예약부터", "알림 설정까지"],
+  ["쇼핑 검색부터", "가격 비교까지"],
+  ["할 일 등록부터", "완료 체크까지"],
+];
 
 function TypingH1() {
+  const [caseIdx, setCaseIdx] = useState(0);
   const [displayed, setDisplayed] = useState("");
+  const fullText = "카톡 한 마디에\n" + H1_CASES[caseIdx][0] + "\n" + H1_CASES[caseIdx][1];
+
   useEffect(() => {
     let i = 0;
     setDisplayed("");
     const id = setInterval(() => {
       i++;
-      setDisplayed(H1_TEXT.slice(0, i));
-      if (i >= H1_TEXT.length) clearInterval(id);
-    }, 60);
+      setDisplayed(fullText.slice(0, i));
+      if (i >= fullText.length) {
+        clearInterval(id);
+        // 3초 후 다음 사례로
+        setTimeout(() => setCaseIdx(c => (c + 1) % H1_CASES.length), 3000);
+      }
+    }, 55);
     return () => clearInterval(id);
-  }, []);
+  }, [caseIdx]);
+
   const lines = displayed.split("\n");
   return (
     <h1 className="mt-6 font-black leading-[1.12] tracking-tight text-white"
