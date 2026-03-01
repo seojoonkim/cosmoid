@@ -32,8 +32,8 @@ export default function Pricing() {
           {plans.map((plan) => (
             <article
               key={plan.name}
-              className={`rounded-xl border p-6 ${
-                plan.featured ? "border-white bg-white text-black" : "border-white/10 bg-white/[0.03] text-white"
+              className={`rounded-lg border p-6 ${
+                plan.featured ? "border-white bg-white text-black" : "border-white/8 bg-black text-white"
               }`}
             >
               <div className="flex items-center justify-between">
@@ -50,10 +50,8 @@ export default function Pricing() {
                 ))}
               </ul>
               <button
-                className={`mt-8 w-full rounded-full px-4 py-2.5 text-sm font-semibold ${
-                  plan.featured
-                    ? "bg-black text-white"
-                    : "bg-gradient-to-r from-purple-600 to-cyan-500 text-white"
+                className={`mt-8 w-full rounded-md border px-4 py-2.5 text-sm font-semibold ${
+                  plan.featured ? "border-black bg-black text-white" : "border-white/15 bg-white text-black"
                 }`}
               >
                 {plan.cta}

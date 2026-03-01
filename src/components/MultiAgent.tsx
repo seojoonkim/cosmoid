@@ -8,6 +8,7 @@ const agents = [
     title: "업무 에이전트",
     desc: "일정 조율, 검색, 요약 자동화",
     stack: "Kakaotalk + Calendar + Search",
+    featured: true,
   },
   {
     title: "금융 에이전트",
@@ -23,10 +24,24 @@ export default function MultiAgent() {
         <p className="section-label">멀티 에이전트</p>
         <div className="mt-10 grid gap-5 md:grid-cols-3">
           {agents.map((agent) => (
-            <article key={agent.title} className="minimal-card rounded-xl p-6">
+            <article
+              key={agent.title}
+              className={`rounded-md border p-6 ${
+                agent.featured ? "border-white bg-white text-black" : "border-white/10 bg-[#0b0b0b] text-white"
+              }`}
+            >
+              {agent.featured && (
+                <span className="badge mb-5 inline-block border-[#7c3aed]/60 text-[#7c3aed]">추천</span>
+              )}
               <h3 className="text-xl font-semibold">{agent.title}</h3>
-              <p className="mt-3 text-sm text-[#888]">{agent.desc}</p>
-              <p className="mono mt-6 text-xs uppercase tracking-[0.08em] text-cyan-300">{agent.stack}</p>
+              <p className={`mt-3 text-sm ${agent.featured ? "text-black/70" : "text-[#888]"}`}>{agent.desc}</p>
+              <p
+                className={`mono mt-6 text-xs uppercase tracking-[0.08em] ${
+                  agent.featured ? "text-black/65" : "text-[#888]"
+                }`}
+              >
+                {agent.stack}
+              </p>
             </article>
           ))}
         </div>

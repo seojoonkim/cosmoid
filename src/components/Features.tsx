@@ -16,7 +16,7 @@ export default function Features() {
         <p className="section-label">무엇을 해줄 수 있나</p>
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {features.map((feature) => (
-            <article key={feature.title} className="minimal-card rounded-xl p-6">
+            <article key={feature.title} className="rounded-md border border-white/12 bg-[#0b0b0b] p-6">
               <Image src={feature.icon} alt={feature.title} width={28} height={28} className="h-7 w-7" />
               <h3 className="mt-5 text-lg font-semibold">{feature.title}</h3>
               <p className="mt-2 text-sm text-[#888]">{feature.desc}</p>

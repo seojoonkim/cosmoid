@@ -6,7 +6,6 @@
   --text: #ffffff;
   --muted: #888888;
   --purple: #7c3aed;
-  --cyan: #06b6d4;
 }
 
 * {
@@ -45,13 +44,6 @@ a {
   border-radius: 4px;
 }
 
-.gradient-text {
-  background: linear-gradient(135deg, var(--purple), var(--cyan));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
 .section-label {
   font-size: 0.72rem;
   letter-spacing: 0.08em;
@@ -61,5 +53,5 @@ a {
 
 .minimal-card {
   border: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.02);
 }

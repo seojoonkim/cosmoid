@@ -23,7 +23,7 @@ export default function HowItWorks() {
         <p className="section-label">어떻게 작동하나</p>
         <div className="mt-10 grid gap-5 md:grid-cols-3">
           {steps.map((step) => (
-            <article key={step.number} className="minimal-card rounded-xl p-6 md:p-7">
+            <article key={step.number} className="rounded-md border border-white/12 bg-[#0b0b0b] p-6 md:p-7">
               <p className="mono text-4xl font-bold leading-none text-white md:text-5xl">{step.number}</p>
               <h3 className="mt-6 text-xl font-semibold">{step.title}</h3>
               <p className="mt-3 text-sm leading-relaxed text-[#888]">{step.description}</p>
