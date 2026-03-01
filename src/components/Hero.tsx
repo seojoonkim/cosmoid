@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const messages = [
@@ -15,6 +15,13 @@ const messages = [
 
 export default function Hero() {
   const [visible, setVisible] = useState(0);
+  const chatRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (chatRef.current) {
+      chatRef.current.scrollTop = chatRef.current.scrollHeight;
+    }
+  }, [visible]);
 
   useEffect(() => {
     if (visible < messages.length) {
@@ -113,7 +120,7 @@ export default function Hero() {
                 </span>
               </div>
               {/* 메시지 */}
-              <div className="px-5 py-5 space-y-3.5 h-[340px] md:h-[400px] overflow-y-auto">
+              <div ref={chatRef} className="px-5 py-5 space-y-3.5 h-[340px] md:h-[400px] overflow-y-auto scroll-smooth">
                 <AnimatePresence>
                   {messages.slice(0, visible).map((msg) => (
                     <motion.div key={msg.id}
