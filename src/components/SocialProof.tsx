@@ -6,10 +6,10 @@ import Image from "next/image";
 const logos = [
   { name: "kakaotalk", src: "/logos/kakaotalk.svg" },
   { name: "telegram", src: "/logos/telegram.svg" },
+  { name: "line", src: "/logos/line.svg" },
   { name: "whatsapp", src: "/logos/whatsapp.svg" },
   { name: "discord", src: "/logos/discord.svg" },
   { name: "slack", src: "/logos/slack.svg" },
-  { name: "line", src: "/logos/line.svg" },
 ];
 
 export default function SocialProof() {
