@@ -143,7 +143,7 @@ export default function Hero() {
                 작동 방식 보기
               </a>
             </div>
-            <div className="mt-10 flex items-center gap-6 text-sm text-white/50">
+            <div className="mt-10 flex items-center gap-6 text-base text-white/70">
               <div className="flex items-center gap-2">
                 <img src="https://flagcdn.com/w40/kr.png" alt="한국" className="h-4 w-6 rounded-sm object-cover" />
                 <span>한국 서비스 특화</span>
