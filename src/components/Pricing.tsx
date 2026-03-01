@@ -49,7 +49,7 @@ export default function Pricing() {
               </div>
               <p className="mt-5 text-3xl font-extrabold md:text-4xl">
                 {plan.price}
-                <span className={`ml-1 text-xs md:text-sm ${plan.featured ? "text-white/80" : "text-[var(--muted)]"}`}>
+                <span className={`ml-1 text-sm md:text-base ${plan.featured ? "text-white" : "text-[var(--muted)]"}`}>
                   {plan.term}
                 </span>
               </p>

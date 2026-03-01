@@ -2,7 +2,7 @@ export default function BetaCTA() {
   return (
     <section id="beta" className="border-t border-[var(--border)] bg-[var(--purple)] py-16 md:py-20 text-white">
       <div className="mx-auto max-w-4xl px-5 md:px-8">
-        <p className="text-xs font-semibold uppercase tracking-[0.12em] text-white/80">지금 시작하기</p>
+        <p className="text-sm font-semibold uppercase tracking-[0.12em] text-white">지금 시작하기</p>
         <h2 className="mt-4 max-w-2xl text-3xl font-extrabold leading-tight tracking-tight md:text-5xl">
           베타 대기열에 등록하고
           <br className="hidden md:block" />

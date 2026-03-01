@@ -26,15 +26,15 @@ export default function HowItWorks() {
           {steps.map((step) => (
             <article
               key={step.number}
-              className="card p-5 md:p-7 grid gap-4 md:grid-cols-2 md:items-center"
+              className="card p-6 md:p-8 grid gap-4 md:grid-cols-2 md:items-center"
             >
               <div>
-                <p className="text-sm font-semibold text-[var(--purple)]">{step.number}</p>
+                <p className="text-base font-semibold text-[var(--purple)]">{step.number}</p>
                 <h3 className="mt-2 text-2xl font-bold tracking-tight">{step.title}</h3>
-                <p className="mt-3 text-[var(--muted)]">{step.description}</p>
+                <p className="mt-3 text-lg text-[var(--muted)]">{step.description}</p>
               </div>
               <div className="rounded-xl border border-[var(--border)] bg-[var(--bg-alt)] p-5 md:p-6">
-                <p className="text-sm text-[var(--muted)]">
+                <p className="text-base text-[var(--muted)]">
                   {step.number} 단계에서 필요한 정보만 보여줘 빠르게 다음 행동으로 이어집니다.
                 </p>
               </div>

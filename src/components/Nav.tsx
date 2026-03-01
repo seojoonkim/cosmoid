@@ -1,4 +1,5 @@
- "use client";
+"use client";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Nav() {
@@ -17,10 +18,10 @@ export default function Nav() {
       }`}
     >
       <div className="max-w-6xl mx-auto px-5 md:px-8 h-14 flex items-center justify-between">
-        <a href="/" className="flex items-center gap-2">
+        <Link href="/" className="flex items-center gap-2">
           <img src="/logo-icon.svg" alt="" className="h-7 w-7" />
           <span className="text-lg font-bold text-[var(--text)] tracking-tight">cosmoid</span>
-        </a>
+        </Link>
         <div className="hidden md:flex items-center gap-7 text-base text-[var(--muted)] font-medium">
           <a href="#features" className="hover:text-[var(--text)] transition-colors">
             기능

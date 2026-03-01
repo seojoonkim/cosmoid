@@ -1,12 +1,14 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="bg-[var(--text)] text-white py-10">
       <div className="mx-auto flex max-w-6xl flex-col gap-5 px-5 md:px-8 text-base md:flex-row md:items-center md:justify-between md:text-lg">
         <div>
-          <a href="/" className="flex items-center gap-2">
+          <Link href="/" className="flex items-center gap-2">
             <img src="/logo-icon.svg" alt="" className="h-7 w-7" style={{ filter: "brightness(0) invert(1)" }} />
             <span className="text-lg font-bold text-white tracking-tight">cosmoid</span>
-          </a>
+          </Link>
           <p className="mt-2 text-sm text-white/70 md:text-base">AI assistant for real life</p>
         </div>
         <div className="flex flex-wrap items-center gap-5">
