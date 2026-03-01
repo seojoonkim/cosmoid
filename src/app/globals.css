@@ -6,6 +6,7 @@ html { scroll-behavior: smooth; }
 :root {
   --bg: #faf9ff;
   --bg-alt: #f0ebff;
+  --bg-alt-grad: linear-gradient(160deg, #f0ebff 0%, #e8e0ff 50%, #f0ebff 100%);
   --surface: #ffffff;
   --border: rgba(109, 40, 217, 0.12);
   --text: #1c1033;
@@ -31,7 +32,7 @@ body {
 body {
   font-family: "Inter", -apple-system, sans-serif;
   font-size: 16px;
-  background: var(--bg);
+  background: linear-gradient(160deg, #faf9ff 0%, #f5f0ff 50%, #faf9ff 100%);
   color: var(--text);
   overflow-x: hidden;
   line-height: 1.75;
@@ -43,11 +44,12 @@ a {
 }
 
 .section-label {
-  font-size: 0.9rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
+  font-size: 1.02rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--purple);
+  font-family: var(--font-nunito, 'Nunito', system-ui);
 }
 .badge {
   display: inline-block;

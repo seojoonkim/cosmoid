@@ -58,7 +58,7 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className="bg-[var(--bg-alt)] border-t border-[var(--border)] py-16 md:py-24">
+    <section className="bg-[var(--bg-alt)] [background:linear-gradient(160deg,#f0ebff_0%,#e6deff_50%,#f0ebff_100%)] border-t border-[var(--border)] py-16 md:py-24">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <motion.p
                     className="section-label"
