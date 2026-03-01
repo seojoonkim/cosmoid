@@ -7,7 +7,7 @@ export default function WhyCosmoid() {
     <section id="why" className="section-bg-2 border-t border-[var(--border)] py-16 md:py-24">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <motion.p
-                    className="section-label" style={{background:"rgba(255,255,255,0.2)",color:"#ffffff",WebkitTextFillColor:"#ffffff",border:"1px solid rgba(255,255,255,0.35)"}}
+                    className="section-label"
         >
           왜 Cosmoid인가요
         </motion.p>

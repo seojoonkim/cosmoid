@@ -61,7 +61,12 @@ a {
 
 /* 섹션별 배경 그라데이션 */
 .section-bg-1 { background: #ffffff; }           /* SocialProof */
-.section-bg-2 { background: linear-gradient(180deg, #f0ebfe 0%, #e8dffd 100%); } /* WhyCosmoid — 유일한 보라 틴트 */
+.section-bg-2 {
+  background: linear-gradient(180deg, #f0ebfe 0%, #e8dffd 100%);
+  --label-bg: #ffffff;
+  --label-color: #5b21b6;
+  --label-border: rgba(109, 40, 217, 0.3);
+} /* WhyCosmoid — 유일한 보라 틴트 */
 .section-bg-3 { background: #ffffff; }           /* Features */
 .section-bg-4 { background: #f9f8fd; }           /* HowItWorks — cool 극미세 */
 .section-bg-5 { background: #ffffff; }           /* Comparison */
