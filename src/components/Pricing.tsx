@@ -5,13 +5,14 @@ const plans = [
     term: "/월",
     features: ["기본 에이전트 1개", "월 50만 토큰", "핵심 스킬 5개"],
     cta: "무료 시작",
+    featured: false,
   },
   {
     name: "Pro",
     price: "₩19,900",
     term: "/월",
     features: ["에이전트 5개", "월 500만 토큰", "고급 스킬 + 우선 처리"],
-    cta: "추천 플랜 시작",
+    cta: "Pro 시작하기",
     featured: true,
   },
   {
@@ -20,6 +21,7 @@ const plans = [
     term: "/월",
     features: ["에이전트 20개", "월 2,000만 토큰", "팀 기능 + 관리자 제어"],
     cta: "팀으로 시작",
+    featured: false,
   },
 ];
 
@@ -29,41 +31,43 @@ export default function Pricing() {
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <p className="section-label">요금제</p>
         <h2 className="mt-4 text-3xl md:text-4xl font-extrabold tracking-tight">필요한 만큼 선택하세요</h2>
-        <div className="mt-10 grid gap-5 md:grid-cols-3">
+        <div className="mt-10 grid gap-5 md:grid-cols-3 md:items-start">
           {plans.map((plan) => (
             <article
               key={plan.name}
-              className={`card p-6 md:p-8 ${
-                plan.featured
-                  ? "border-[var(--purple)] bg-[var(--purple)] text-white"
-                  : "text-[var(--text)]"
-              }`}
+              className="rounded-2xl p-6 md:p-8 flex flex-col"
+              style={plan.featured
+                ? { background: "var(--purple)", border: "2px solid var(--purple)", color: "white" }
+                : { background: "white", border: "1px solid var(--border)", color: "var(--text)" }
+              }
             >
-              <div className="flex items-center justify-between">
-                <h3 className="text-lg font-semibold md:text-xl">{plan.name}</h3>
+              <div className="flex items-center justify-between mb-5">
+                <h3 className="text-xl font-bold">{plan.name}</h3>
                 {plan.featured && (
-                  <span className="rounded-full bg-white/20 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">
+                  <span className="rounded-full bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wide text-white">
                     추천
                   </span>
                 )}
               </div>
-              <p className="mt-5 text-3xl font-extrabold md:text-4xl">
+              <p className="text-4xl font-black mb-1">
                 {plan.price}
-                <span className={`ml-1 text-sm md:text-base ${plan.featured ? "text-white" : "text-[var(--muted)]"}`}>
-                  {plan.term}
-                </span>
+                <span className="text-base font-normal ml-1" style={{ opacity: 0.7 }}>{plan.term}</span>
               </p>
-              <ul className={`mt-6 space-y-2 text-base md:text-lg ${plan.featured ? "text-white" : "text-[var(--muted)]"}`}>
+              <ul className="mt-6 space-y-3 flex-1">
                 {plan.features.map((feature) => (
-                  <li key={feature}>{feature}</li>
+                  <li key={feature} className="flex items-start gap-2 text-base">
+                    <span className="mt-1.5 h-1.5 w-1.5 rounded-full shrink-0"
+                      style={{ background: plan.featured ? "rgba(255,255,255,0.7)" : "var(--purple)" }} />
+                    <span style={{ opacity: plan.featured ? 0.9 : 0.7 }}>{feature}</span>
+                  </li>
                 ))}
               </ul>
               <button
-                className={`mt-8 w-full rounded-full border px-4 py-2.5 text-base font-semibold ${
-                  plan.featured
-                    ? "border-white/70 bg-white text-[var(--purple)]"
-                    : "border-[var(--border)] bg-[var(--purple-soft)] text-[var(--purple)]"
-                }`}
+                className="mt-8 w-full rounded-full px-4 py-3 text-base font-bold transition-opacity hover:opacity-90"
+                style={plan.featured
+                  ? { background: "white", color: "var(--purple)", border: "none" }
+                  : { background: "var(--purple-soft)", color: "var(--purple)", border: "1px solid var(--border)" }
+                }
               >
                 {plan.cta}
               </button>
