@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
+import { Nunito } from "next/font/google";
 import "./globals.css";
 
-const geist = Geist({ subsets: ["latin"], variable: "--font-geist" });
+const nunito = Nunito({ subsets: ["latin"], weight: ["700", "800"], variable: "--font-nunito" });
 
 export const metadata: Metadata = {
   title: "Cosmoid — 카카오톡 AI 에이전트",
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ko">
-      <body className={geist.variable}>{children}</body>
+      <body className={nunito.variable}>{children}</body>
     </html>
   );
 }
