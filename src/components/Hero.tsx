@@ -17,38 +17,32 @@ const H1_CASES = [
 
 function TypingH1() {
   const [caseIdx, setCaseIdx] = useState(0);
-  const [displayed, setDisplayed] = useState("");
-  const subText = H1_CASES[caseIdx][0] + "\n" + H1_CASES[caseIdx][1];
 
   useEffect(() => {
-    let i = 0;
-    setDisplayed("");
     const id = setInterval(() => {
-      i++;
-      setDisplayed(subText.slice(0, i));
-      if (i >= subText.length) {
-        clearInterval(id);
-        setTimeout(() => setCaseIdx(c => (c + 1) % H1_CASES.length), 3000);
-      }
-    }, 55);
+      setCaseIdx(c => (c + 1) % H1_CASES.length);
+    }, 3200);
     return () => clearInterval(id);
-  }, [caseIdx]);
+  }, []);
 
-  // 항상 2줄 공간 유지 (레이아웃 안 흔들리게)
-  const line1 = displayed.split("\n")[0] ?? "";
-  const line2 = displayed.split("\n")[1] ?? "";
-  const done1 = displayed.includes("\n") && line2.length > 0;
-  const cursor = <span className="animate-pulse" style={{display:"inline-block",width:"2px",height:"0.85em",background:"rgba(255,255,255,0.35)",verticalAlign:"middle",marginLeft:"2px",borderRadius:"1px"}} />;
   return (
     <h1 className="mt-6 font-black leading-[1.12] tracking-tight text-white"
       style={{fontSize:"clamp(2.4rem, 5vw, 4rem)", wordBreak:"keep-all"}}>
       <span style={{display:"block", color:"#f59e0b"}}>카톡 한 마디에</span>
-      <span style={{display:"block", color:"white", minHeight:"1.12em"}}>
-        {line1}{!done1 && line1.length > 0 && cursor}
-      </span>
-      <span style={{display:"block", color:"white", minHeight:"1.12em"}}>
-        {line2}{line2.length > 0 && cursor}
-      </span>
+      <div style={{overflow:"hidden", minHeight:"2.4em"}}>
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={caseIdx}
+            initial={{ y: "60%", opacity: 0 }}
+            animate={{ y: "0%", opacity: 1 }}
+            exit={{ y: "-60%", opacity: 0 }}
+            transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
+          >
+            <span style={{display:"block", color:"white"}}>{H1_CASES[caseIdx][0]}</span>
+            <span style={{display:"block", color:"white"}}>{H1_CASES[caseIdx][1]}</span>
+          </motion.div>
+        </AnimatePresence>
+      </div>
     </h1>
   );
 }
