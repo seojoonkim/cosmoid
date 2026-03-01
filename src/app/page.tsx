@@ -20,6 +20,7 @@ export default function Home() {
       <WhyCosmoid />
       <Features />
       <HowItWorks />
+      <Comparison />
       <MultiAgent />
       <FAQ />
       <Pricing />
