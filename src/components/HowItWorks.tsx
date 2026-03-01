@@ -52,7 +52,7 @@ export default function HowItWorks() {
               <h3 className="text-xl font-extrabold tracking-tight text-[var(--text)] mb-3">{step.title}</h3>
               <p className="text-base text-[var(--muted)] leading-relaxed mb-5">{step.description}</p>
               <div className="rounded-xl overflow-hidden border border-[var(--border)] bg-[var(--bg-alt)] mt-auto">
-                <img src={step.image} alt={step.title} className="w-full object-cover h-40" />
+                <img src={step.image} alt={step.title} loading="lazy" className="w-full object-cover h-36 md:h-44" />
               </div>
             </article>
           ))}

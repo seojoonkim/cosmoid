@@ -40,11 +40,21 @@ export default function Hero() {
           {/* 왼쪽 텍스트 */}
           <div className="md:col-span-5">
             <span className="badge">Private Beta</span>
-            <h1 className="mt-6 text-[2.8rem] md:text-[4.2rem] font-black leading-[1.15] tracking-tight">
-              말 한마디로<br />
-              <span style={{background:"linear-gradient(135deg,#7c3aed,#06b6d4)",WebkitBackgroundClip:"text",WebkitTextFillColor:"transparent",backgroundClip:"text"}}>
+            <h1
+              className="mt-6 text-[2.2rem] md:text-[4.2rem] font-black leading-[1.15] tracking-tight"
+              style={{ wordBreak: "keep-all" }}
+            >
+              말 한마디로{" "}
+              <span
+                style={{
+                  background: "linear-gradient(135deg,#7c3aed,#06b6d4)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  backgroundClip: "text",
+                }}
+              >
                 모든 걸 처리하는
-              </span><br />
+              </span>{" "}
               AI 개인 비서
             </h1>
             <p className="mt-6 max-w-lg text-lg text-[var(--muted)] leading-relaxed">
@@ -80,7 +90,7 @@ export default function Hero() {
           <div className="md:col-span-7">
             <div className="relative">
               {/* 프리미엄 이미지 */}
-              <div className="rounded-3xl overflow-hidden shadow-2xl border border-[var(--border)]"
+              <div className="hidden md:block rounded-3xl overflow-hidden shadow-2xl border border-[var(--border)]"
                 style={{boxShadow:"0 32px 80px rgba(124,58,237,0.18), 0 8px 24px rgba(0,0,0,0.08)"}}>
                 <img src="/images/2026-03-01-hero-premium.png" alt="Cosmoid 미리보기"
                   className="w-full object-cover h-64 md:h-80" />

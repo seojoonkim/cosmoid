@@ -46,7 +46,7 @@ export default function WhyCosmoid() {
               </ul>
             </div>
             <div className="mt-auto bg-[var(--bg-alt)] border-t border-[var(--border)]">
-              <img src="/images/2026-03-01-why-old.png" alt="기존 방식" className="w-full object-cover h-48 md:h-56" />
+              <img src="/images/2026-03-01-why-old.png" alt="기존 방식" className="w-full object-cover h-44 md:h-52" />
             </div>
           </div>
 
@@ -70,7 +70,7 @@ export default function WhyCosmoid() {
               </ul>
             </div>
             <div className="mt-auto bg-[var(--purple-soft)] border-t border-[var(--border)]">
-              <img src="/images/2026-03-01-why-new.png" alt="Cosmoid 방식" className="w-full object-cover h-48 md:h-56" />
+              <img src="/images/2026-03-01-why-new.png" alt="Cosmoid 방식" className="w-full object-cover h-44 md:h-52" />
             </div>
           </div>
         </div>

@@ -33,6 +33,7 @@ body {
   color: var(--text);
   overflow-x: hidden;
   line-height: 1.6;
+  word-break: keep-all;
 }
 a {
   color: inherit;
