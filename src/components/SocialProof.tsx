@@ -22,28 +22,23 @@ export default function SocialProof() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="mt-3 text-3xl md:text-4xl font-black tracking-tight"
+            className="mt-3 text-3xl md:text-4xl font-black tracking-tight whitespace-nowrap"
           >
             1,247명 얼리어답터 대기 중
           </motion.h2>
         </div>
-        <div className="flex flex-wrap items-center gap-3">
-          {/* 카카오톡 — 강조 */}
-          <div className="flex items-center gap-2 rounded-2xl border-2 border-[var(--purple)] bg-[var(--purple-soft)] px-4 py-2">
-            <Image src="/logos/kakaotalk.svg" alt="kakaotalk" width={28} height={28} className="h-7 w-7 object-contain" />
-            <span className="text-sm font-bold text-[var(--purple)]">KakaoTalk</span>
-          </div>
-          {/* 나머지 5개 — 연하게 */}
+        <div className="flex flex-wrap items-center gap-2">
           {[
+            { name: "KakaoTalk", src: "/logos/kakaotalk.svg" },
             { name: "Telegram", src: "/logos/telegram.svg" },
             { name: "Line", src: "/logos/line.svg" },
             { name: "WhatsApp", src: "/logos/whatsapp.svg" },
             { name: "Discord", src: "/logos/discord.svg" },
             { name: "Slack", src: "/logos/slack.svg" },
           ].map((m) => (
-            <div key={m.name} className="flex items-center gap-1.5 rounded-xl border border-[var(--border)] bg-white px-3 py-1.5 opacity-50">
+            <div key={m.name} className="flex items-center gap-1.5 rounded-xl border border-[var(--border)] bg-white px-3 py-2">
               <Image src={m.src} alt={m.name} width={20} height={20} className="h-5 w-5 object-contain" />
-              <span className="text-xs text-[var(--muted)]">{m.name}</span>
+              <span className="text-xs font-medium text-[var(--muted)]">{m.name}</span>
             </div>
           ))}
         </div>

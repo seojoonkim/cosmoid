@@ -10,7 +10,7 @@ const steps = [
   },
   {
     number: "02",
-    title: "그냥 말하면 돼요",
+    title: "그냥 쓰면 돼요",
     description: "\"치킨 시켜줘\", \"내일 미팅 잡아줘\" — 평소처럼 메시지만 보내시면 돼요. 앱 없이, 검색 없이.",
     image: "/images/2026-03-01-step2-v3.png",
   },
