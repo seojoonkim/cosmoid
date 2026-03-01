@@ -37,7 +37,7 @@ export default function Comparison() {
                 style={{background:"linear-gradient(90deg,#f5f0ff,#faf9ff)"}}>
                 <th className="py-4 px-5 text-left text-xs font-bold uppercase tracking-widest text-[var(--muted)]">항목</th>
                 <th className="py-4 px-5 text-center">
-                  <span className="inline-block rounded-full bg-[var(--purple)] px-3 py-1 text-xs font-bold text-white">Cosmoid ✦</span>
+                  <span className="inline-block rounded-full px-3 py-1 text-xs font-bold text-white" style={{background:"linear-gradient(90deg,#f59e0b,#d97706)"}}>Cosmoid ✦</span>
                 </th>
                 <th className="py-4 px-5 text-center text-xs font-semibold text-[var(--muted)]">해외 AI SaaS</th>
                 <th className="py-4 px-5 text-center text-xs font-semibold text-[var(--muted)]">OpenClaw 직접 설치</th>
@@ -49,7 +49,7 @@ export default function Comparison() {
                   className="border-b border-[var(--border)] last:border-0 transition-colors hover:bg-[var(--bg-alt)]"
                   style={{background: i % 2 === 0 ? "white" : "#faf9ff"}}>
                   <td className="py-4 px-5 font-semibold text-[var(--text)]">{row.label}</td>
-                  <td className="py-4 px-5 text-center font-semibold" style={{color:"var(--purple)"}}>{row.cosmoid}</td>
+                  <td className="py-4 px-5 text-center font-semibold" style={{color:"#d97706",fontWeight:700}}>{row.cosmoid}</td>
                   <td className="py-4 px-5 text-center text-[var(--muted)]">{row.saas}</td>
                   <td className="py-4 px-5 text-center text-[var(--muted)]">{row.self}</td>
                 </tr>

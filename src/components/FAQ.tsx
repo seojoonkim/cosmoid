@@ -83,7 +83,7 @@ export default function FAQ() {
                   aria-expanded={isOpen}
                 >
                   <span className="font-semibold text-[17px] transition-colors duration-200"
-                    style={{ color: isOpen ? "var(--purple)" : "var(--text)" }}>
+                    style={{ color: isOpen ? "#1a1a2e" : "var(--text)" }}>
                     {faq.q}
                   </span>
                   <motion.span

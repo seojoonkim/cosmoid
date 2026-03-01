@@ -34,7 +34,7 @@ export default function BetaCTA() {
           />
           <button
             type="submit"
-            className="h-12 rounded-full px-6 text-base font-semibold text-white transition-opacity hover:opacity-90 md:text-lg" style={{background:"#f59e0b",border:"none"}}
+            className="h-12 rounded-full px-6 text-base font-semibold text-white transition-opacity hover:opacity-90 md:text-lg btn-amber" style={{background:"#f59e0b",border:"none"}}
           >
             베타 신청
           </button>
