@@ -1,46 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" fill="none">
-  <defs>
-    <radialGradient id="planet" cx="38%" cy="32%" r="60%">
-      <stop offset="0%" stop-color="#c4b5fd"/>
-      <stop offset="55%" stop-color="#7c3aed"/>
-      <stop offset="100%" stop-color="#4c1d95"/>
-    </radialGradient>
-    <linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.9"/>
-      <stop offset="50%" stop-color="#818cf8"/>
-      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.9"/>
-    </linearGradient>
-    <linearGradient id="bubble" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"/>
-      <stop offset="100%" stop-color="#e0e7ff" stop-opacity="0.85"/>
-    </linearGradient>
-  </defs>
+  <!-- 궤도 뒤쪽 반 (행성 뒤에 가려짐 표현) -->
+  <ellipse cx="22" cy="22" rx="20" ry="7"
+    stroke="#4c1d95" stroke-width="3" fill="none"
+    stroke-dasharray="26 34"
+    transform="rotate(-18 22 22)"/>
 
-  <!-- 행성 본체 -->
-  <circle cx="22" cy="21" r="13" fill="url(#planet)"/>
+  <!-- 행성 본체 (단색) -->
+  <circle cx="22" cy="22" r="12" fill="#7c3aed"/>
 
-  <!-- 궤도 링 (뒤쪽 반) -->
-  <ellipse cx="22" cy="21" rx="19" ry="6.5"
-    stroke="url(#ring)" stroke-width="2.5" fill="none" opacity="0.45"
-    stroke-dasharray="30 28"
-    transform="rotate(-22 22 21)"/>
-  <!-- 궤도 링 (앞쪽 반) -->
-  <ellipse cx="22" cy="21" rx="19" ry="6.5"
-    stroke="url(#ring)" stroke-width="2.5" fill="none"
-    stroke-dasharray="30 28"
-    stroke-dashoffset="30"
-    transform="rotate(-22 22 21)"/>
+  <!-- 궤도 앞쪽 반 -->
+  <ellipse cx="22" cy="22" rx="20" ry="7"
+    stroke="#38bdf8" stroke-width="3" fill="none"
+    stroke-dasharray="26 34"
+    stroke-dashoffset="34"
+    transform="rotate(-18 22 22)"/>
 
-  <!-- 채팅 말풍선 (오른쪽 하단 오버랩) -->
-  <rect x="24" y="27" width="16" height="11" rx="5" fill="url(#bubble)"/>
-  <path d="M27 38 L24 42 L31 38" fill="url(#bubble)"/>
+  <!-- 채팅 점 3개 (행성 위에) -->
+  <circle cx="16" cy="23" r="2" fill="white"/>
+  <circle cx="22" cy="23" r="2" fill="white"/>
+  <circle cx="28" cy="23" r="2" fill="white"/>
 
-  <!-- 말풍선 안 점 3개 -->
-  <circle cx="28.5" cy="32.5" r="1.3" fill="#7c3aed" opacity="0.7"/>
-  <circle cx="32" cy="32.5" r="1.3" fill="#7c3aed" opacity="0.7"/>
-  <circle cx="35.5" cy="32.5" r="1.3" fill="#7c3aed" opacity="0.7"/>
-
-  <!-- 위성 점 -->
-  <circle cx="5" cy="15" r="2.5" fill="#818cf8"/>
-  <circle cx="38" cy="9" r="1.5" fill="#38bdf8"/>
+  <!-- 작은 위성 -->
+  <circle cx="5" cy="14" r="3" fill="#a78bfa"/>
+  <circle cx="38" cy="11" r="2" fill="#38bdf8"/>
 </svg>
