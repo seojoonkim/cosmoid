@@ -177,10 +177,10 @@ export default function Hero() {
           {/* 오른쪽 — 채팅창만 */}
           <div className="md:col-span-7">
             <div className="rounded-2xl overflow-hidden border border-white/15 shadow-2xl"
-              style={{background:"rgba(255,255,255,0.22)",backdropFilter:"blur(20px)",boxShadow:"0 32px 80px rgba(0,0,0,0.4)"}}>
+              style={{background:"rgba(255,255,255,0.92)",backdropFilter:"blur(20px)",boxShadow:"0 32px 80px rgba(0,0,0,0.4)"}}>
               {/* 헤더 */}
               <div className="flex items-center justify-between px-5 py-3.5 border-b border-white/10"
-                style={{background:"rgba(255,255,255,0.06)"}}>
+                style={{background:"rgba(245,240,255,0.98)"}}>
                 <div className="flex items-center gap-2.5">
                   <div className="h-8 w-8 rounded-full overflow-hidden">
                     <img src="/images/cosmoid-avatar.png" alt="코스모이드" className="h-full w-full object-cover" />
@@ -214,7 +214,7 @@ export default function Hero() {
                       }`}
                         style={msg.from === "user"
                           ? {background:"linear-gradient(135deg,#7c3aed,#8b5cf6)"}
-                          : {background:"rgba(255,255,255,0.28)"}
+                          : {background:"rgba(240,235,255,0.95)"}
                         }
                       >
                         {msg.id === typingId ? typingText : msg.text}
