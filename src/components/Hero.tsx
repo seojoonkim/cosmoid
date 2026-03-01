@@ -33,9 +33,9 @@ function TypingH1() {
         <AnimatePresence mode="wait">
           <motion.div
             key={caseIdx}
-            initial={{ y: "60%", opacity: 0 }}
+            initial={{ y: "10%", opacity: 0 }}
             animate={{ y: "0%", opacity: 1 }}
-            exit={{ y: "-60%", opacity: 0 }}
+            exit={{ y: "-10%", opacity: 0 }}
             transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
           >
             <span style={{display:"block", color:"white"}}>{H1_CASES[caseIdx][0]}</span>
