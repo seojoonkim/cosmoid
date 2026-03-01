@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function BetaCTA() {
   return (
     <section id="cta" className="border-t border-[var(--border)] bg-[var(--purple)] py-16 md:py-20 text-white">
-      <div className="mx-auto max-w-4xl px-5 md:px-8">
+      <div className="mx-auto max-w-6xl px-5 md:px-8">
         <motion.p
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
