@@ -5,12 +5,10 @@
       <stop offset="100%" stop-color="#38bdf8"/>
     </linearGradient>
   </defs>
-  <!-- 부드러운 육각형 -->
-  <path d="M18 3 L30 10 Q33 11.5 33 14 L33 22 Q33 24.5 30 26 L18 33 L6 26 Q3 24.5 3 22 L3 14 Q3 11.5 6 10 Z"
-        fill="url(#g)" opacity="0.13"/>
-  <path d="M18 3 L30 10 Q33 11.5 33 14 L33 22 Q33 24.5 30 26 L18 33 L6 26 Q3 24.5 3 22 L3 14 Q3 11.5 6 10 Z"
-        stroke="url(#g)" stroke-width="2" fill="none"/>
-  <!-- 둥근 C 모양 -->
-  <path d="M23.5 13 A7 7 0 1 0 23.5 23"
-        stroke="url(#g)" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  <!-- 둥근 사각형 배경 -->
+  <rect x="2" y="2" width="32" height="32" rx="10" fill="url(#g)" opacity="0.12"/>
+  <rect x="2" y="2" width="32" height="32" rx="10" stroke="url(#g)" stroke-width="2" fill="none"/>
+  <!-- 심플한 C자 -->
+  <path d="M22 12.5 A7.5 7.5 0 1 0 22 23.5"
+        stroke="url(#g)" stroke-width="3.8" stroke-linecap="round" fill="none"/>
 </svg>
