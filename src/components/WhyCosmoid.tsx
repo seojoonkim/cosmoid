@@ -11,7 +11,7 @@ export default function WhyCosmoid() {
           {/* 기존 방식 */}
           <div className="card overflow-hidden flex flex-col">
             <div className="p-6 md:p-8">
-              <p className="badge">기존 방식</p>
+              <p className="text-lg font-extrabold text-[var(--text)] mb-1">기존 방식</p><p className="text-sm text-[var(--muted)] mb-5">지금까지 AI 비서를 못 쓴 이유</p>
               <ul className="mt-5 space-y-3 text-base leading-relaxed text-[var(--muted)]">
                 <li className="flex items-start gap-2">
                   <span className="mt-2 h-1.5 w-1.5 rounded-full bg-red-400 shrink-0" />
@@ -35,7 +35,7 @@ export default function WhyCosmoid() {
           {/* Cosmoid */}
           <div className="card overflow-hidden flex flex-col">
             <div className="p-6 md:p-8">
-              <p className="badge">Cosmoid</p>
+              <p className="text-lg font-extrabold text-[var(--purple)] mb-1">Cosmoid</p><p className="text-sm text-[var(--muted)] mb-5">대화 하나로 실행까지</p>
               <ul className="mt-5 space-y-3 text-base leading-relaxed">
                 <li className="flex items-start gap-2">
                   <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[var(--purple)] shrink-0" />
