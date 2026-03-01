@@ -202,7 +202,7 @@ function FeaturePreview({ title }: { title: string }) {
 
 export default function Features() {
   return (
-    <section id="features" className="bg-white border-t border-[var(--border)] py-16 md:py-24">
+    <section id="features" className="section-bg-3 border-t border-[var(--border)]" style={{background:"linear-gradient(225deg, #faf9ff 0%, #f0ebff 40%, #faf9ff 100%)"}} py-16 md:py-24">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <motion.p
                     className="section-label"

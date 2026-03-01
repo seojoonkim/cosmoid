@@ -26,7 +26,7 @@ const agents = [
 
 export default function MultiAgent() {
   return (
-    <section className="bg-white border-t border-[var(--border)] py-16 md:py-24">
+    <section className="section-bg-6 border-t border-[var(--border)]" style={{background:"linear-gradient(160deg, #faf9ff 0%, #eee8ff 60%, #faf9ff 100%)"}} py-16 md:py-24">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <motion.p
                     className="section-label"

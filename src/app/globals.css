@@ -43,6 +43,17 @@ a {
   text-decoration: none;
 }
 
+
+/* 섹션별 배경 그라데이션 */
+.section-bg-1 { background: linear-gradient(135deg, #faf9ff 0%, #f3eeff 50%, #faf9ff 100%); }
+.section-bg-2 { background: linear-gradient(160deg, #eee8ff 0%, #e0d8ff 55%, #eee8ff 100%); }
+.section-bg-3 { background: linear-gradient(225deg, #faf9ff 0%, #f0ebff 45%, #faf9ff 100%); }
+.section-bg-4 { background: linear-gradient(180deg, #ede8ff 0%, #e4dcff 50%, #ede8ff 100%); }
+.section-bg-5 { background: linear-gradient(120deg, #fdfcff 0%, #f2eeff 50%, #fdfcff 100%); }
+.section-bg-6 { background: linear-gradient(160deg, #faf9ff 0%, #eee8ff 60%, #faf9ff 100%); }
+.section-bg-7 { background: linear-gradient(200deg, #ede8ff 0%, #ddd5ff 50%, #ede8ff 100%); }
+.section-bg-8 { background: linear-gradient(150deg, #eee8ff 0%, #e2d9ff 50%, #eee8ff 100%); }
+
 .section-label {
   font-size: 1.02rem;
   font-weight: 700;

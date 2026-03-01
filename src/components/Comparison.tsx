@@ -15,7 +15,7 @@ const rows = [
 
 export default function Comparison() {
   return (
-    <section className="bg-white border-t border-[var(--border)] py-16 md:py-24">
+    <section className="section-bg-5 border-t border-[var(--border)]" style={{background:"linear-gradient(120deg, #fdfcff 0%, #f2eeff 50%, #fdfcff 100%)"}} py-16 md:py-24">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <motion.p
           initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}
