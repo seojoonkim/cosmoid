@@ -20,7 +20,7 @@ export default function Nav() {
       <div className="max-w-6xl mx-auto px-5 md:px-8 h-14 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
           <img src="/logo-icon.svg" alt="" className="h-7 w-7" />
-          <span className="text-lg font-bold text-[var(--text)] tracking-tight">cosmoid</span>
+          <span style={{fontWeight:800,fontSize:"1.15rem",letterSpacing:"-0.03em",color:"#1c1033"}}>cosmoid</span>
         </Link>
         <div className="hidden md:flex items-center gap-7 text-base text-[var(--muted)] font-medium">
           <a href="#features" className="hover:text-[var(--text)] transition-colors">
