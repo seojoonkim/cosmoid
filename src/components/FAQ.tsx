@@ -83,14 +83,14 @@ export default function FAQ() {
                   aria-expanded={isOpen}
                 >
                   <span className="font-semibold text-[17px] transition-colors duration-200"
-                    style={{ color: isOpen ? "#f59e0b" : "var(--text)" }}>
+                    style={{ color: isOpen ? "var(--purple)" : "var(--text)" }}>
                     {faq.q}
                   </span>
                   <motion.span
                     animate={{ rotate: isOpen ? 45 : 0 }}
                     transition={{ duration: 0.25, ease: "easeInOut" }}
                     className="text-xl font-light shrink-0"
-                    style={{ color: isOpen ? "#f59e0b" : "var(--muted)", lineHeight: 1 }}
+                    style={{ color: isOpen ? "var(--purple)" : "var(--muted)", lineHeight: 1 }}
                   >
                     +
                   </motion.span>
