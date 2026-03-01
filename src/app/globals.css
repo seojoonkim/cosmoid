@@ -92,7 +92,7 @@ a {
 }
 
 .section-title {
-  background: linear-gradient(120deg, #7c3aed 0%, #a78bfa 30%, #38bdf8 60%, #818cf8 80%, #7c3aed 100%);
+  background: linear-gradient(120deg, #7c3aed 0%, #9333ea 40%, #a78bfa 70%, #7c3aed 100%);
   background-size: 300% 100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
