@@ -39,10 +39,10 @@ export default function MultiAgent() {
                 </span>
               )}
               <h3 className="text-lg font-semibold md:text-xl">{agent.title}</h3>
-              <p className={`mt-3 text-sm md:text-base ${agent.featured ? "text-white/90" : "text-[var(--muted)]"}`}>
+              <p className={`mt-3 text-base md:text-lg ${agent.featured ? "text-white" : "text-[var(--muted)]"}`}>
                 {agent.desc}
               </p>
-              <p className={`mt-6 text-xs uppercase tracking-[0.08em] md:text-sm ${agent.featured ? "text-white/80" : "text-[var(--muted)]"}`}>
+              <p className={`mt-6 text-sm uppercase tracking-[0.08em] md:text-base ${agent.featured ? "text-white" : "text-[var(--muted)]"}`}>
                 {agent.stack}
               </p>
             </article>

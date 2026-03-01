@@ -53,13 +53,13 @@ export default function Pricing() {
                   {plan.term}
                 </span>
               </p>
-              <ul className={`mt-6 space-y-2 text-sm md:text-base ${plan.featured ? "text-white/90" : "text-[var(--muted)]"}`}>
+              <ul className={`mt-6 space-y-2 text-base md:text-lg ${plan.featured ? "text-white" : "text-[var(--muted)]"}`}>
                 {plan.features.map((feature) => (
                   <li key={feature}>{feature}</li>
                 ))}
               </ul>
               <button
-                className={`mt-8 w-full rounded-full border px-4 py-2.5 text-sm font-semibold ${
+                className={`mt-8 w-full rounded-full border px-4 py-2.5 text-base font-semibold ${
                   plan.featured
                     ? "border-white/70 bg-white text-[var(--purple)]"
                     : "border-[var(--border)] bg-[var(--purple-soft)] text-[var(--purple)]"

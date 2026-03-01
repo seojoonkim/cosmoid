@@ -12,7 +12,7 @@ export default function WhyCosmoid() {
         <div className="mt-10 grid gap-5 md:grid-cols-2">
           <div className="card p-6 md:p-8">
             <p className="badge">기존 방식</p>
-            <ul className="mt-6 space-y-3 text-[var(--muted)]">
+            <ul className="mt-6 space-y-3 text-base leading-relaxed text-[var(--muted)]">
               <li>별도 앱 설치와 긴 온보딩 과정</li>
               <li>도구마다 인터페이스가 달라 학습 필요</li>
               <li>실행 단계에서 맥락이 끊겨 사용 중단</li>
@@ -20,12 +20,15 @@ export default function WhyCosmoid() {
           </div>
           <div className="card p-6 md:p-8">
             <p className="badge">Cosmoid</p>
-            <ul className="mt-6 space-y-3">
+            <ul className="mt-6 space-y-3 text-base leading-relaxed">
               <li>익숙한 메신저에서 바로 시작</li>
               <li>주문, 검색, 일정, 금융을 한 문맥에서 처리</li>
               <li>짧은 대화만으로 실행까지 완료</li>
             </ul>
           </div>
+        </div>
+        <div className="mt-8 overflow-hidden rounded-2xl border border-[var(--border)]">
+          <img src="/images/2026-03-01-why-comparison.png" alt="기존 vs Cosmoid" className="w-full object-cover" />
         </div>
       </div>
     </section>

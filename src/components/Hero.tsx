@@ -7,27 +7,27 @@ export default function Hero() {
         <div className="grid gap-12 md:grid-cols-12 md:items-center">
           <div className="md:col-span-7">
             <span className="badge">Private Beta</span>
-            <h1 className="mt-6 text-[2.6rem] md:text-[3.8rem] font-extrabold leading-[1.1] tracking-tight">
+            <h1 className="mt-6 text-[2.8rem] md:text-[4rem] font-extrabold leading-[1.1] tracking-tight">
               메신저 위에서
               <br />
               가장 부드럽게 작동하는
               <br />
               AI 개인 비서
             </h1>
-            <p className="mt-6 max-w-xl text-base text-[var(--muted)]">
+            <p className="mt-6 max-w-xl text-lg text-[var(--muted)]">
               Calm의 감성과 Notion의 명확함을 담아, 주문과 검색부터 일정과 금융 확인까지 카카오톡 대화 하나로
               끝냅니다.
             </p>
-            <div className="mt-8 flex flex-wrap items-center gap-4">
+            <div className="mt-8 flex flex-wrap items-center gap-6">
               <a
                 href="#beta"
-                className="bg-[var(--purple)] text-white rounded-full px-7 py-3.5 text-base font-semibold hover:opacity-90 transition-opacity"
+                className="bg-[var(--purple)] text-white rounded-full px-7 py-3.5 text-lg font-semibold hover:opacity-90 transition-opacity"
               >
                 베타 신청하기
               </a>
               <a
                 href="#how"
-                className="rounded-full border border-[var(--border)] px-7 py-3.5 text-base font-semibold text-[var(--text)] hover:bg-white transition-colors"
+                className="rounded-full border border-[var(--border)] px-7 py-3.5 text-lg font-semibold text-[var(--text)] hover:bg-white transition-colors"
               >
                 데모 보기
               </a>
@@ -36,14 +36,15 @@ export default function Hero() {
 
           <div className="md:col-span-5">
             <div className="card overflow-hidden p-4 shadow-sm md:p-5">
+              <img src="/images/2026-03-01-hero-chat.png" alt="Cosmoid 데모" className="mb-4 w-full rounded-xl object-cover" />
               <div className="mb-4 flex items-center justify-between rounded-xl bg-[var(--purple-soft)] px-4 py-3">
-                <p className="text-sm font-semibold text-[var(--text)]">Cosmoid 비서</p>
-                <span className="flex items-center gap-2 text-xs text-[var(--muted)]">
+                <p className="text-base font-semibold text-[var(--text)]">Cosmoid 비서</p>
+                <span className="flex items-center gap-2 text-sm text-[var(--muted)]">
                   <span className="h-2.5 w-2.5 rounded-full bg-emerald-500" />
                   online
                 </span>
               </div>
-              <div className="space-y-3 text-sm md:text-base">
+              <div className="space-y-3 text-base md:text-lg">
                 <div className="flex justify-end">
                   <div className="max-w-[82%] rounded-2xl rounded-br-md bg-[var(--purple)] px-4 py-3 text-white">
                     내일 오전 10시에 팀 미팅 잡아줘

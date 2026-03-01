@@ -15,13 +15,16 @@ export default function Features() {
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <p className="section-label">무엇을 해줄 수 있나</p>
         <h2 className="mt-4 text-3xl md:text-4xl font-extrabold tracking-tight">핵심 기능 6가지</h2>
+        <div className="mt-8 mb-10 rounded-2xl overflow-hidden border border-[var(--border)]">
+          <img src="/images/2026-03-01-features-grid.png" alt="기능 소개" className="w-full object-cover max-h-64 object-top" />
+        </div>
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {features.map((feature, idx) => (
-            <article key={feature.title} className="card p-5 md:p-7">
+            <article key={feature.title} className="card p-6 md:p-8">
               <p className="text-xs font-semibold text-[var(--purple)]">{String(idx + 1).padStart(2, "0")}</p>
               <Image src={feature.icon} alt={feature.title} width={28} height={28} className="h-7 w-7" />
               <h3 className="mt-5 text-lg font-semibold md:text-xl">{feature.title}</h3>
-              <p className="mt-2 text-sm text-[var(--muted)] md:text-base">{feature.desc}</p>
+              <p className="mt-2 text-lg text-[var(--muted)]">{feature.desc}</p>
             </article>
           ))}
         </div>

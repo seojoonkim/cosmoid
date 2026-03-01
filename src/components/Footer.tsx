@@ -1,10 +1,13 @@
 export default function Footer() {
   return (
     <footer className="bg-[var(--text)] text-white py-10">
-      <div className="mx-auto flex max-w-6xl flex-col gap-5 px-5 md:px-8 text-sm md:flex-row md:items-center md:justify-between md:text-base">
+      <div className="mx-auto flex max-w-6xl flex-col gap-5 px-5 md:px-8 text-base md:flex-row md:items-center md:justify-between md:text-lg">
         <div>
-          <img src="/logo.svg" alt="Cosmoid" className="h-7" style={{ filter: "brightness(0) invert(1)" }} />
-          <p className="mt-2 text-xs text-white/70 md:text-sm">AI assistant for real life</p>
+          <a href="/" className="flex items-center gap-2">
+            <img src="/logo-icon.svg" alt="" className="h-7 w-7" style={{ filter: "brightness(0) invert(1)" }} />
+            <span className="text-lg font-bold text-white tracking-tight">cosmoid</span>
+          </a>
+          <p className="mt-2 text-sm text-white/70 md:text-base">AI assistant for real life</p>
         </div>
         <div className="flex flex-wrap items-center gap-5">
           <a href="#features" className="text-white/80 hover:text-white">
@@ -17,7 +20,7 @@ export default function Footer() {
             베타 신청
           </a>
         </div>
-        <p className="text-xs text-white/70 md:text-sm">© 2026 Cosmoid. All rights reserved.</p>
+        <p className="text-sm text-white/70 md:text-base">© 2026 Cosmoid. All rights reserved.</p>
       </div>
     </footer>
   );

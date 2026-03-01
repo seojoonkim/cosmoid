@@ -6,7 +6,6 @@ const logos = [
   { name: "whatsapp", src: "/logos/whatsapp.svg" },
   { name: "discord", src: "/logos/discord.svg" },
   { name: "slack", src: "/logos/slack.svg" },
-  { name: "google", src: "/logos/google.svg" },
 ];
 
 export default function SocialProof() {

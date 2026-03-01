@@ -12,11 +12,11 @@ export default function BetaCTA() {
           <input
             type="email"
             placeholder="you@company.com"
-            className="h-12 flex-1 rounded-full border border-white/30 bg-white/20 px-5 text-sm text-white outline-none placeholder:text-white/70 focus:border-white md:text-base"
+            className="h-12 flex-1 rounded-full border border-white/30 bg-white/20 px-5 text-base text-white outline-none placeholder:text-white/70 focus:border-white md:text-lg"
           />
           <button
             type="submit"
-            className="h-12 rounded-full border border-white/60 bg-white px-6 text-sm font-semibold text-[var(--purple)] transition-opacity hover:opacity-90 md:text-base"
+            className="h-12 rounded-full border border-white/60 bg-white px-6 text-base font-semibold text-[var(--purple)] transition-opacity hover:opacity-90 md:text-lg"
           >
             베타 신청
           </button>
