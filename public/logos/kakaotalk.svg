@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="KakaoTalk logo">
+  <rect width="128" height="128" rx="28" fill="#FEE500"/>
+  <path d="M64 26c-21.5 0-39 15.1-39 33.8 0 12.1 7.2 22.8 18.2 28.8l-4.5 15.8 18.3-12.2c2.3.3 4.6.4 7 .4 21.5 0 39-15.1 39-33.8S85.5 26 64 26Z" fill="#191919"/>
+  <circle cx="48" cy="60" r="5.3" fill="#FEE500"/>
+  <circle cx="64" cy="60" r="5.3" fill="#FEE500"/>
+  <circle cx="80" cy="60" r="5.3" fill="#FEE500"/>
+</svg>

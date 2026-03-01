@@ -1,7 +1,22 @@
 const steps = [
-  { n:"01", title:"소셜 로그인", desc:"카카오, 구글, 네이버로 30초 안에 가입. 지갑도 자동으로 생성돼요.", icon:"🔑" },
-  { n:"02", title:"에이전트 설정", desc:"이름과 성격을 정하고, 연결할 메신저와 원하는 스킬을 선택하세요.", icon:"⚙️" },
-  { n:"03", title:"바로 사용", desc:"QR 코드 스캔 한 번으로 카카오톡에서 AI 비서와 대화를 시작해요.", icon:"💬" },
+  {
+    n: "01",
+    title: "소셜 로그인",
+    desc: "카카오, 구글, 네이버로 30초 안에 가입. 지갑도 자동으로 생성돼요.",
+    icon: "/icons/key.svg",
+  },
+  {
+    n: "02",
+    title: "에이전트 설정",
+    desc: "이름과 성격을 정하고, 연결할 메신저와 원하는 스킬을 선택하세요.",
+    icon: "/icons/settings.svg",
+  },
+  {
+    n: "03",
+    title: "바로 사용",
+    desc: "QR 코드 스캔 한 번으로 카카오톡에서 AI 비서와 대화를 시작해요.",
+    icon: "/icons/chat.svg",
+  },
 ];
 
 export default function HowItWorks() {
@@ -15,7 +30,7 @@ export default function HowItWorks() {
         <div className="grid md:grid-cols-3 gap-4 md:gap-6">
           {steps.map((s) => (
             <div key={s.n} className="glass rounded-3xl p-6 md:p-10 card-hover">
-              <div className="text-3xl mb-4">{s.icon}</div>
+              <img src={s.icon} alt={`${s.title} icon`} className="w-8 h-8 mb-4 text-cyan-300" />
               <div className="gradient-text text-5xl font-black mb-3 leading-none">{s.n}</div>
               <h3 className="text-base font-bold mb-2">{s.title}</h3>
               <p className="text-slate-400 text-sm leading-relaxed">{s.desc}</p>

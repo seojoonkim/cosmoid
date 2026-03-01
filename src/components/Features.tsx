@@ -1,10 +1,10 @@
 const features = [
-  { icon:"🛒", title:"쇼핑 자동화", desc:"쿠팡, 네이버쇼핑 검색부터 주문까지 한 번에" },
-  { icon:"🍕", title:"배달 주문", desc:"배민, 쿠팡이츠에서 '치킨 시켜줘' 한 마디로" },
-  { icon:"🚕", title:"교통", desc:"카카오T 택시 요금 조회 및 호출" },
-  { icon:"💰", title:"금융 관리", desc:"오픈뱅킹으로 계좌 조회, 월별 지출 분석" },
-  { icon:"📅", title:"일정 관리", desc:"캘린더 연동, 미팅 예약, 리마인더 설정" },
-  { icon:"🔍", title:"정보 검색", desc:"네이버 검색, 뉴스, 날씨 실시간" },
+  { icon: "/icons/cart.svg", title: "쇼핑 자동화", desc: "쿠팡, 네이버쇼핑 검색부터 주문까지 한 번에" },
+  { icon: "/icons/food.svg", title: "배달 주문", desc: "배민, 쿠팡이츠에서 '치킨 시켜줘' 한 마디로" },
+  { icon: "/icons/car.svg", title: "교통", desc: "카카오T 택시 요금 조회 및 호출" },
+  { icon: "/icons/money.svg", title: "금융 관리", desc: "오픈뱅킹으로 계좌 조회, 월별 지출 분석" },
+  { icon: "/icons/calendar.svg", title: "일정 관리", desc: "캘린더 연동, 미팅 예약, 리마인더 설정" },
+  { icon: "/icons/search.svg", title: "정보 검색", desc: "네이버 검색, 뉴스, 날씨 실시간" },
 ];
 
 export default function Features() {
@@ -12,13 +12,17 @@ export default function Features() {
     <section className="py-20 md:py-32 px-5 bg-[#0d0d18]" id="features">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12 md:mb-20">
-          <h2 className="text-3xl md:text-6xl font-black mb-4">원하는 모든 걸<br />대신 해줘요</h2>
+          <h2 className="text-3xl md:text-6xl font-black mb-4">
+            원하는 모든 걸
+            <br />
+            대신 해줘요
+          </h2>
           <p className="text-base md:text-xl text-slate-400">한국 생활에 딱 맞춘 스킬들</p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-5">
           {features.map((f) => (
             <div key={f.title} className="glass rounded-2xl p-5 md:p-8 card-hover">
-              <div className="text-3xl mb-3">{f.icon}</div>
+              <img src={f.icon} alt={`${f.title} icon`} className="w-8 h-8 mb-3 text-cyan-300" />
               <h3 className="font-bold mb-2 text-sm md:text-lg">{f.title}</h3>
               <p className="text-slate-400 text-xs md:text-sm leading-relaxed">{f.desc}</p>
             </div>

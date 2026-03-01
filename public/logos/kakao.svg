@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Kakao logo">
+  <rect width="128" height="128" rx="28" fill="#FEE500"/>
+  <path d="M64 28c-20.4 0-37 13.9-37 31.1 0 11.3 7.2 21.2 18 26.6l-4.8 16.7 19.7-13.1c1.4.1 2.8.2 4.1.2 20.4 0 37-13.9 37-31.1S84.4 28 64 28Z" fill="#191919"/>
+  <path d="M52 50h8v12l10-12h10L67 64l14 18H71l-9-12-2 2v10h-8V50Z" fill="#FEE500"/>
+</svg>
