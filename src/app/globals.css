@@ -4,22 +4,34 @@
 html { scroll-behavior: smooth; }
 
 :root {
+  /* Surfaces — 뉴트럴 70% */
   --bg: #ffffff;
-  --bg-alt: #f8f5ff;
-  --bg-warm: #fffbf5;
-  --bg-alt-grad: linear-gradient(180deg, #f8f5ff 0%, #f3eeff 100%);
+  --bg-cool: #f9f8fd;
+  --bg-warm: #fefaf4;
+  --bg-alt: #f0ebfe;
+  --bg-alt-grad: linear-gradient(180deg, #f0ebfe 0%, #e8dffd 100%);
   --surface: #ffffff;
-  --border: #e5e7eb;
-  --border-purple: rgba(109, 40, 217, 0.12);
-  --text: #1c1033;
+
+  /* Text */
+  --text: #1e1b2e;
   --muted: #64748b;
+  --subtle: #9ca3af;
+
+  /* Brand — 보라 20% */
   --purple: #7c3aed;
-  --purple-soft: #ede9fe;
+  --purple-soft: #f0ebfe;
   --purple-mid: #ddd6fe;
+  --purple-deep: #4c1d95;
   --cta: #7c3aed;
+
+  /* Accent — amber 10% (CTA/가격만) */
   --amber: #f59e0b;
   --amber-dark: #d97706;
-  --amber-soft: #fef3c7;
+  --amber-soft: #fef6d0;
+
+  /* Border */
+  --border: #e5e7eb;
+  --border-subtle: #f1f2f4;
 }
 
 *,
@@ -48,14 +60,14 @@ a {
 
 
 /* 섹션별 배경 그라데이션 */
-.section-bg-1 { background: #ffffff; }
-.section-bg-2 { background: linear-gradient(180deg, #f8f5ff 0%, #f3eeff 100%); }
-.section-bg-3 { background: #ffffff; }
-.section-bg-4 { background: #fffbf5; }
-.section-bg-5 { background: #ffffff; }
-.section-bg-6 { background: #fffbf5; }
-.section-bg-7 { background: #ffffff; }
-.section-bg-8 { background: linear-gradient(180deg, #f8f5ff 0%, #f3eeff 100%); }
+.section-bg-1 { background: #ffffff; }           /* SocialProof */
+.section-bg-2 { background: linear-gradient(180deg, #f0ebfe 0%, #e8dffd 100%); } /* WhyCosmoid — 유일한 보라 틴트 */
+.section-bg-3 { background: #ffffff; }           /* Features */
+.section-bg-4 { background: #f9f8fd; }           /* HowItWorks — cool 극미세 */
+.section-bg-5 { background: #ffffff; }           /* Comparison */
+.section-bg-6 { background: #fefaf4; }           /* MultiAgent — warm */
+.section-bg-7 { background: #f9f8fd; }           /* FAQ — cool */
+.section-bg-8 { background: #fefaf4; }           /* Pricing — warm */
 
 .section-label {
   display: inline-block;
@@ -64,8 +76,8 @@ a {
   letter-spacing: 0.07em;
   text-transform: uppercase;
   font-family: var(--font-nunito, 'Nunito', system-ui);
-  background: #fef3c7;
-  color: #92400e;
+  background: #f0ebfe;
+  color: #5b21b6;
   padding: 4px 14px;
   border-radius: 9999px;
 }
