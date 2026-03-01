@@ -11,7 +11,7 @@ export default function BetaCTA() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, ease: "easeOut" }}
-          className="section-label" style={{color:"rgba(255,255,255,0.85)",WebkitTextFillColor:"rgba(255,255,255,0.85)",backgroundImage:"none"}}
+          className="section-label" style={{background:"rgba(255,255,255,0.18)",color:"#ffffff",WebkitTextFillColor:"#ffffff",border:"1px solid rgba(255,255,255,0.3)"}}
         >
           지금 시작해보세요
         </motion.p>
