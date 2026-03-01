@@ -3,12 +3,14 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const messages = [
-  { id: 1, from: "user", text: "치킨 시켜줘, 배달의민족으로" },
-  { id: 2, from: "ai", text: "근처 인기 치킨집 3곳 찾았어요. 굽네치킨 27분 도착, 18,000원. 주문할까요?" },
-  { id: 3, from: "user", text: "응" },
-  { id: 4, from: "ai", text: "✓ 주문 완료! 27분 후 도착 예정이에요 🍗" },
-  { id: 5, from: "user", text: "내일 오전 10시 미팅 잡아줘" },
-  { id: 6, from: "ai", text: "캘린더에 '미팅' 등록했어요. 내일 9시 30분에 리마인드 드릴게요 📅" },
+  { id: 1, from: "user", text: "치킨 시켜줘, 배달의민족으로 🍗" },
+  { id: 2, from: "ai", text: "근처 굽네치킨이 평점 4.8점이에요. 27분 도착, 18,000원 — 바로 주문할까요?" },
+  { id: 3, from: "user", text: "응, 결제도 해줘" },
+  { id: 4, from: "ai", text: "✓ 카카오페이로 결제 완료! 27분 후 도착 예정이에요. 문 열어두세요 🍗" },
+  { id: 5, from: "user", text: "내일 강남에서 오전 10시 미팅 잡아줘" },
+  { id: 6, from: "ai", text: "캘린더에 '강남 미팅' 등록했어요. 9시 30분에 리마인드 드릴게요. 카카오맵으로 길 안내도 해드릴까요? 📅" },
+  { id: 7, from: "user", text: "이번 달 카드 지출 얼마야?" },
+  { id: 8, from: "ai", text: "3월 지출 총 847,200원이에요. 식비 42%, 쇼핑 28%, 교통 15% 순이에요 💳" },
 ];
 
 export default function Hero() {
@@ -52,7 +54,7 @@ export default function Hero() {
 
           {/* 왼쪽 텍스트 */}
           <div className="md:col-span-5">
-            <span className="inline-block rounded-full border border-white/30 bg-white/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-white/80">
+            <span className="inline-block rounded-full border border-white/30 bg-white/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-white">
               Private Beta
             </span>
             <h1 className="mt-6 font-black leading-[1.12] tracking-tight text-white"
@@ -61,7 +63,7 @@ export default function Hero() {
               <span style={{background:"linear-gradient(135deg,#a78bfa,#22d3ee)",WebkitBackgroundClip:"text",WebkitTextFillColor:"transparent",backgroundClip:"text"}}>
                 모든 걸 처리하는
               </span><br/>
-              AI 개인 비서
+              AI 에이전트
             </h1>
             <p className="mt-6 max-w-lg text-base text-white/70 leading-relaxed">
               카카오톡에서 대화 하나로 쇼핑 주문, 배달, 일정 관리, 금융 조회까지.<br/>설치도, 학습도 필요 없어요.
@@ -79,7 +81,7 @@ export default function Hero() {
             </div>
             <div className="mt-10 flex items-center gap-6 text-sm text-white/50">
               <div className="flex items-center gap-2">
-                <img src="/flags/kr.svg" alt="한국" className="h-4 w-6 rounded-sm object-cover" />
+                <img src="https://flagcdn.com/w40/kr.png" alt="한국" className="h-4 w-6 rounded-sm object-cover" />
                 <span>한국 서비스 특화</span>
               </div>
               <div className="w-px h-4 bg-white/20" />
@@ -104,14 +106,14 @@ export default function Hero() {
                     style={{background:"linear-gradient(135deg,#7c3aed,#06b6d4)"}}>
                     <span className="text-white text-xs font-bold">C</span>
                   </div>
-                  <p className="text-sm font-semibold text-white">Cosmoid 비서</p>
+                  <p className="text-sm font-semibold text-white">코즈모</p>
                 </div>
                 <span className="flex items-center gap-1.5 text-xs text-emerald-400 font-medium">
                   <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />online
                 </span>
               </div>
               {/* 메시지 */}
-              <div className="px-5 py-5 space-y-3.5 min-h-[280px] md:min-h-[320px]">
+              <div className="px-5 py-5 space-y-3.5 min-h-[340px] md:min-h-[400px]">
                 <AnimatePresence>
                   {messages.slice(0, visible).map((msg) => (
                     <motion.div key={msg.id}
