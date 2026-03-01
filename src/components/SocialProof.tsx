@@ -3,15 +3,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-const logos = [
-  { name: "kakaotalk", src: "/logos/kakaotalk.svg" },
-  { name: "telegram", src: "/logos/telegram.svg" },
-  { name: "line", src: "/logos/line.svg" },
-  { name: "whatsapp", src: "/logos/whatsapp.svg" },
-  { name: "discord", src: "/logos/discord.svg" },
-  { name: "slack", src: "/logos/slack.svg" },
-];
-
 export default function SocialProof() {
   return (
     <section className="bg-white border-y border-[var(--border)] py-10">
@@ -33,16 +24,15 @@ export default function SocialProof() {
             transition={{ duration: 0.6, ease: "easeOut" }}
             className="mt-3 text-3xl md:text-4xl font-black tracking-tight"
           >
-            1,247명이 대기 중
+            1,247명 얼리어답터 대기 중
           </motion.h2>
         </div>
-        <div className="flex flex-wrap items-center gap-5">
-          {logos.map((logo) => (
-            <div key={logo.name} className="flex items-center gap-2.5 text-base text-[var(--muted)]">
-              <Image src={logo.src} alt={logo.name} width={22} height={22} className="h-5 w-5 object-contain" />
-              <span className="capitalize">{logo.name}</span>
-            </div>
-          ))}
+        <div className="flex flex-col items-start gap-3 md:items-end">
+          <div className="flex items-center gap-3 rounded-2xl border border-[var(--border)] px-5 py-3">
+            <Image src="/logos/kakaotalk.svg" alt="kakaotalk" width={42} height={42} className="h-10 w-10 object-contain" />
+            <span className="text-lg font-bold text-[var(--text)]">KakaoTalk</span>
+          </div>
+          <p className="text-sm text-[var(--muted)]">텔레그램, 라인 등 6개 메신저 지원 예정</p>
         </div>
       </div>
     </section>

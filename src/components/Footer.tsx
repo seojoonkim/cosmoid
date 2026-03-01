@@ -18,7 +18,7 @@ export default function Footer() {
           <a href="#pricing" className="text-white/80 hover:text-white">
             요금제
           </a>
-          <a href="#beta" className="text-white/80 hover:text-white">
+          <a href="#cta" className="text-white/80 hover:text-white">
             베타 신청
           </a>
         </div>
