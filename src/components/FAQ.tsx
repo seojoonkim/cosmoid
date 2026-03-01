@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 const faqs = [
   {
@@ -55,7 +55,7 @@ const faqs = [
 ];
 
 export default function FAQ() {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
     <section className="bg-white border-t border-[var(--border)] py-16 md:py-24">
@@ -83,17 +83,40 @@ export default function FAQ() {
           {faqs.map((faq, idx) => {
             const isOpen = openIndex === idx;
             return (
-              <article key={faq.q} className="border-b border-[var(--border)] py-4">
+              <article key={faq.q} className="border-b border-[var(--border)]">
                 <button
                   type="button"
-                  className="flex w-full items-center justify-between gap-4 text-left"
+                  className="flex w-full items-center justify-between gap-4 text-left py-5"
                   onClick={() => setOpenIndex(isOpen ? null : idx)}
                   aria-expanded={isOpen}
                 >
-                  <span className="font-semibold" style={{color: isOpen ? "#f59e0b" : "var(--text)"}}>{faq.q}</span>
-                  <span className="text-lg font-bold" style={{color: isOpen ? "#f59e0b" : "var(--muted)"}}>{isOpen ? "−" : "+"}</span>
+                  <span className="font-semibold text-base transition-colors duration-200"
+                    style={{ color: isOpen ? "#f59e0b" : "var(--text)" }}>
+                    {faq.q}
+                  </span>
+                  <motion.span
+                    animate={{ rotate: isOpen ? 45 : 0 }}
+                    transition={{ duration: 0.25, ease: "easeInOut" }}
+                    className="text-xl font-light shrink-0"
+                    style={{ color: isOpen ? "#f59e0b" : "var(--muted)", lineHeight: 1 }}
+                  >
+                    +
+                  </motion.span>
                 </button>
-                {isOpen ? <p className="mt-3 text-sm leading-relaxed text-[var(--muted)]">{faq.a}</p> : null}
+                <AnimatePresence initial={false}>
+                  {isOpen && (
+                    <motion.div
+                      key="answer"
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: "auto", opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
+                      style={{ overflow: "hidden" }}
+                    >
+                      <p className="pb-5 text-sm leading-relaxed text-[var(--muted)]">{faq.a}</p>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </article>
             );
           })}
