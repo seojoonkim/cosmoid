@@ -227,8 +227,7 @@ export default function Hero() {
                     <div className="rounded-2xl rounded-bl-sm px-4 py-3 border border-white/10 flex gap-1"
                       style={{background:"#f0ebff"}}>
                       {[0,1,2].map(i => (
-                        <span key={i} className="h-1.5 w-1.5 rounded-full animate-bounce" style={{background:"#a78bfa"}}
-                          style={{animationDelay:`${i*0.15}s`}} />
+                        <span key={i} className="h-1.5 w-1.5 rounded-full animate-bounce" style={{background:"#a78bfa",animationDelay:`${i*0.15}s`}} />
                       ))}
                     </div>
                   </motion.div>
