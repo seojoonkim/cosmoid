@@ -44,11 +44,27 @@ const messages = [
 
 export default function Hero() {
   const [visible, setVisible] = useState(0);
+  const [typingText, setTypingText] = useState("");
+  const [typingId, setTypingId] = useState<number | null>(null);
   const chatRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (chatRef.current) {
       chatRef.current.scrollTop = chatRef.current.scrollHeight;
+    }
+    // 새로 나타난 메시지가 AI면 타이핑 시작
+    const newMsg = messages[visible - 1];
+    if (newMsg && newMsg.from === "ai") {
+      setTypingId(newMsg.id);
+      setTypingText("");
+      let i = 0;
+      const full = newMsg.text;
+      const tid = setInterval(() => {
+        i++;
+        setTypingText(full.slice(0, i));
+        if (i >= full.length) { clearInterval(tid); }
+      }, 30);
+      return () => clearInterval(tid);
     }
   }, [visible]);
 
@@ -157,7 +173,7 @@ export default function Hero() {
                           : {background:"rgba(255,255,255,0.08)"}
                         }
                       >
-                        {msg.text}
+                        {msg.from === "ai" && msg.id === typingId ? typingText : msg.text}
                       </div>
                     </motion.div>
                   ))}
