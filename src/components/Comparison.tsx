@@ -22,7 +22,7 @@ export default function Comparison() {
           viewport={{ once: true }} transition={{ duration: 0.5 }}
           className="section-label"
         >비교</motion.p>
-        <h2 className="mt-4 text-3xl md:text-4xl font-extrabold tracking-tight section-title">
+        <h2 className="mt-4 section-h2 section-title">
           왜 Cosmoid인가요?
         </h2>
         <p className="mt-4 text-base text-[var(--muted)] max-w-2xl">

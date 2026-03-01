@@ -66,7 +66,7 @@ export default function FAQ() {
           자주 묻는 질문
         </motion.p>
         <motion.h2
-                    className="mt-4 text-3xl md:text-4xl font-extrabold tracking-tight section-title"
+                    className="mt-4 section-h2 section-title"
         >
           FAQ
         </motion.h2>

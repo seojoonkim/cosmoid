@@ -210,7 +210,7 @@ export default function Features() {
           어떤 일을 해드릴 수 있나요
         </motion.p>
         <motion.h2
-                    className="mt-4 text-3xl md:text-4xl font-extrabold tracking-tight section-title"
+                    className="mt-4 section-h2 section-title"
         >
           핵심 기능 6가지
         </motion.h2>

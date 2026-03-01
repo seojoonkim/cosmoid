@@ -25,7 +25,7 @@ export default function WhatIsAgent() {
             <motion.h2
               initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.1 }}
-              className="mt-4 text-3xl md:text-4xl font-extrabold tracking-tight section-title"
+              className="mt-4 section-h2 section-title"
             >
               말 한마디면<br/>알아서 다 해주는 AI
             </motion.h2>

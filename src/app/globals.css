@@ -148,3 +148,40 @@ a {
   box-shadow: 0 6px 20px rgba(245, 158, 11, 0.5);
   transform: translateY(-1px);
 }
+
+/* ─── 타이포그래피 시스템 ─── */
+/* section-h2: 섹션 제목 */
+.section-h2 {
+  font-size: clamp(1.75rem, 4vw, 2.25rem); /* 28px ~ 36px */
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+/* section-desc: 섹션 서브 설명 */
+.section-desc {
+  font-size: 1rem; /* 16px */
+  line-height: 1.7;
+  color: #4b5563;
+  max-width: 42rem;
+}
+/* card-title: 카드 제목 */
+.card-title {
+  font-size: 1.0625rem; /* 17px */
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--text);
+}
+/* card-desc: 카드 설명 */
+.card-desc {
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.65;
+  color: var(--muted);
+}
+/* stat-number: 강조 숫자 */
+.stat-number {
+  font-size: 2.25rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--purple);
+}
+

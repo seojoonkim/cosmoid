@@ -32,11 +32,11 @@ export default function HowItWorks() {
           어떻게 사용하나요
         </motion.p>
         <motion.h2
-                    className="mt-4 text-3xl md:text-4xl font-extrabold tracking-tight section-title"
+                    className="mt-4 section-h2 section-title"
         >
           딱 3단계예요
         </motion.h2>
-        <p className="mt-5 max-w-2xl text-base leading-relaxed" style={{color:"#4b5563"}}>
+        <p className="mt-4 section-desc">
           <strong style={{color:"#1a1a2e"}}>AI 에이전트</strong>란, 사용자 대신 앱을 조작하고 업무를 처리해주는 AI 비서예요. 주문, 예약, 검색, 결제까지 — 카카오톡에서 말 한마디로 지시하면 알아서 처리해줘요. 코딩도, 새 앱 설치도 필요 없어요.
         </p>
         <div className="mt-10 grid gap-5 md:grid-cols-3">

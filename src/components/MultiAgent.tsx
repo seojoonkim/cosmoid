@@ -34,7 +34,7 @@ export default function MultiAgent() {
           멀티 에이전트
         </motion.p>
         <motion.h2
-                    className="mt-4 text-3xl md:text-4xl font-extrabold tracking-tight section-title"
+                    className="mt-4 section-h2 section-title"
         >
           역할별로 나뉜 AI 팀
         </motion.h2>
@@ -45,7 +45,7 @@ export default function MultiAgent() {
   className="rounded-2xl border p-6 md:p-8 flex flex-col"
               style={{ background: "var(--surface)", borderColor: "var(--border)", color: "var(--text)", boxShadow: "0 4px 24px rgba(0,0,0,0.11), 0 1px 4px rgba(0,0,0,0.07)" }}
             >
-<h3 className="text-xl font-bold">{agent.title}</h3>
+<h3 className="card-title">{agent.title}</h3>
               <p className="mt-2 text-base" style={{ color: "var(--muted)" }}>
                 {agent.desc}
               </p>

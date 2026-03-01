@@ -39,7 +39,7 @@ export default function Pricing() {
           요금제
         </motion.p>
         <motion.h2
-                    className="mt-4 text-3xl md:text-4xl font-extrabold tracking-tight section-title"
+                    className="mt-4 section-h2 section-title"
         >
           필요한 만큼 선택하세요
         </motion.h2>
@@ -51,7 +51,7 @@ export default function Pricing() {
 style={{ background: "white", border: "1px solid var(--border)", color: "var(--text)" }}
             >
               <div className="flex items-center justify-between mb-5">
-                <h3 className="text-xl font-bold">{plan.name}</h3>
+                <h3 className="card-title">{plan.name}</h3>
 
               </div>
               <p className="text-3xl md:text-4xl font-black mb-1" style={{color:"#d97706",fontWeight:800}}>
