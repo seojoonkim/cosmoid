@@ -176,22 +176,22 @@ export default function Hero() {
 
           {/* 오른쪽 — 채팅창만 */}
           <div className="md:col-span-7">
-            <div className="rounded-2xl overflow-hidden shadow-2xl" style={{background:"#ffffff",backdropFilter:"blur(20px)",boxShadow:"0 32px 80px rgba(0,0,0,0.4)",border:"1px solid #ede8ff"}}>
+            <div className="rounded-3xl overflow-hidden" style={{background:"#f2f2f7",boxShadow:"0 24px 60px rgba(0,0,0,0.45), 0 0 0 1px rgba(255,255,255,0.12)"}}>
               {/* 헤더 */}
-              <div className="flex items-center justify-between px-5 py-3.5 border-b border-white/10"
-                style={{background:"#f9f7ff",borderBottom:"1px solid #ede8ff"}}>
+              <div className="flex items-center justify-between px-5 py-3.5"
+                style={{background:"rgba(255,255,255,0.85)",backdropFilter:"blur(20px)",WebkitBackdropFilter:"blur(20px)",borderBottom:"1px solid rgba(0,0,0,0.06)"}}>
                 <div className="flex items-center gap-2.5">
                   <div className="h-8 w-8 rounded-full overflow-hidden">
                     <img src="/images/cosmoid-avatar.png" alt="코스모이드" className="h-full w-full object-cover" />
                   </div>
-                  <p className="text-sm font-semibold text-white">코스모이드</p>
+                  <p className="text-sm font-semibold text-[#1c1033]">코스모이드</p>
                 </div>
-                <span className="flex items-center gap-1.5 text-xs text-emerald-400 font-medium">
-                  <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />online
+                <span className="flex items-center gap-1.5 text-xs font-medium" style={{color:"#34c759"}}>
+                  <span className="h-2 w-2 rounded-full animate-pulse" style={{background:"#34c759"}} />online
                 </span>
               </div>
               {/* 메시지 */}
-              <div ref={chatRef} className="chat-scroll px-5 py-5 space-y-3.5 h-[411px] md:h-[484px] overflow-y-auto scroll-smooth">
+              <div ref={chatRef} className="chat-scroll px-4 py-4 space-y-3 h-[411px] md:h-[484px] overflow-y-auto scroll-smooth" style={{background:"#f2f2f7"}}>
                 <AnimatePresence>
                   {messages.slice(0, visible).map((msg) => (
                     <motion.div key={msg.id}
@@ -208,12 +208,12 @@ export default function Hero() {
                       )}
                       <div className={`max-w-[72%] rounded-2xl px-4 py-2.5 text-sm leading-relaxed ${
                         msg.from === "user"
-                          ? "rounded-br-sm text-white"
-                          : "rounded-bl-sm"
+                          ? "text-white"
+                          : ""
                       }`}
                         style={msg.from === "user"
-                          ? {background:"linear-gradient(135deg,#7c3aed,#8b5cf6)"}
-                          : {background:"#f0ebff",color:"#1c1033"}
+                          ? {background:"#7c3aed",borderRadius:"20px 20px 4px 20px"}
+                          : {background:"#ffffff",color:"#1c1033",borderRadius:"20px 20px 20px 4px",boxShadow:"0 1px 3px rgba(0,0,0,0.08)"}
                         }
                       >
                         {msg.id === typingId ? typingText : msg.text}
@@ -224,8 +224,7 @@ export default function Hero() {
                 {/* 타이핑 인디케이터 */}
                 {visible > 0 && visible < messages.length && messages[visible - 1].from === "user" && (
                   <motion.div initial={{opacity:0}} animate={{opacity:1}} className="flex justify-start">
-                    <div className="rounded-2xl rounded-bl-sm px-4 py-3 border border-white/10 flex gap-1"
-                      style={{background:"#f0ebff"}}>
+                    <div className="px-4 py-3 flex gap-1" style={{background:"#ffffff",borderRadius:"20px 20px 20px 4px",boxShadow:"0 1px 3px rgba(0,0,0,0.08)"}}>
                       {[0,1,2].map(i => (
                         <span key={i} className="h-1.5 w-1.5 rounded-full animate-bounce" style={{background:"#a78bfa",animationDelay:`${i*0.15}s`}} />
                       ))}
