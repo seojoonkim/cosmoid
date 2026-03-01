@@ -6,21 +6,22 @@ const agents = [
 
 export default function MultiAgent() {
   return (
-    <section className="py-24 px-6">
+    <section className="py-32 px-6">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-black mb-4">하나의 계정, 여러 AI 비서</h2>
-          <p className="text-slate-400 text-lg">각자 다른 메신저에서, 각자 다른 역할로</p>
+        <div className="text-center mb-20">
+          <h2 className="text-4xl md:text-6xl font-black mb-6">하나의 계정,<br />여러 AI 비서</h2>
+          <p className="text-xl text-slate-400">각자 다른 메신저에서, 각자 다른 역할로</p>
         </div>
         <div className="grid md:grid-cols-3 gap-6">
           {agents.map((a) => (
-            <div key={a.name} className={`glass rounded-2xl p-8 card-hover ${a.featured ? "border-purple-500/50 glow-purple" : ""}`}>
-              <div className="text-4xl mb-4">{a.icon}</div>
-              <h3 className="text-xl font-bold mb-1">{a.name}</h3>
-              <p className="text-slate-500 text-sm mb-4">{a.messenger} 연결</p>
+            <div key={a.name} className={`rounded-3xl p-10 card-hover ${a.featured ? "glow-purple" : "glass"}`}
+              style={a.featured ? {background:"linear-gradient(135deg,rgba(124,58,237,0.2),rgba(6,182,212,0.1))",border:"1px solid rgba(124,58,237,0.4)"} : {}}>
+              <div className="text-5xl mb-6">{a.icon}</div>
+              <h3 className="text-2xl font-black mb-2">{a.name}</h3>
+              <p className="text-slate-400 text-sm mb-6">{a.messenger} 연결</p>
               <div className="flex flex-wrap gap-2">
                 {a.skills.map((s) => (
-                  <span key={s} className="text-xs bg-white/8 rounded-full px-3 py-1 text-slate-300">{s}</span>
+                  <span key={s} className="text-xs bg-white/8 rounded-full px-3 py-1.5 text-slate-300">{s}</span>
                 ))}
               </div>
             </div>

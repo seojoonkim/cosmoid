@@ -1,6 +1,7 @@
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
 import SocialProof from "@/components/SocialProof";
+import WhyCosmoid from "@/components/WhyCosmoid";
 import HowItWorks from "@/components/HowItWorks";
 import Features from "@/components/Features";
 import MultiAgent from "@/components/MultiAgent";
@@ -14,6 +15,7 @@ export default function Home() {
       <Nav />
       <Hero />
       <SocialProof />
+      <WhyCosmoid />
       <HowItWorks />
       <Features />
       <MultiAgent />
