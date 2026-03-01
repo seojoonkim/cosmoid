@@ -71,11 +71,11 @@ export default function Hero() {
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <a href="#beta"
                 className="rounded-full px-8 py-4 text-base font-bold text-white hover:opacity-90 transition-opacity shadow-lg"
-                style={{background:"linear-gradient(135deg,#7c3aed,#8b5cf6)",boxShadow:"0 8px 24px rgba(124,58,237,0.4)"}}>
+                style={{background:"linear-gradient(135deg,#7c3aed,#8b5cf6)",boxShadow:"0 8px 24px rgba(124,58,237,0.4)",color:"white"}}>
                 무료 베타 신청 →
               </a>
               <a href="#how"
-                className="rounded-full border-2 border-white/60 px-8 py-4 text-base font-bold text-white hover:bg-white/10 transition-colors">
+                className="rounded-full border-2 px-8 py-4 text-base font-bold hover:bg-white/10 transition-colors" style={{borderColor:"rgba(255,255,255,0.8)",color:"white"}}>
                 사용법 보기
               </a>
             </div>
