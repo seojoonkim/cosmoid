@@ -1,34 +1,29 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" fill="none">
-  <!-- 궤도 뒤쪽 -->
-  <ellipse cx="22" cy="22" rx="21" ry="7.5"
-    stroke="#818cf8" stroke-width="2.5" fill="none"
-    stroke-dasharray="28 34"
-    transform="rotate(-20 22 22)"/>
+  <!-- 궤도 뒤쪽 (행성 뒤) -->
+  <ellipse cx="21" cy="21" rx="20" ry="7"
+    stroke="#818cf8" stroke-width="2.4" fill="none"
+    stroke-dasharray="26 34"
+    transform="rotate(-20 21 21)"/>
 
-  <!-- 행성 본체 + 말풍선 꼬리 (path로 통합) -->
-  <path d="
-    M22 9
-    a13 13 0 1 1 9.19 22.19
-    L35 38
-    L26 30.5
-    A13 13 0 0 1 22 35
-    a13 13 0 0 1 0-26
-    Z
-  " fill="#7c3aed"/>
+  <!-- 행성 원 -->
+  <circle cx="21" cy="21" r="13" fill="#7c3aed"/>
 
-  <!-- 궤도 앞쪽 -->
-  <ellipse cx="22" cy="22" rx="21" ry="7.5"
-    stroke="#38bdf8" stroke-width="2.5" fill="none"
-    stroke-dasharray="28 34"
+  <!-- 궤도 앞쪽 (행성 위) -->
+  <ellipse cx="21" cy="21" rx="20" ry="7"
+    stroke="#38bdf8" stroke-width="2.4" fill="none"
+    stroke-dasharray="26 34"
     stroke-dashoffset="34"
-    transform="rotate(-20 22 22)"/>
+    transform="rotate(-20 21 21)"/>
+
+  <!-- 말풍선 꼬리 (오른쪽 하단) -->
+  <path d="M30 30 L38 38 L27 33 Z" fill="#7c3aed"/>
 
   <!-- 채팅 점 3개 -->
-  <circle cx="15.5" cy="23" r="2.2" fill="white"/>
-  <circle cx="22" cy="23" r="2.2" fill="white"/>
-  <circle cx="28.5" cy="23" r="2.2" fill="white"/>
+  <circle cx="15" cy="22" r="2.2" fill="white"/>
+  <circle cx="21" cy="22" r="2.2" fill="white"/>
+  <circle cx="27" cy="22" r="2.2" fill="white"/>
 
   <!-- 위성 -->
   <circle cx="4" cy="13" r="2.8" fill="#818cf8"/>
-  <circle cx="39" cy="12" r="1.8" fill="#38bdf8"/>
+  <circle cx="38" cy="10" r="1.8" fill="#38bdf8"/>
 </svg>
