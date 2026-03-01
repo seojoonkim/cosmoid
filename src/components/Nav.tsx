@@ -1,24 +1,34 @@
+ "use client";
+import { useEffect, useState } from "react";
+
 export default function Nav() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const fn = () => setScrolled(window.scrollY > 10);
+    window.addEventListener("scroll", fn);
+    return () => window.removeEventListener("scroll", fn);
+  }, []);
+
   return (
-    <nav className="sticky top-0 z-50 border-b border-[var(--border)] bg-white/90 backdrop-blur">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a href="#" className="text-lg font-bold text-[var(--text)]">
-          Cosmoid
-        </a>
-        <div className="hidden items-center gap-8 text-xs text-[var(--muted)] md:flex md:text-sm">
-          <a href="#why" className="transition-colors hover:text-[var(--purple)]">
-            왜 Cosmoid인가
-          </a>
-          <a href="#features" className="transition-colors hover:text-[var(--purple)]">
+    <nav
+      className={`sticky top-0 z-50 bg-[var(--bg)] border-b border-[var(--border)] transition-shadow ${
+        scrolled ? "shadow-sm" : ""
+      }`}
+    >
+      <div className="max-w-6xl mx-auto px-5 md:px-8 h-14 flex items-center justify-between">
+        <img src="/logo.svg" alt="Cosmoid" className="h-7" />
+        <div className="hidden md:flex items-center gap-7 text-sm text-[var(--muted)] font-medium">
+          <a href="#features" className="hover:text-[var(--text)] transition-colors">
             기능
           </a>
-          <a href="#pricing" className="transition-colors hover:text-[var(--purple)]">
+          <a href="#pricing" className="hover:text-[var(--text)] transition-colors">
             요금제
           </a>
         </div>
         <a
           href="#beta"
-          className="rounded-md bg-[var(--purple)] px-4 py-1.5 text-xs font-semibold text-white transition-opacity hover:opacity-90 md:text-sm"
+          className="bg-[var(--purple)] text-white rounded-full px-5 py-2 text-sm font-semibold hover:opacity-90 transition-opacity"
         >
           베타 신청
         </a>

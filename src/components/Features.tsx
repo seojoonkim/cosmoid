@@ -11,12 +11,14 @@ const features = [
 
 export default function Features() {
   return (
-    <section id="features" className="border-t border-[var(--border)] py-16 md:py-24">
-      <div className="mx-auto max-w-6xl px-6">
+    <section id="features" className="bg-[var(--bg-alt)] border-t border-[var(--border)] py-16 md:py-24">
+      <div className="mx-auto max-w-6xl px-5 md:px-8">
         <p className="section-label">무엇을 해줄 수 있나</p>
+        <h2 className="mt-4 text-3xl md:text-4xl font-extrabold tracking-tight">핵심 기능 6가지</h2>
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {features.map((feature) => (
-            <article key={feature.title} className="rounded-md border border-[var(--border)] bg-[var(--surface)] p-4 md:p-8">
+          {features.map((feature, idx) => (
+            <article key={feature.title} className="card p-5 md:p-7">
+              <p className="text-xs font-semibold text-[var(--purple)]">{String(idx + 1).padStart(2, "0")}</p>
               <Image src={feature.icon} alt={feature.title} width={28} height={28} className="h-7 w-7" />
               <h3 className="mt-5 text-lg font-semibold md:text-xl">{feature.title}</h3>
               <p className="mt-2 text-sm text-[var(--muted)] md:text-base">{feature.desc}</p>

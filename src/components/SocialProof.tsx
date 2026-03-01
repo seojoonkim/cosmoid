@@ -11,17 +11,14 @@ const logos = [
 
 export default function SocialProof() {
   return (
-    <section className="border-y border-[var(--border)] py-16 md:py-24">
-      <div className="mx-auto max-w-6xl px-6">
-        <p className="section-label">사회적 신뢰</p>
-        <p className="mt-4 text-2xl font-extrabold leading-tight md:text-4xl">1,247명이 대기 중</p>
-        <div className="mt-8 flex flex-wrap items-center gap-4 md:gap-5">
+    <section className="bg-white border-y border-[var(--border)] py-10">
+      <div className="mx-auto max-w-6xl px-5 md:px-8 flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+        <p className="text-2xl md:text-3xl font-extrabold tracking-tight">1,247명이 대기 중</p>
+        <div className="flex flex-wrap items-center gap-5">
           {logos.map((logo) => (
-            <div
-              key={logo.name}
-              className="minimal-card flex h-12 w-12 items-center justify-center rounded-md p-2 md:h-14 md:w-14"
-            >
-              <Image src={logo.src} alt={logo.name} width={24} height={24} className="h-6 w-6 object-contain" />
+            <div key={logo.name} className="flex items-center gap-2.5 text-sm text-[var(--muted)]">
+              <Image src={logo.src} alt={logo.name} width={22} height={22} className="h-5 w-5 object-contain" />
+              <span className="capitalize">{logo.name}</span>
             </div>
           ))}
         </div>

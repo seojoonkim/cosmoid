@@ -25,22 +25,27 @@ const plans = [
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="border-t border-[var(--border)] py-16 md:py-24">
-      <div className="mx-auto max-w-6xl px-6">
+    <section id="pricing" className="bg-[var(--bg-alt)] border-t border-[var(--border)] py-16 md:py-24">
+      <div className="mx-auto max-w-6xl px-5 md:px-8">
         <p className="section-label">요금제</p>
+        <h2 className="mt-4 text-3xl md:text-4xl font-extrabold tracking-tight">필요한 만큼 선택하세요</h2>
         <div className="mt-10 grid gap-5 md:grid-cols-3">
           {plans.map((plan) => (
             <article
               key={plan.name}
-              className={`rounded-lg border p-4 md:p-8 ${
+              className={`card p-6 md:p-8 ${
                 plan.featured
                   ? "border-[var(--purple)] bg-[var(--purple)] text-white"
-                  : "border-[var(--border)] bg-[var(--surface)] text-[var(--text)]"
+                  : "text-[var(--text)]"
               }`}
             >
               <div className="flex items-center justify-between">
                 <h3 className="text-lg font-semibold md:text-xl">{plan.name}</h3>
-                {plan.featured && <span className="badge border-white/40 text-white">recommended</span>}
+                {plan.featured && (
+                  <span className="rounded-full bg-white/20 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">
+                    추천
+                  </span>
+                )}
               </div>
               <p className="mt-5 text-3xl font-extrabold md:text-4xl">
                 {plan.price}
@@ -54,10 +59,10 @@ export default function Pricing() {
                 ))}
               </ul>
               <button
-                className={`mt-8 w-full rounded-md border px-4 py-2.5 text-sm font-semibold ${
+                className={`mt-8 w-full rounded-full border px-4 py-2.5 text-sm font-semibold ${
                   plan.featured
                     ? "border-white/70 bg-white text-[var(--purple)]"
-                    : "border-[var(--border)] bg-[var(--purple-bg)] text-[var(--purple)]"
+                    : "border-[var(--border)] bg-[var(--purple-soft)] text-[var(--purple)]"
                 }`}
               >
                 {plan.cta}

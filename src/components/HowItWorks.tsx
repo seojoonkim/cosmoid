@@ -18,15 +18,26 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section id="how" className="border-t border-[var(--border)] bg-[var(--bg-alt)] py-16 md:py-24">
-      <div className="mx-auto max-w-6xl px-6">
+    <section id="how" className="bg-white border-t border-[var(--border)] py-16 md:py-24">
+      <div className="mx-auto max-w-6xl px-5 md:px-8">
         <p className="section-label">어떻게 작동하나</p>
-        <div className="mt-10 grid gap-5 md:grid-cols-3">
+        <h2 className="mt-4 text-3xl md:text-4xl font-extrabold tracking-tight">Notion처럼 명확한 3단계</h2>
+        <div className="mt-10 space-y-4">
           {steps.map((step) => (
-            <article key={step.number} className="rounded-md border border-[var(--border)] bg-[var(--surface)] p-4 md:p-8">
-              <p className="mono text-3xl font-bold leading-none text-[var(--text)] md:text-5xl">{step.number}</p>
-              <h3 className="mt-6 text-lg font-semibold md:text-xl">{step.title}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-[var(--muted)] md:text-base">{step.description}</p>
+            <article
+              key={step.number}
+              className="card p-5 md:p-7 grid gap-4 md:grid-cols-2 md:items-center"
+            >
+              <div>
+                <p className="text-sm font-semibold text-[var(--purple)]">{step.number}</p>
+                <h3 className="mt-2 text-2xl font-bold tracking-tight">{step.title}</h3>
+                <p className="mt-3 text-[var(--muted)]">{step.description}</p>
+              </div>
+              <div className="rounded-xl border border-[var(--border)] bg-[var(--bg-alt)] p-5 md:p-6">
+                <p className="text-sm text-[var(--muted)]">
+                  {step.number} 단계에서 필요한 정보만 보여줘 빠르게 다음 행동으로 이어집니다.
+                </p>
+              </div>
             </article>
           ))}
         </div>
