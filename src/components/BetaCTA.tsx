@@ -11,7 +11,7 @@ export default function BetaCTA() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, ease: "easeOut" }}
-          className="section-label"
+          className="section-label" style={{color:"rgba(255,255,255,0.85)",backgroundImage:"none",WebkitBackgroundClip:"unset",WebkitTextFillColor:"rgba(255,255,255,0.85)"}}
           style={{ color: "rgba(255,255,255,0.85)" }}
         >
           지금 시작해보세요
@@ -21,7 +21,7 @@ export default function BetaCTA() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="mt-4 max-w-2xl text-3xl font-extrabold leading-tight tracking-tight md:text-5xl section-title" style={{color:"white"}}
+          className="mt-4 max-w-2xl text-3xl font-extrabold leading-tight tracking-tight md:text-5xl" style={{background:"linear-gradient(120deg, #ffffff 0%, #e9d5ff 50%, #ffffff 100%)",WebkitBackgroundClip:"text",WebkitTextFillColor:"transparent",backgroundClip:"text"}}
         >
           베타 대기열에 등록하고
           <br className="hidden md:block" />
