@@ -27,7 +27,7 @@ export default function SocialProof() {
             1,247명 얼리어답터 대기 중
           </motion.h2>
         </div>
-        <div className="flex flex-wrap items-center gap-2">
+        <div className="grid grid-cols-3 gap-2.5">
           {[
             { name: "KakaoTalk", src: "/logos/kakaotalk.svg" },
             { name: "Telegram", src: "/logos/telegram.svg" },
@@ -36,9 +36,9 @@ export default function SocialProof() {
             { name: "Discord", src: "/logos/discord.svg" },
             { name: "Slack", src: "/logos/slack.svg" },
           ].map((m) => (
-            <div key={m.name} className="flex items-center gap-1.5 rounded-xl border border-[var(--border)] bg-white px-3 py-2">
-              <Image src={m.src} alt={m.name} width={20} height={20} className="h-5 w-5 object-contain" />
-              <span className="text-xs font-medium text-[var(--muted)]">{m.name}</span>
+            <div key={m.name} className="flex items-center gap-2 rounded-xl border border-[var(--border)] bg-white px-3 py-2.5">
+              <Image src={m.src} alt={m.name} width={28} height={28} className="h-7 w-7 object-contain shrink-0" />
+              <span className="text-xs font-medium text-[var(--muted)] whitespace-nowrap">{m.name}</span>
             </div>
           ))}
         </div>
