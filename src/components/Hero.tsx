@@ -28,14 +28,14 @@ export default function Hero() {
                 style={{background:"linear-gradient(135deg,#7c3aed,#8b5cf6)"}}>
                 무료 베타 신청 →
               </a>
-              <a href="#how" className="rounded-full border border-[var(--border)] px-8 py-4 text-base font-semibold text-[var(--text)] hover:bg-white transition-colors">
+              <a href="#how" className="rounded-full px-8 py-4 text-base font-semibold text-white hover:opacity-90 transition-opacity" style={{background:"var(--purple)",opacity:0.75}}>
                 사용법 보기
               </a>
             </div>
             {/* 신뢰 지표 */}
             <div className="mt-10 flex items-center gap-6 text-sm text-[var(--muted)]">
               <div className="flex items-center gap-2">
-                <span className="text-xl">🇰🇷</span>
+                <svg width="20" height="14" viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="20" fill="white"/><rect y="6" width="30" height="8" fill="white"/><circle cx="15" cy="10" r="5" fill="#C60C30"/><path d="M15 5 a5 5 0 0 1 0 10" fill="#003478"/></svg>
                 <span>한국 서비스 특화</span>
               </div>
               <div className="w-px h-4 bg-[var(--border)]" />
