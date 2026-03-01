@@ -62,7 +62,7 @@ style={{ background: "white", border: "1px solid var(--border)", color: "var(--t
                 <h3 className="text-xl font-bold">{plan.name}</h3>
 
               </div>
-              <p className="text-3xl md:text-4xl font-black mb-1">
+              <p className="text-3xl md:text-4xl font-black mb-1" style={{color:"#f59e0b"}}>
                 {plan.price}
                 <span className="text-base font-normal ml-1" style={{ opacity: 0.7 }}>{plan.term}</span>
               </p>

@@ -47,8 +47,8 @@ export default function FAQ() {
                   onClick={() => setOpenIndex(isOpen ? null : idx)}
                   aria-expanded={isOpen}
                 >
-                  <span className="font-semibold text-[var(--text)]">{faq.q}</span>
-                  <span className="text-lg text-[var(--muted)]">{isOpen ? "−" : "+"}</span>
+                  <span className="font-semibold" style={{color: isOpen ? "#f59e0b" : "var(--text)"}}>{faq.q}</span>
+                  <span className="text-lg font-bold" style={{color: isOpen ? "#f59e0b" : "var(--muted)"}}>{isOpen ? "−" : "+"}</span>
                 </button>
                 {isOpen ? <p className="mt-3 text-sm leading-relaxed text-[var(--muted)]">{faq.a}</p> : null}
               </article>

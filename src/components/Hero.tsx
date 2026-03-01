@@ -78,7 +78,7 @@ export default function Hero() {
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <a href="#cta"
                 className="rounded-full px-8 py-4 text-base font-bold text-white hover:opacity-90 transition-opacity shadow-lg"
-                style={{background:"linear-gradient(135deg,#7c3aed,#8b5cf6)",boxShadow:"0 8px 24px rgba(124,58,237,0.4)",color:"white"}}>
+                style={{background:"linear-gradient(135deg,#f59e0b,#f97316)",boxShadow:"0 8px 24px rgba(245,158,11,0.45)",color:"white"}}>
                 카톡으로 30초 신청
               </a>
               <a href="#how"

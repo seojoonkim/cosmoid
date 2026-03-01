@@ -49,7 +49,7 @@ export default function Nav() {
           <a href="#pricing" className="hover:text-[var(--text)] transition-colors">요금제</a>
         </div>
         <div className="hidden md:flex">
-          <a href="#cta" className="rounded-full px-5 py-2 text-base font-semibold text-white hover:opacity-90 transition-opacity" style={{background:"var(--purple)"}}>
+          <a href="#cta" className="rounded-full px-5 py-2 text-base font-semibold text-white hover:opacity-90 transition-opacity" style={{background:"linear-gradient(135deg,#f59e0b,#f97316)"}}>
             베타 신청
           </a>
         </div>
@@ -84,7 +84,7 @@ export default function Nav() {
               <a
                 href="#cta"
                 className="mt-2 inline-flex w-full items-center justify-center rounded-full px-5 py-2.5 text-base font-semibold text-white hover:opacity-90 transition-opacity"
-                style={{ background: "var(--purple)" }}
+                style={{ background: "linear-gradient(135deg,#f59e0b,#f97316)" }}
                 onClick={() => setIsOpen(false)}
               >
                 베타 신청

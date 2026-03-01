@@ -22,7 +22,7 @@ export default function SocialProof() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="mt-3 text-3xl md:text-4xl font-black tracking-tight whitespace-nowrap"
+            className="mt-3 text-3xl md:text-4xl font-black tracking-tight whitespace-nowrap" style={{color:"var(--text)"}}
           >
             1,247명 얼리어답터 대기 중
           </motion.h2>

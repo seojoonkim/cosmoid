@@ -59,7 +59,7 @@ export default function HowItWorks() {
               {/* 텍스트 */}
               <div className="p-5 md:p-6 flex flex-col flex-1">
                 <div className="flex items-center gap-2.5 mb-3">
-                  <span className="text-sm font-black text-[var(--purple)]">{step.number}</span>
+                  <span className="text-sm font-black" style={{color:"#f59e0b"}}>{step.number}</span>
                   <h3 className="text-lg font-extrabold tracking-tight text-[var(--text)]">{step.title}</h3>
                 </div>
                 <p className="text-sm text-[var(--muted)] leading-relaxed">{step.description}</p>
