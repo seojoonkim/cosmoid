@@ -1,19 +1,26 @@
 export default function BetaCTA() {
   return (
-    <section className="py-20 md:py-32 px-5 relative overflow-hidden" id="beta">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(124,58,237,0.25)_0%,transparent_65%)]" />
-      <div className="relative z-10 max-w-2xl mx-auto text-center">
-        <h2 className="text-3xl md:text-6xl font-black mb-4 leading-tight">
-          지금 신청하면<br /><span className="gradient-text">Pro 1개월 무료</span>
+    <section id="beta" className="border-t border-white/8 py-24 md:py-32">
+      <div className="mx-auto max-w-4xl px-6">
+        <p className="section-label">지금 시작하기</p>
+        <h2 className="mt-4 text-3xl font-extrabold leading-tight md:text-5xl">
+          대기열에 등록하고
+          <br />
+          가장 먼저 시작하세요.
         </h2>
-        <p className="text-base md:text-xl text-slate-400 mb-8 leading-relaxed">
-          3월 런칭 시 가장 먼저 초대받고,<br />Pro 플랜 한 달 무료 혜택을 드려요.
-        </p>
-        <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto mb-5">
-          <input type="email" placeholder="이메일 주소를 입력하세요" className="flex-1 bg-white/8 border border-white/12 rounded-full px-5 py-3.5 text-sm outline-none focus:border-purple-500 transition-colors" />
-          <button className="gradient-btn text-white font-bold px-7 py-3.5 rounded-full text-sm whitespace-nowrap shadow-lg">베타 신청하기</button>
-        </div>
-        <p className="text-slate-500 text-xs">이미 <span className="text-white font-semibold">1,247명</span>이 대기 중 · 신용카드 불필요</p>
+        <form className="mt-10 flex flex-col gap-3 sm:flex-row">
+          <input
+            type="email"
+            placeholder="you@company.com"
+            className="h-12 flex-1 rounded-md border border-white/15 bg-transparent px-4 text-sm text-white outline-none placeholder:text-[#666] focus:border-cyan-400"
+          />
+          <button
+            type="submit"
+            className="h-12 rounded-md bg-white px-6 text-sm font-semibold text-black transition-opacity hover:opacity-90"
+          >
+            베타 신청
+          </button>
+        </form>
       </div>
     </section>
   );

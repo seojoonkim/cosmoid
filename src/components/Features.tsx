@@ -1,31 +1,26 @@
+import Image from "next/image";
+
 const features = [
-  { icon: "/icons/cart.svg", title: "쇼핑 자동화", desc: "쿠팡, 네이버쇼핑 검색부터 주문까지 한 번에" },
-  { icon: "/icons/food.svg", title: "배달 주문", desc: "배민, 쿠팡이츠에서 '치킨 시켜줘' 한 마디로" },
-  { icon: "/icons/car.svg", title: "교통", desc: "카카오T 택시 요금 조회 및 호출" },
-  { icon: "/icons/money.svg", title: "금융 관리", desc: "오픈뱅킹으로 계좌 조회, 월별 지출 분석" },
-  { icon: "/icons/calendar.svg", title: "일정 관리", desc: "캘린더 연동, 미팅 예약, 리마인더 설정" },
-  { icon: "/icons/search.svg", title: "정보 검색", desc: "네이버 검색, 뉴스, 날씨 실시간" },
+  { icon: "/icons/cart.svg", title: "쇼핑 자동화", desc: "최저가 탐색 후 바로 주문" },
+  { icon: "/icons/food.svg", title: "배달 주문", desc: "메뉴 추천부터 결제까지" },
+  { icon: "/icons/money.svg", title: "금융 요약", desc: "지출 분석과 계좌 조회" },
+  { icon: "/icons/calendar.svg", title: "일정 관리", desc: "캘린더 등록과 리마인드" },
+  { icon: "/icons/car.svg", title: "이동 지원", desc: "교통 조회와 호출" },
+  { icon: "/icons/search.svg", title: "실시간 검색", desc: "뉴스, 정보, 트렌드 탐색" },
 ];
 
 export default function Features() {
   return (
-    <section className="py-20 md:py-32 px-5 bg-[#0d0d18]" id="features">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-12 md:mb-20">
-          <h2 className="text-3xl md:text-6xl font-black mb-4">
-            원하는 모든 걸
-            <br />
-            대신 해줘요
-          </h2>
-          <p className="text-base md:text-xl text-slate-400">한국 생활에 딱 맞춘 스킬들</p>
-        </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-5">
-          {features.map((f) => (
-            <div key={f.title} className="glass rounded-2xl p-5 md:p-8 card-hover">
-              <img src={f.icon} alt={`${f.title} icon`} className="w-8 h-8 mb-3 text-cyan-300" />
-              <h3 className="font-bold mb-2 text-sm md:text-lg">{f.title}</h3>
-              <p className="text-slate-400 text-xs md:text-sm leading-relaxed">{f.desc}</p>
-            </div>
+    <section id="features" className="border-t border-white/8 py-24 md:py-32">
+      <div className="mx-auto max-w-6xl px-6">
+        <p className="section-label">무엇을 해줄 수 있나</p>
+        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {features.map((feature) => (
+            <article key={feature.title} className="minimal-card rounded-xl p-6">
+              <Image src={feature.icon} alt={feature.title} width={28} height={28} className="h-7 w-7" />
+              <h3 className="mt-5 text-lg font-semibold">{feature.title}</h3>
+              <p className="mt-2 text-sm text-[#888]">{feature.desc}</p>
+            </article>
           ))}
         </div>
       </div>

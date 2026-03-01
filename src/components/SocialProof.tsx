@@ -1,24 +1,28 @@
-const messengers = [
-  { name: "카카오톡", logo: "/logos/kakaotalk.svg" },
-  { name: "텔레그램", logo: "/logos/telegram.svg" },
-  { name: "왓츠앱", logo: "/logos/whatsapp.svg" },
-  { name: "디스코드", logo: "/logos/discord.svg" },
-  { name: "슬랙", logo: "/logos/slack.svg" },
+import Image from "next/image";
+
+const logos = [
+  { name: "kakaotalk", src: "/logos/kakaotalk.svg" },
+  { name: "telegram", src: "/logos/telegram.svg" },
+  { name: "whatsapp", src: "/logos/whatsapp.svg" },
+  { name: "discord", src: "/logos/discord.svg" },
+  { name: "slack", src: "/logos/slack.svg" },
+  { name: "google", src: "/logos/google.svg" },
 ];
 
 export default function SocialProof() {
   return (
-    <section className="py-12 border-y border-white/8">
-      <div className="max-w-6xl mx-auto px-5 text-center">
-        <p className="text-slate-400 mb-6 text-sm">
-          이미 <span className="text-white font-bold text-base">1,247명</span>이 기다리고 있어요
-        </p>
-        <div className="flex flex-wrap justify-center gap-5">
-          {messengers.map((m) => (
-            <span key={m.name} className="text-slate-400 text-sm font-medium inline-flex items-center gap-2">
-              <img src={m.logo} alt={`${m.name} logo`} className="w-5 h-5" />
-              {m.name}
-            </span>
+    <section className="border-y border-white/8 py-16 md:py-20">
+      <div className="mx-auto max-w-6xl px-6">
+        <p className="section-label">사회적 신뢰</p>
+        <p className="mt-4 text-4xl font-extrabold leading-tight md:text-6xl">1,247명이 대기 중</p>
+        <div className="mt-8 flex flex-wrap items-center gap-4 md:gap-5">
+          {logos.map((logo) => (
+            <div
+              key={logo.name}
+              className="minimal-card flex h-12 w-12 items-center justify-center rounded-md p-2 md:h-14 md:w-14"
+            >
+              <Image src={logo.src} alt={logo.name} width={24} height={24} className="h-6 w-6 object-contain" />
+            </div>
           ))}
         </div>
       </div>

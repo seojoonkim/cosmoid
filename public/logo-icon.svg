@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <!-- 아이콘만 (파비콘/앱아이콘용) -->
+  <circle cx="16" cy="16" r="13" stroke="url(#g)" stroke-width="2.5" stroke-dasharray="64 18" stroke-linecap="round"/>
+  <circle cx="16" cy="16" r="4" fill="url(#g)"/>
+  <defs>
+    <linearGradient id="g" x1="3" y1="3" x2="29" y2="29" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+</svg>

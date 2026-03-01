@@ -1,18 +1,23 @@
 export default function Footer() {
   return (
-    <footer className="border-t border-white/8 py-12 px-6">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-        <div>
-          <div className="text-xl font-black gradient-text mb-1">Cosmoid</div>
-          <p className="text-slate-500 text-sm">AI 비서를 모두에게</p>
+    <footer className="border-t border-white/8 py-10">
+      <div className="mx-auto flex max-w-6xl flex-col gap-5 px-6 text-sm text-[#888] md:flex-row md:items-center md:justify-between">
+        <div className="text-white">
+          <p className="text-lg font-bold">Cosmoid</p>
+          <p className="mt-1 text-xs text-[#888]">AI assistant for real life</p>
         </div>
-        <div className="flex flex-wrap gap-6 text-sm text-slate-400">
-          <a href="#" className="hover:text-white transition-colors">서비스 소개</a>
-          <a href="#" className="hover:text-white transition-colors">요금제</a>
-          <a href="#" className="hover:text-white transition-colors">개인정보처리방침</a>
-          <a href="#" className="hover:text-white transition-colors">이용약관</a>
+        <div className="flex flex-wrap items-center gap-5">
+          <a href="#features" className="hover:text-white">
+            기능
+          </a>
+          <a href="#pricing" className="hover:text-white">
+            요금제
+          </a>
+          <a href="#beta" className="hover:text-white">
+            베타 신청
+          </a>
         </div>
-        <p className="text-slate-600 text-sm">© 2026 Cosmoid. All rights reserved.</p>
+        <p className="text-xs">© 2026 Cosmoid. All rights reserved.</p>
       </div>
     </footer>
   );

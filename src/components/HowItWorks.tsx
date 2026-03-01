@@ -1,40 +1,33 @@
 const steps = [
   {
-    n: "01",
-    title: "소셜 로그인",
-    desc: "카카오, 구글, 네이버로 30초 안에 가입. 지갑도 자동으로 생성돼요.",
-    icon: "/icons/key.svg",
+    number: "01",
+    title: "연결",
+    description: "카카오톡을 연결하고 기본 설정을 완료합니다.",
   },
   {
-    n: "02",
-    title: "에이전트 설정",
-    desc: "이름과 성격을 정하고, 연결할 메신저와 원하는 스킬을 선택하세요.",
-    icon: "/icons/settings.svg",
+    number: "02",
+    title: "요청",
+    description: "원하는 작업을 평소 대화하듯 메시지로 보냅니다.",
   },
   {
-    n: "03",
-    title: "바로 사용",
-    desc: "QR 코드 스캔 한 번으로 카카오톡에서 AI 비서와 대화를 시작해요.",
-    icon: "/icons/chat.svg",
+    number: "03",
+    title: "실행",
+    description: "Cosmoid가 검색, 결제, 예약까지 처리하고 결과를 회신합니다.",
   },
 ];
 
 export default function HowItWorks() {
   return (
-    <section className="py-20 md:py-32 px-5" id="how">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-12 md:mb-20">
-          <h2 className="text-3xl md:text-6xl font-black mb-4">3분이면 충분해요</h2>
-          <p className="text-base md:text-xl text-slate-400">복잡한 설정 없이, 지금 바로 시작할 수 있어요.</p>
-        </div>
-        <div className="grid md:grid-cols-3 gap-4 md:gap-6">
-          {steps.map((s) => (
-            <div key={s.n} className="glass rounded-3xl p-6 md:p-10 card-hover">
-              <img src={s.icon} alt={`${s.title} icon`} className="w-8 h-8 mb-4 text-cyan-300" />
-              <div className="gradient-text text-5xl font-black mb-3 leading-none">{s.n}</div>
-              <h3 className="text-base font-bold mb-2">{s.title}</h3>
-              <p className="text-slate-400 text-sm leading-relaxed">{s.desc}</p>
-            </div>
+    <section id="how" className="border-t border-white/8 py-24 md:py-32">
+      <div className="mx-auto max-w-6xl px-6">
+        <p className="section-label">어떻게 작동하나</p>
+        <div className="mt-10 grid gap-5 md:grid-cols-3">
+          {steps.map((step) => (
+            <article key={step.number} className="minimal-card rounded-xl p-6 md:p-7">
+              <p className="mono text-4xl font-bold leading-none text-white md:text-5xl">{step.number}</p>
+              <h3 className="mt-6 text-xl font-semibold">{step.title}</h3>
+              <p className="mt-3 text-sm leading-relaxed text-[#888]">{step.description}</p>
+            </article>
           ))}
         </div>
       </div>
