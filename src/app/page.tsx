@@ -5,6 +5,7 @@ import WhyCosmoid from "@/components/WhyCosmoid";
 import HowItWorks from "@/components/HowItWorks";
 import Features from "@/components/Features";
 import MultiAgent from "@/components/MultiAgent";
+import Comparison from '@/components/Comparison';
 import FAQ from "@/components/FAQ";
 import Pricing from "@/components/Pricing";
 import BetaCTA from "@/components/BetaCTA";
