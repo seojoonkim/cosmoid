@@ -113,7 +113,7 @@ export default function Hero() {
                     style={{background:"linear-gradient(135deg,#7c3aed,#06b6d4)"}}>
                     <span className="text-white text-xs font-bold">C</span>
                   </div>
-                  <p className="text-sm font-semibold text-white">커스모이드</p>
+                  <p className="text-sm font-semibold text-white">코스모이드</p>
                 </div>
                 <span className="flex items-center gap-1.5 text-xs text-emerald-400 font-medium">
                   <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />online
