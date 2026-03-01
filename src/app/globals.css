@@ -110,8 +110,12 @@ a {
 }
 
 .section-title {
-  color: #1a1a2e;
-  -webkit-text-fill-color: #1a1a2e;
+  background: linear-gradient(120deg, #1a1a2e 0%, #3b0764 45%, #1a1a2e 100%);
+  background-size: 200% 100%;
+  animation: title-gradient-shift 8s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 @keyframes cursor-blink {
