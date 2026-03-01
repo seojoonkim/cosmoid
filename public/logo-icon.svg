@@ -6,13 +6,18 @@
       <stop offset="100%" stop-color="#22d3ee"/>
     </linearGradient>
   </defs>
-  <!-- 행성 원 -->
-  <circle cx="18" cy="18" r="7.5" stroke="url(#g)" stroke-width="3" fill="none"/>
-  <!-- 궤도 링 (기울어진 타원) -->
-  <ellipse cx="18" cy="18" rx="15" ry="5.5"
-    stroke="url(#g)" stroke-width="2.5" fill="none"
-    transform="rotate(-22 18 18)"/>
-  <!-- 작은 위성 점들 -->
-  <circle cx="5.5" cy="13" r="1.8" fill="url(#g)"/>
-  <circle cx="30" cy="9.5" r="1.2" fill="url(#g)"/>
+  <!-- 행성 원 + 말풍선 꼬리 -->
+  <path d="M18 10 A8 8 0 1 1 18 10.001
+           M22 24 L25 29 L18.5 25.5"
+        stroke="url(#g)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- 행성 원 단독 -->
+  <circle cx="18" cy="18" r="8" stroke="url(#g)" stroke-width="2.8" fill="none"/>
+  <!-- 말풍선 꼬리 -->
+  <path d="M23 24 L27 30 L18 25.5" stroke="url(#g)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- 궤도 링 -->
+  <ellipse cx="18" cy="17" rx="14.5" ry="5"
+    stroke="url(#g)" stroke-width="2.2" fill="none"
+    transform="rotate(-20 18 17)"/>
+  <!-- 위성 점 -->
+  <circle cx="5.5" cy="12.5" r="1.6" fill="url(#g)"/>
 </svg>
