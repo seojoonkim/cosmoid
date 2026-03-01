@@ -179,12 +179,12 @@ export default function Hero() {
             <div className="rounded-3xl overflow-hidden" style={{background:"#f2f2f7",boxShadow:"0 24px 60px rgba(0,0,0,0.45), 0 0 0 1px rgba(255,255,255,0.12)"}}>
               {/* 헤더 */}
               <div className="flex items-center justify-between px-5 py-3.5"
-                style={{background:"rgba(255,255,255,0.85)",backdropFilter:"blur(20px)",WebkitBackdropFilter:"blur(20px)",borderBottom:"1px solid rgba(0,0,0,0.06)"}}>
+                style={{background:"#ffffff",borderBottom:"1px solid #e9e0ff"}}>
                 <div className="flex items-center gap-2.5">
                   <div className="h-8 w-8 rounded-full overflow-hidden">
                     <img src="/images/cosmoid-avatar.png" alt="코스모이드" className="h-full w-full object-cover" />
                   </div>
-                  <p className="text-sm font-semibold text-[#1c1033]">코스모이드</p>
+                  <p className="text-sm font-bold" style={{color:"#1c1033"}}>코스모이드</p>
                 </div>
                 <span className="flex items-center gap-1.5 text-xs font-medium" style={{color:"#34c759"}}>
                   <span className="h-2 w-2 rounded-full animate-pulse" style={{background:"#34c759"}} />online
