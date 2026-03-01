@@ -53,7 +53,7 @@ export default function Features() {
           transition={{ duration: 0.5, ease: "easeOut" }}
           className="section-label"
         >
-          무엇을 해줄 수 있나
+          어떤 일을 해드릴 수 있나요
         </motion.p>
         <motion.h2
           initial={{ opacity: 0, y: 24 }}

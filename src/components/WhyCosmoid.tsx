@@ -13,7 +13,7 @@ export default function WhyCosmoid() {
           transition={{ duration: 0.5, ease: "easeOut" }}
           className="section-label"
         >
-          왜 Cosmoid인가
+          왜 Cosmoid인가요
         </motion.p>
         <motion.h2
           initial={{ opacity: 0, y: 24 }}

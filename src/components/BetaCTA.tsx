@@ -14,7 +14,7 @@ export default function BetaCTA() {
           className="section-label"
           style={{ color: "rgba(255,255,255,0.85)" }}
         >
-          지금 시작하기
+          지금 시작해보세요
         </motion.p>
         <motion.h2
           initial={{ opacity: 0, y: 24 }}

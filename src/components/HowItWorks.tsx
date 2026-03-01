@@ -34,7 +34,7 @@ export default function HowItWorks() {
           transition={{ duration: 0.5, ease: "easeOut" }}
           className="section-label"
         >
-          어떻게 쓰나요
+          어떻게 사용하나요
         </motion.p>
         <motion.h2
           initial={{ opacity: 0, y: 24 }}
@@ -51,8 +51,8 @@ export default function HowItWorks() {
               <p className="text-sm font-bold text-[var(--purple)] mb-3">{step.number}</p>
               <h3 className="text-xl font-extrabold tracking-tight text-[var(--text)] mb-3">{step.title}</h3>
               <p className="text-base text-[var(--muted)] leading-relaxed mb-5">{step.description}</p>
-              <div className="rounded-xl overflow-hidden border border-[var(--border)] bg-[var(--bg-alt)] mt-auto">
-                <img src={step.image} alt={step.title} loading="lazy" className="w-full object-cover h-36 md:h-44" />
+              <div className="rounded-xl overflow-hidden border border-[var(--border)] bg-[var(--bg-alt)] mt-auto h-40 md:h-48">
+                <img src={step.image} alt={step.title} loading="lazy" className="w-full h-full object-cover object-center" />
               </div>
             </article>
           ))}
