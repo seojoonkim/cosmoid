@@ -189,7 +189,7 @@ export default function Hero() {
                 </span>
               </div>
               {/* 메시지 */}
-              <div ref={chatRef} className="px-5 py-5 space-y-3.5 h-[340px] md:h-[400px] overflow-y-auto scroll-smooth">
+              <div ref={chatRef} className="chat-scroll px-5 py-5 space-y-3.5 h-[374px] md:h-[440px] overflow-y-auto scroll-smooth">
                 <AnimatePresence>
                   {messages.slice(0, visible).map((msg) => (
                     <motion.div key={msg.id}
