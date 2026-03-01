@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 
 const rows = [
-  { label: "시작 시간", cosmoid: "3분", saas: "30분~2시간", self: "수일~수주" },
+  { label: "시작 시간", cosmoid: "1분", saas: "30분~2시간", self: "수일~수주" },
   { label: "설치/설정", cosmoid: "없음 (카톡만)", saas: "앱 설치 + 가입", self: "서버, CLI, 코드 설정" },
   { label: "기술 지식", cosmoid: "불필요", saas: "최소", self: "개발자 수준 필수" },
   { label: "한국 서비스 연동", cosmoid: "기본 탑재", saas: "없거나 제한적", self: "직접 구현 필요" },
@@ -27,7 +27,7 @@ export default function Comparison() {
         </h2>
         <p className="mt-4 text-base text-[var(--muted)] max-w-2xl">
           OpenClaw를 직접 설치하거나, 해외 SaaS를 쓰는 것과 무엇이 다른지 비교해보세요.
-          Cosmoid는 <strong>누구나 3분 안에</strong> AI 에이전트를 최적의 환경으로 운영할 수 있도록 설계됐어요.
+          Cosmoid는 <strong>누구나 1분 안에</strong> AI 에이전트를 최적의 환경으로 운영할 수 있도록 설계됐어요.
         </p>
 
         <div className="mt-10 overflow-x-auto rounded-2xl border border-[var(--border)] shadow-[0_4px_24px_rgba(0,0,0,0.08)]">

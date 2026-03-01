@@ -148,7 +148,7 @@ export default function Hero() {
             </span>
             <TypingH1 />
             <p className="mt-6 max-w-lg text-base text-white/70 leading-relaxed">
-              앱 개발자 아니어도 괜찮아요. 카카오톡 친구 추가 하나로 — 나만의 AI 에이전트가 3분이면 준비돼요.
+              앱 개발자 아니어도 괜찮아요. 카카오톡 친구 추가 하나로 — 나만의 AI 에이전트가 1분이면 준비돼요.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <a href="#cta"
@@ -163,7 +163,7 @@ export default function Hero() {
             </div>
             <div className="mt-8 flex flex-wrap gap-2.5">
               {[
-                { icon: "⚡", text: "3분 설정 완료" },
+                { icon: "⚡", text: "1분 설정 완료" },
                 { icon: "👤", text: "비개발자도 OK" },
                 { icon: "🔒", text: "대화 내용 미저장" },
               ].map((b) => (
