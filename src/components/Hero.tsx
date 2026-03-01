@@ -56,7 +56,7 @@ export default function Hero() {
                 style={{background:"linear-gradient(135deg,#7c3aed,#8b5cf6)"}}>
                 무료 베타 신청 →
               </a>
-              <a href="#how" className="rounded-full px-8 py-4 text-base font-semibold text-white hover:opacity-90 transition-opacity" style={{background:"var(--purple)",opacity:0.75}}>
+              <a href="#how" className="rounded-full px-8 py-4 text-base font-semibold text-white hover:opacity-90 transition-opacity" style={{background:"rgba(124,58,237,0.65)"}}>
                 사용법 보기
               </a>
             </div>
