@@ -46,11 +46,11 @@ export default function MultiAgent() {
         >
           역할별로 나뉜 AI 팀
         </motion.h2>
-        <div className="mt-10 grid gap-5 md:grid-cols-3">
+        <div className="mt-10 grid gap-5 md:grid-cols-3 md:items-stretch">
           {agents.map((agent) => (
             <article
               key={agent.title}
-  className="rounded-2xl border p-6 md:p-8"
+  className="rounded-2xl border p-6 md:p-8 flex flex-col"
               style={{ background: "var(--surface)", borderColor: "var(--border)", color: "var(--text)", boxShadow: "0 4px 24px rgba(0,0,0,0.11), 0 1px 4px rgba(0,0,0,0.07)" }}
             >
 <h3 className="text-xl font-bold">{agent.title}</h3>
