@@ -66,7 +66,7 @@ export default function Hero() {
               AI 에이전트
             </h1>
             <p className="mt-6 max-w-lg text-base text-white/70 leading-relaxed">
-              카카오톡에서 대화 하나로 쇼핑 주문, 배달, 일정 관리, 금융 조회까지.<br/>설치도, 학습도 필요 없어요.
+              카카오톡에서 대화 하나로 쇼핑 주문, 배달, 일정 관리, 금융 조회까지. 설치도, 학습도 필요 없어요.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <a href="#beta"
@@ -75,7 +75,7 @@ export default function Hero() {
                 무료 베타 신청 →
               </a>
               <a href="#how"
-                className="rounded-full border border-white/30 px-8 py-4 text-base font-semibold text-white hover:bg-white/10 transition-colors">
+                className="rounded-full border-2 border-white/60 px-8 py-4 text-base font-bold text-white hover:bg-white/10 transition-colors">
                 사용법 보기
               </a>
             </div>
@@ -106,14 +106,14 @@ export default function Hero() {
                     style={{background:"linear-gradient(135deg,#7c3aed,#06b6d4)"}}>
                     <span className="text-white text-xs font-bold">C</span>
                   </div>
-                  <p className="text-sm font-semibold text-white">코즈모</p>
+                  <p className="text-sm font-semibold text-white">커스모이드</p>
                 </div>
                 <span className="flex items-center gap-1.5 text-xs text-emerald-400 font-medium">
                   <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />online
                 </span>
               </div>
               {/* 메시지 */}
-              <div className="px-5 py-5 space-y-3.5 min-h-[340px] md:min-h-[400px]">
+              <div className="px-5 py-5 space-y-3.5 h-[340px] md:h-[400px] overflow-y-auto">
                 <AnimatePresence>
                   {messages.slice(0, visible).map((msg) => (
                     <motion.div key={msg.id}
