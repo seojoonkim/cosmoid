@@ -21,7 +21,7 @@ function TypingH1() {
   useEffect(() => {
     const id = setInterval(() => {
       setCaseIdx(c => (c + 1) % H1_CASES.length);
-    }, 5000);
+    }, 7000);
     return () => clearInterval(id);
   }, []);
 
@@ -36,7 +36,7 @@ function TypingH1() {
             initial={{ y: "60%", opacity: 0 }}
             animate={{ y: "0%", opacity: 1 }}
             exit={{ y: "-60%", opacity: 0 }}
-            transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
           >
             <span style={{display:"block", color:"white"}}>{H1_CASES[caseIdx][0]}</span>
             <span style={{display:"block", color:"white"}}>{H1_CASES[caseIdx][1]}</span>
