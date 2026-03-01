@@ -68,8 +68,8 @@ export default function Features() {
           {features.map((feature, idx) => (
             <article key={feature.title} className="card overflow-hidden flex flex-col">
               {/* 이미지 영역 */}
-              <div className="border-b border-[var(--border)] h-44 md:h-48 overflow-hidden bg-white">
-                <img src={feature.image} alt={feature.title} loading="lazy" className="w-full h-full object-cover object-center scale-110" />
+              <div className="border-b border-[var(--border)] h-48 md:h-52 overflow-hidden bg-white">
+                <img src={feature.image} alt={feature.title} loading="lazy" className="w-full h-full object-cover object-center scale-[1.6]" />
               </div>
               {/* 텍스트 영역 */}
               <div className="p-5 md:p-6 flex flex-col flex-1">
