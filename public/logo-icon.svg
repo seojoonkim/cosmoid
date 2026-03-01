@@ -1,17 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" fill="none">
   <defs>
     <linearGradient id="g" x1="2" y1="2" x2="34" y2="34" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#7c3aed"/>
-      <stop offset="60%" stop-color="#4f46e5"/>
-      <stop offset="100%" stop-color="#06b6d4"/>
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
     </linearGradient>
   </defs>
-  <!-- 육각형 외곽 -->
-  <path d="M18 2.5 L31.5 10 L31.5 26 L18 33.5 L4.5 26 L4.5 10 Z"
-        stroke="url(#g)" stroke-width="2.2" stroke-linejoin="round" fill="none"/>
-  <!-- 각진 C자 -->
-  <path d="M25 12.5 L13.5 12.5 L9.5 18 L13.5 23.5 L25 23.5"
-        stroke="url(#g)" stroke-width="3.2" stroke-linecap="square" stroke-linejoin="miter" fill="none"/>
-  <!-- 포인트 사각 도트 -->
-  <rect x="22.5" y="16.5" width="3" height="3" rx="0.5" fill="url(#g)"/>
+  <!-- 부드러운 육각형 -->
+  <path d="M18 3 L30 10 Q33 11.5 33 14 L33 22 Q33 24.5 30 26 L18 33 L6 26 Q3 24.5 3 22 L3 14 Q3 11.5 6 10 Z"
+        fill="url(#g)" opacity="0.13"/>
+  <path d="M18 3 L30 10 Q33 11.5 33 14 L33 22 Q33 24.5 30 26 L18 33 L6 26 Q3 24.5 3 22 L3 14 Q3 11.5 6 10 Z"
+        stroke="url(#g)" stroke-width="2" fill="none"/>
+  <!-- 둥근 C 모양 -->
+  <path d="M23.5 13 A7 7 0 1 0 23.5 23"
+        stroke="url(#g)" stroke-width="3.5" stroke-linecap="round" fill="none"/>
 </svg>
