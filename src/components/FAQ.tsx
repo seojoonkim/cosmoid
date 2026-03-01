@@ -82,7 +82,7 @@ export default function FAQ() {
                   onClick={() => setOpenIndex(isOpen ? null : idx)}
                   aria-expanded={isOpen}
                 >
-                  <span className="font-semibold text-base transition-colors duration-200"
+                  <span className="font-semibold text-[17px] transition-colors duration-200"
                     style={{ color: isOpen ? "#f59e0b" : "var(--text)" }}>
                     {faq.q}
                   </span>
@@ -105,7 +105,7 @@ export default function FAQ() {
                       transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
                       style={{ overflow: "hidden" }}
                     >
-                      <p className="pb-5 text-sm leading-relaxed text-[var(--muted)]">{faq.a}</p>
+                      <p className="pb-5 text-[15px] leading-relaxed text-[var(--muted)]">{faq.a}</p>
                     </motion.div>
                   )}
                 </AnimatePresence>

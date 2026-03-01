@@ -180,7 +180,7 @@ export default function Hero() {
                 style={{background:"rgba(255,255,255,0.06)"}}>
                 <div className="flex items-center gap-2.5">
                   <div className="h-8 w-8 rounded-full overflow-hidden">
-                    <img src="/images/cosmoid-avatar.png" alt="코스모이드" className="h-full w-full object-cover" />
+                    <img src="/images/cosmoid-logo-v2.png" alt="코스모이드" className="h-full w-full object-cover" />
                   </div>
                   <p className="text-sm font-semibold text-white">코스모이드</p>
                 </div>
@@ -201,7 +201,7 @@ export default function Hero() {
                     >
                       {msg.from === "ai" && (
                         <div className="h-8 w-8 rounded-full overflow-hidden shrink-0 mb-0.5">
-                          <img src="/images/cosmoid-avatar.png" alt="코스모이드" className="h-full w-full object-cover" />
+                          <img src="/images/cosmoid-logo-v2.png" alt="코스모이드" className="h-full w-full object-cover" />
                         </div>
                       )}
                       <div className={`max-w-[72%] rounded-2xl px-4 py-2.5 text-sm leading-relaxed ${

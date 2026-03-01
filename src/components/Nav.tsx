@@ -22,7 +22,7 @@ export default function Nav() {
           transition={{ type: "spring", stiffness: 400, damping: 20 }}
         >
           <motion.img
-            src="/logo-icon.svg" alt="" className="h-9 w-9"
+            src="/images/cosmoid-logo-v2.png" alt="cosmoid" className="h-9 w-9 object-contain"
             animate={{ rotate: [0, 5, -5, 0] }}
             transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", repeatDelay: 3 }}
           />
