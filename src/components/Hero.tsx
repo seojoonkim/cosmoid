@@ -84,7 +84,7 @@ export default function Hero() {
     setTypingText("");
     let i = 0;
     const full = newMsg.text;
-    const speed = newMsg.from === "user" ? 80 : 120;
+    const speed = 45;
 
     const tid = setInterval(() => {
       i++;
