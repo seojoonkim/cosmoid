@@ -50,34 +50,22 @@ export default function MultiAgent() {
           {agents.map((agent) => (
             <article
               key={agent.title}
-              className="rounded-2xl border p-6 md:p-8"
-              style={agent.featured
-                ? { background: "var(--purple)", borderColor: "var(--purple)", color: "white" }
-                : { background: "var(--surface)", borderColor: "var(--border)", color: "var(--text)" }
-              }
+  className="rounded-2xl border p-6 md:p-8"
+              style={{ background: "var(--surface)", borderColor: "var(--border)", color: "var(--text)" }}
             >
-              {agent.featured && (
-                <span className="mb-4 inline-block rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide"
-                  style={{ background: "rgba(255,255,255,0.2)", color: "white" }}>
-                  추천
-                </span>
-              )}
-              <h3 className="text-xl font-bold">{agent.title}</h3>
-              <p className="mt-2 text-base" style={{ color: agent.featured ? "rgba(255,255,255,0.85)" : "var(--muted)" }}>
+<h3 className="text-xl font-bold">{agent.title}</h3>
+              <p className="mt-2 text-base" style={{ color: "var(--muted)" }}>
                 {agent.desc}
               </p>
               <ul className="mt-5 space-y-2">
                 {agent.bullets.map((b) => (
-                  <li key={b} className="flex items-start gap-2 text-sm leading-relaxed"
-                    style={{ color: agent.featured ? "rgba(255,255,255,0.9)" : "var(--muted)" }}>
-                    <span className="mt-1.5 h-1.5 w-1.5 rounded-full shrink-0"
-                      style={{ background: agent.featured ? "rgba(255,255,255,0.7)" : "var(--purple)" }} />
+<li key={b} className="flex items-start gap-2 text-sm leading-relaxed" style={{ color: "var(--muted)" }}>
+                    <span className="mt-1.5 h-1.5 w-1.5 rounded-full shrink-0" style={{ background: "var(--purple)" }} />
                     {b}
                   </li>
                 ))}
               </ul>
-              <p className="mt-6 text-xs uppercase tracking-[0.08em]"
-                style={{ color: agent.featured ? "rgba(255,255,255,0.6)" : "var(--muted)" }}>
+<p className="mt-6 text-xs uppercase tracking-[0.08em]" style={{ color: "var(--muted)" }}>
                 {agent.stack}
               </p>
             </article>

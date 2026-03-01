@@ -42,7 +42,7 @@ function FeaturePreview({ title }: { title: string }) {
         <div className="text-[11px] text-[var(--muted)] mb-2">쿠팡 검색 결과</div>
         <div className="grid grid-cols-2 gap-2 h-[calc(100%-20px)]">
           <div className="rounded-xl bg-white shadow-sm p-2 flex flex-col">
-            <div className="h-14 rounded-md bg-gray-200" />
+  <div className="h-14 rounded-md bg-purple-50 flex items-center justify-center text-3xl">🔌</div>
             <p className="mt-2 text-xs font-semibold text-[var(--text)]">애플 충전기</p>
             <p className="mt-0.5 text-[11px] text-[var(--muted)]">★4.8</p>
             <div className="mt-auto flex items-center gap-1">
@@ -51,7 +51,7 @@ function FeaturePreview({ title }: { title: string }) {
             </div>
           </div>
           <div className="rounded-xl bg-white shadow-sm p-2 flex flex-col">
-            <div className="h-14 rounded-md bg-gray-200" />
+  <div className="h-14 rounded-md bg-purple-50 flex items-center justify-center text-3xl">🎧</div>
             <p className="mt-2 text-xs font-semibold text-[var(--text)]">무선이어폰</p>
             <p className="mt-0.5 text-[11px] text-[var(--muted)]">★4.6</p>
             <p className="mt-auto text-xs font-bold text-[var(--text)]">₩32,000</p>
@@ -175,21 +175,21 @@ function FeaturePreview({ title }: { title: string }) {
     <div className="h-full bg-[var(--bg-alt)] p-4">
       <div className="h-full flex flex-col gap-2">
         <div className="rounded-xl bg-white shadow-sm p-2 flex items-center gap-2">
-          <div className="h-8 w-8 rounded-md bg-gray-200 shrink-0" />
+<div className="h-8 w-8 rounded-md bg-blue-50 shrink-0 flex items-center justify-center text-base">🌤</div>
           <div className="min-w-0 flex-1">
             <p className="text-xs leading-tight text-[var(--text)] line-clamp-2">서울 날씨 오늘 15도 맑음</p>
             <p className="text-[11px] text-[var(--muted)]">방금 전</p>
           </div>
         </div>
         <div className="rounded-xl bg-white shadow-sm p-2 flex items-center gap-2">
-          <div className="h-8 w-8 rounded-md bg-gray-200 shrink-0" />
+<div className="h-8 w-8 rounded-md bg-green-50 shrink-0 flex items-center justify-center text-base">📈</div>
           <div className="min-w-0 flex-1">
             <p className="text-xs leading-tight text-[var(--text)] line-clamp-2">코스피 2,650 상승 마감</p>
             <p className="text-[11px] text-[var(--muted)]">3분 전</p>
           </div>
         </div>
         <div className="rounded-xl bg-white shadow-sm p-2 flex items-center gap-2">
-          <div className="h-8 w-8 rounded-md bg-gray-200 shrink-0" />
+<div className="h-8 w-8 rounded-md bg-amber-50 shrink-0 flex items-center justify-center text-base">📱</div>
           <div className="min-w-0 flex-1">
             <p className="text-xs leading-tight text-[var(--text)] line-clamp-2">삼성 신제품 발표</p>
             <p className="text-[11px] text-[var(--muted)]">10분 전</p>

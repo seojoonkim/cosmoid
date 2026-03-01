@@ -56,18 +56,11 @@ export default function Pricing() {
             <article
               key={plan.name}
               className="rounded-2xl p-6 md:p-8 flex flex-col"
-              style={plan.featured
-                ? { background: "var(--purple)", border: "2px solid var(--purple)", color: "white" }
-                : { background: "white", border: "1px solid var(--border)", color: "var(--text)" }
-              }
+style={{ background: "white", border: "1px solid var(--border)", color: "var(--text)" }}
             >
               <div className="flex items-center justify-between mb-5">
                 <h3 className="text-xl font-bold">{plan.name}</h3>
-                {plan.featured && (
-                  <span className="rounded-full bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wide text-white">
-                    추천
-                  </span>
-                )}
+
               </div>
               <p className="text-3xl md:text-4xl font-black mb-1">
                 {plan.price}
@@ -77,7 +70,7 @@ export default function Pricing() {
                 {plan.features.map((feature) => (
                   <li key={feature} className="flex items-start gap-2 text-base">
                     <span className="mt-1.5 h-1.5 w-1.5 rounded-full shrink-0"
-                      style={{ background: plan.featured ? "rgba(255,255,255,0.7)" : "var(--purple)" }} />
+                style={{ background: "var(--purple)" }} />
                     <span style={{ opacity: plan.featured ? 0.9 : 0.7 }}>{feature}</span>
                   </li>
                 ))}
