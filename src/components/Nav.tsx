@@ -17,16 +17,30 @@ export default function Nav() {
       <div className="max-w-6xl mx-auto px-5 md:px-8 h-16 flex items-center justify-between">
         <motion.a
           href="/"
-          className="flex items-center gap-2"
+          className="flex items-center gap-1.5"
           whileHover={{ scale: 1.04 }}
           transition={{ type: "spring", stiffness: 400, damping: 20 }}
         >
           <motion.img
-            src="/logo-icon.svg" alt="" className="h-8 w-8"
+            src="/logo-icon.svg" alt="" className="h-9 w-9"
             animate={{ rotate: [0, 5, -5, 0] }}
             transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", repeatDelay: 3 }}
           />
-          <span style={{fontWeight:800,fontSize:"1.3rem",letterSpacing:"-0.02em",color:"#1c1033",fontFamily:"var(--font-nunito, 'Nunito', system-ui)"}}>cosmoid</span>
+          <motion.span
+            style={{
+              fontWeight: 800,
+              fontSize: "1.45rem",
+              letterSpacing: "-0.03em",
+              fontFamily: "var(--font-nunito, 'Nunito', system-ui)",
+              background: "linear-gradient(90deg, #7c3aed 0%, #6366f1 40%, #22d3ee 100%)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              backgroundClip: "text",
+              backgroundSize: "200% 100%",
+            }}
+            animate={{ backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"] }}
+            transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+          >cosmoid</motion.span>
         </motion.a>
         <div className="hidden md:flex items-center gap-7 text-base text-[var(--muted)] font-medium">
           <a href="#why" className="hover:text-[var(--text)] transition-colors">소개</a>

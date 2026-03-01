@@ -21,7 +21,7 @@ export default function BetaCTA() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="mt-4 max-w-2xl text-3xl font-extrabold leading-tight tracking-tight md:text-5xl"
+          className="mt-4 max-w-2xl text-3xl font-extrabold leading-tight tracking-tight md:text-5xl" style={{color:"white"}}
         >
           베타 대기열에 등록하고
           <br className="hidden md:block" />
