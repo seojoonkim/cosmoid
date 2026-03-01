@@ -231,10 +231,7 @@ export default function Features() {
               </div>
               {/* 텍스트 영역 */}
               <div className="p-5 md:p-6 flex flex-col flex-1">
-                  <div className="flex items-center gap-2.5 mb-4">
-                  <Image src={feature.icon} alt={feature.title} width={22} height={22} className="h-5 w-5 shrink-0" />
-                  <h3 className="text-base font-bold text-[var(--text)]">{feature.title}</h3>
-                </div>
+  <h3 className="text-xl font-extrabold text-[var(--text)] mb-4">{feature.title}</h3>
                 <ul className="space-y-2 mt-auto">
                   {feature.bullets.map((b) => (
                     <li key={b} className="flex items-start gap-2 text-sm text-[var(--muted)] leading-relaxed">
