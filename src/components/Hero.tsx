@@ -38,7 +38,7 @@ function TypingH1() {
   const line1 = displayed.split("\n")[0] ?? "";
   const line2 = displayed.split("\n")[1] ?? "";
   const done1 = displayed.includes("\n") && line2.length > 0;
-  const cursor = <span className="animate-pulse" style={{opacity:0.7}}>|</span>;
+  const cursor = <span className="animate-pulse" style={{display:"inline-block",width:"2px",height:"0.85em",background:"rgba(255,255,255,0.35)",verticalAlign:"middle",marginLeft:"2px",borderRadius:"1px"}} />;
   return (
     <h1 className="mt-6 font-black leading-[1.12] tracking-tight text-white"
       style={{fontSize:"clamp(2.4rem, 5vw, 4rem)", wordBreak:"keep-all"}}>
