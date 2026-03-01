@@ -70,6 +70,12 @@ export default function Hero() {
     if (chatRef.current) {
       chatRef.current.scrollTop = chatRef.current.scrollHeight;
     }
+  }, [typingText]);
+
+  useEffect(() => {
+    if (chatRef.current) {
+      chatRef.current.scrollTop = chatRef.current.scrollHeight;
+    }
 
     if (visible === 0) {
       // 첫 메시지 딜레이 후 시작
