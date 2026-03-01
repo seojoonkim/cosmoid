@@ -5,8 +5,16 @@
     stroke-dasharray="28 34"
     transform="rotate(-20 22 22)"/>
 
-  <!-- 행성 본체 -->
-  <circle cx="22" cy="22" r="13" fill="#7c3aed"/>
+  <!-- 행성 본체 + 말풍선 꼬리 (path로 통합) -->
+  <path d="
+    M22 9
+    a13 13 0 1 1 9.19 22.19
+    L35 38
+    L26 30.5
+    A13 13 0 0 1 22 35
+    a13 13 0 0 1 0-26
+    Z
+  " fill="#7c3aed"/>
 
   <!-- 궤도 앞쪽 -->
   <ellipse cx="22" cy="22" rx="21" ry="7.5"
