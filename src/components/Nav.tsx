@@ -26,7 +26,7 @@ export default function Nav() {
             animate={{ rotate: [0, 5, -5, 0] }}
             transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", repeatDelay: 3 }}
           />
-          <span style={{fontWeight:800,fontSize:"1.2rem",letterSpacing:"-0.04em",color:"#1c1033"}}>cosmoid</span>
+          <span style={{fontWeight:700,fontSize:"1.25rem",letterSpacing:"-0.05em",color:"#1c1033",fontFamily:"var(--font-geist, 'Geist', system-ui)"}}>cosmoid</span>
         </motion.a>
         <div className="hidden md:flex items-center gap-7 text-base text-[var(--muted)] font-medium">
           <a href="#why" className="hover:text-[var(--text)] transition-colors">소개</a>

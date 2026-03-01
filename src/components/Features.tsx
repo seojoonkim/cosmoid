@@ -68,13 +68,12 @@ export default function Features() {
           {features.map((feature, idx) => (
             <article key={feature.title} className="card overflow-hidden flex flex-col">
               {/* 이미지 영역 */}
-              <div className="bg-[var(--bg-alt)] border-b border-[var(--border)] h-36 md:h-40 overflow-hidden">
-                <img src={feature.image} alt={feature.title} loading="lazy" className="w-full h-full object-cover object-top" />
+              <div className="border-b border-[var(--border)] h-44 md:h-48 overflow-hidden bg-white">
+                <img src={feature.image} alt={feature.title} loading="lazy" className="w-full h-full object-cover object-center scale-110" />
               </div>
               {/* 텍스트 영역 */}
               <div className="p-5 md:p-6 flex flex-col flex-1">
-                <p className="text-xs font-semibold text-[var(--purple)] mb-3">{String(idx + 1).padStart(2, "0")}</p>
-                <div className="flex items-center gap-2.5 mb-4">
+                  <div className="flex items-center gap-2.5 mb-4">
                   <Image src={feature.icon} alt={feature.title} width={22} height={22} className="h-5 w-5 shrink-0" />
                   <h3 className="text-base font-bold text-[var(--text)]">{feature.title}</h3>
                 </div>
