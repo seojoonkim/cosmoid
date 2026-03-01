@@ -148,7 +148,7 @@ export default function Hero() {
             </span>
             <TypingH1 />
             <p className="mt-6 max-w-lg text-base text-white/70 leading-relaxed">
-              새 앱 설치 없이, 이미 쓰는 카카오톡에서 바로 시작하세요.
+              앱 개발자 아니어도 괜찮아요. 카카오톡 친구 추가 하나로 — 나만의 AI 에이전트가 3분이면 준비돼요.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <a href="#cta"
@@ -161,13 +161,16 @@ export default function Hero() {
                 작동 방식 보기
               </a>
             </div>
-            <div className="mt-10 flex items-center gap-6 text-base text-white/70">
-              <div className="flex items-center gap-2">
-                <img src="https://flagcdn.com/w40/kr.png" alt="한국" className="h-4 w-6 rounded-sm object-cover" />
-                <span>한국 서비스 특화</span>
-              </div>
-              <div className="w-px h-4 bg-white/20" />
-              <div>3분 설정</div>
+            <div className="mt-8 flex flex-wrap gap-2.5">
+              {[
+                { icon: "⚡", text: "3분 설정 완료" },
+                { icon: "👤", text: "비개발자도 OK" },
+                { icon: "🔒", text: "대화 내용 미저장" },
+              ].map((b) => (
+                <span key={b.text} className="flex items-center gap-1.5 rounded-full border border-white/20 bg-white/10 px-3.5 py-1.5 text-sm font-medium text-white/80 backdrop-blur-sm">
+                  <span>{b.icon}</span>{b.text}
+                </span>
+              ))}
             </div>
           </div>
 
