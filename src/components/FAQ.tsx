@@ -58,7 +58,7 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className="bg-white border-t border-[var(--border)] py-16 md:py-24">
+    <section className="bg-[var(--bg-alt)] border-t border-[var(--border)] py-16 md:py-24">
       <div className="mx-auto max-w-4xl px-5 md:px-8">
         <motion.p
           initial={{ opacity: 0, y: 16 }}
