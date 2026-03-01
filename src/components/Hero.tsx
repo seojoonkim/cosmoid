@@ -82,7 +82,7 @@ export default function Hero() {
         i++;
         setTypingText(full.slice(0, i));
         if (i >= full.length) { clearInterval(tid); }
-      }, 30);
+      }, 90);
       return () => clearInterval(tid);
     }
   }, [visible]);
