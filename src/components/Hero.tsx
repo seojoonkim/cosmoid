@@ -51,13 +51,13 @@ const messages = [
   { id: 1, from: "user", text: "치킨 시켜줘, 배달의민족으로 🍗" },
   { id: 2, from: "ai", text: "근처 굽네치킨 평점 4.8점이에요. 27분 도착, 18,000원 — 바로 주문할까요?" },
   { id: 3, from: "user", text: "응, 결제도 해줘" },
-  { id: 4, from: "ai", text: "✓ 카카오페이로 결제 완료! 27분 후 도착 예정이에요. 문 열어두세요 🍗" },
+  { id: 4, from: "ai", text: "✓ 카카오페이로 결제 완료! 27분 후 도착해요.", card: { emoji: "🍗", title: "굽네치킨 볼케이노", tag: "배달의민족", rows: ["₩18,000 · 카카오페이", "27분 후 도착 예정"] } },
   { id: 5, from: "user", text: "내일 오전 10시 강남 미팅 캘린더에 넣어줘" },
-  { id: 6, from: "ai", text: "캘린더 등록했어요. 9시 30분에 출발 알림도 드릴게요 📅 카카오T 미리 잡을까요?" },
-  { id: 7, from: "user", text: "ㅇㅇ 잡아줘. 현대카드로" },
-  { id: 8, from: "ai", text: "✓ 카카오T 예약 완료. 9시 22분 픽업, 현대카드 결제 예정이에요 🚕" },
+  { id: 6, from: "ai", text: "캘린더 등록했어요. 9:30 출발 알림 설정 완료.", card: { emoji: "📅", title: "강남 미팅", tag: "캘린더", rows: ["내일 오전 10:00", "⏰ 9:30 출발 알림"] } },
+  { id: 7, from: "user", text: "ㅇㅇ 카카오T도 잡아줘. 현대카드로" },
+  { id: 8, from: "ai", text: "✓ 카카오T 예약 완료!", card: { emoji: "🚕", title: "카카오T 예약", tag: "카카오T", rows: ["9:22 픽업", "현대카드 결제"] } },
   { id: 9, from: "user", text: "쿠팡에서 에어팟 최저가 찾아줘" },
-  { id: 10, from: "ai", text: "에어팟 Pro 2세대 229,000원 — 오늘 최저가예요. 로켓배송으로 내일 도착. 주문할까요? 🎧" },
+  { id: 10, from: "ai", text: "오늘 최저가예요. 주문할까요?", card: { emoji: "🎧", title: "AirPods Pro 2세대", tag: "쿠팡 로켓배송", rows: ["₩229,000 · 오늘 최저가", "내일 도착"] } },
 ];
 
 export default function Hero() {
