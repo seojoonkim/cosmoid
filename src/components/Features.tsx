@@ -6,31 +6,43 @@ const features = [
   {
     icon: "/icons/cart.svg",
     title: "쇼핑 자동화",
+    emoji: "🛒",
+    headline: "대화 한 번으로 최저가 주문",
     bullets: ["쿠팡·네이버 최저가를 실시간으로 탐색해요", "리뷰 요약 후 최적 상품을 추천해드려요", "대화 한 번으로 바로 주문해드려요"],
   },
   {
     icon: "/icons/food.svg",
     title: "배달 주문",
+    emoji: "🍱",
+    headline: "먹고 싶은 거 말하면 바로 주문",
     bullets: ["배민·쿠팡이츠 메뉴를 자동으로 추천해드려요", "과거 주문을 기반으로 취향을 학습해요", "결제까지 대화 흐름 안에서 완결해드려요"],
   },
   {
     icon: "/icons/money.svg",
     title: "금융 요약",
+    emoji: "💳",
+    headline: "내 돈이 어디 가는지 한눈에",
     bullets: ["오픈뱅킹으로 계좌 잔액을 조회해드려요", "월별 지출을 카테고리별로 분석해드려요", "이상 지출을 감지해서 알려드려요"],
   },
   {
     icon: "/icons/calendar.svg",
     title: "일정 관리",
+    emoji: "📅",
+    headline: "약속 잡고 알림까지 자동으로",
     bullets: ["캘린더에 자동으로 등록하고 수정해드려요", "미팅 30분 전에 미리 알려드려요", "충돌 일정을 감지해서 대안을 제안해드려요"],
   },
   {
     icon: "/icons/car.svg",
     title: "이동·교통",
+    emoji: "🚕",
+    headline: "택시 부르고 경로까지 한 번에",
     bullets: ["카카오T 실시간 요금을 조회해드려요", "택시와 대중교통 경로를 비교해드려요", "도착 예정 시간을 카카오톡으로 공유해드려요"],
   },
   {
     icon: "/icons/search.svg",
     title: "실시간 검색",
+    emoji: "🔍",
+    headline: "궁금한 거 물어보면 요약해서 답변",
     bullets: ["네이버·구글 최신 뉴스를 요약해드려요", "트렌드·날씨·환율을 즉시 조회해드려요", "검색 결과를 알기 쉽게 요약해드려요"],
   },
 ];
@@ -223,15 +235,19 @@ export default function Features() {
               key={feature.title}
               className={`card overflow-hidden flex flex-col reveal ${idx % 3 === 0 ? "" : idx % 3 === 1 ? "reveal-delay-1" : "reveal-delay-2"}`}
             >
+              <div className="px-5 pt-5 pb-3 flex items-center gap-2 border-b border-[var(--border)]">
+                <span className="text-base">{feature.emoji}</span>
+                <span className="text-sm font-bold text-[var(--purple)] tracking-tight">{feature.title}</span>
+              </div>
               {/* 이미지 영역 */}
               <div className="border-b border-[var(--border)] h-44 md:h-48 overflow-hidden bg-white">
                 <FeaturePreview title={feature.title} />
               </div>
               {/* 텍스트 영역 */}
               <div className="p-5 md:p-6 flex flex-col flex-1">
-  <h3 className="text-xl font-extrabold text-[var(--text)] mb-4">{feature.title}</h3>
+                <h3 className="text-lg font-extrabold text-[var(--text)] mt-4 mb-2">{feature.headline}</h3>
                 <ul className="space-y-2 mt-auto">
-                  {feature.bullets.map((b) => (
+                  {feature.bullets.slice(0, 2).map((b) => (
                     <li key={b} className="flex items-start gap-2 text-sm text-[var(--muted)] leading-relaxed">
                       <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-[var(--purple)] shrink-0" />
                       {b}
