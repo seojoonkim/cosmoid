@@ -30,28 +30,35 @@ export default function Comparison() {
           Cosmoid는 <strong>누구나 1분 안에</strong> AI 에이전트를 최적의 환경으로 운영할 수 있도록 설계됐어요.
         </p>
 
-        <div className="mt-10 overflow-x-auto rounded-2xl border border-[var(--border)] shadow-[0_4px_24px_rgba(0,0,0,0.08)] reveal reveal-delay-3">
-          <table className="w-full text-sm">
+        <div className="mt-10 rounded-2xl border border-[var(--border)] shadow-[0_4px_24px_rgba(0,0,0,0.08)] reveal reveal-delay-3 overflow-hidden">
+          <table className="w-full" style={{ tableLayout: "fixed", borderCollapse: "collapse" }}>
+            <colgroup>
+              {/* mobile: 3 col / desktop: 4 col */}
+              <col style={{ width: "32%" }} />
+              <col style={{ width: "34%" }} />
+              <col style={{ width: "34%" }} />
+            </colgroup>
             <thead>
               <tr className="border-b border-[var(--border)]"
-                style={{background:"linear-gradient(90deg,#f5f0ff,#faf9ff)"}}>
-                <th className="py-4 px-5 text-left text-xs font-bold uppercase tracking-widest text-[var(--muted)]">항목</th>
-                <th className="py-4 px-5 text-center">
-                  <span className="inline-block rounded-full px-3 py-1 text-xs font-bold text-white" style={{background:"linear-gradient(90deg,#f59e0b,#d97706)"}}>Cosmoid ✦</span>
+                style={{ background: "linear-gradient(90deg,#f5f0ff,#faf9ff)" }}>
+                <th className="py-3 px-3 md:py-4 md:px-5 text-left text-[11px] md:text-xs font-bold uppercase tracking-widest text-[var(--muted)]">항목</th>
+                <th className="py-3 px-3 md:py-4 md:px-5 text-center">
+                  <span className="inline-block rounded-full px-2 py-0.5 md:px-3 md:py-1 text-[11px] md:text-xs font-bold text-white"
+                    style={{ background: "linear-gradient(90deg,#f59e0b,#d97706)" }}>Cosmoid ✦</span>
                 </th>
-                <th className="py-4 px-5 text-center text-xs font-semibold text-[var(--muted)]">해외 AI SaaS</th>
-                <th className="py-4 px-5 text-center text-xs font-semibold text-[var(--muted)]">OpenClaw 직접 설치</th>
+                <th className="py-3 px-3 md:py-4 md:px-5 text-center text-[11px] md:text-xs font-semibold text-[var(--muted)]">해외 AI SaaS</th>
+                <th className="hidden md:table-cell py-4 px-5 text-center text-xs font-semibold text-[var(--muted)]">OpenClaw 직접 설치</th>
               </tr>
             </thead>
             <tbody>
               {rows.map((row, i) => (
                 <tr key={row.label}
                   className="border-b border-[var(--border)] last:border-0 transition-colors hover:bg-[var(--bg-alt)]"
-                  style={{background: i % 2 === 0 ? "white" : "#faf9ff"}}>
-                  <td className="py-4 px-5 font-semibold text-[var(--text)]">{row.label}</td>
-                  <td className="py-4 px-5 text-center font-semibold" style={{color:"#d97706",fontWeight:700}}>{row.cosmoid}</td>
-                  <td className="py-4 px-5 text-center text-[var(--muted)]">{row.saas}</td>
-                  <td className="py-4 px-5 text-center text-[var(--muted)]">{row.self}</td>
+                  style={{ background: i % 2 === 0 ? "white" : "#faf9ff" }}>
+                  <td className="py-2.5 px-3 md:py-4 md:px-5 text-[11px] md:text-sm font-semibold text-[var(--text)] leading-snug">{row.label}</td>
+                  <td className="py-2.5 px-3 md:py-4 md:px-5 text-center text-[11px] md:text-sm font-bold leading-snug" style={{ color: "#d97706" }}>{row.cosmoid}</td>
+                  <td className="py-2.5 px-3 md:py-4 md:px-5 text-center text-[11px] md:text-sm text-[var(--muted)] leading-snug">{row.saas}</td>
+                  <td className="hidden md:table-cell py-4 px-5 text-center text-sm text-[var(--muted)]">{row.self}</td>
                 </tr>
               ))}
             </tbody>
