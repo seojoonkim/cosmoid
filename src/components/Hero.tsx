@@ -111,14 +111,8 @@ export default function Hero() {
   return (
     <section className="relative overflow-hidden pt-10 pb-20 md:pt-14 md:pb-28"
       style={{
-        background: "linear-gradient(180deg, #fffbf7 0%, #ffedd5 40%, #ffffff 100%)",
+        background: "#ffffff",
       }}>
-
-      {/* 보라 글로우 blob */}
-      <div className="absolute top-[-80px] left-[-60px] h-72 w-72 rounded-full pointer-events-none"
-        style={{background:"radial-gradient(circle, rgba(139,92,246,0.12) 0%, transparent 70%)"}} />
-      <div className="absolute bottom-[-40px] right-[-40px] h-64 w-64 rounded-full pointer-events-none"
-        style={{background:"radial-gradient(circle, rgba(99,102,241,0.1) 0%, transparent 70%)"}} />
 
       <div className="relative mx-auto max-w-6xl px-5 md:px-8">
         <div className="grid gap-10 md:grid-cols-12 md:items-center">
