@@ -3,9 +3,9 @@ import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const H1_CASES = [
-  ["나만의 AI 에이전트를", "지금 바로 만들어드려요"],
+  ["나만의 AI 에이전트를", "바로 만들어드려요"],
   ["카카오·배민·쿠팡", "모두 연결해드려요"],
-  ["코딩 없이 5분 만에", "AI 비서가 생겨요"],
+  ["코딩 없이", "5분이면 시작돼요"],
 ];
 
 function TypingH1() {
@@ -20,7 +20,7 @@ function TypingH1() {
 
   return (
     <h1 className="mt-6 font-black leading-[1.22] tracking-tight text-[var(--text)]"
-      style={{fontSize:"clamp(2.8rem, 6vw, 4rem)", wordBreak:"keep-all"}}>
+      style={{fontSize:"clamp(2.4rem, 6vw, 4rem)", wordBreak:"keep-all"}}>
       <span style={{display:"block", color:"var(--purple)"}}>카톡 한 마디에</span>
       <div style={{overflow:"hidden", minHeight:"2.4em"}}>
         <AnimatePresence mode="wait">
