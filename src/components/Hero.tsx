@@ -183,8 +183,8 @@ export default function Hero() {
                   <div style={{ width: "8px", height: "8px", background: "#222", borderRadius: "50%" }} />
                 </div>
                 <div
-                  className="rounded-3xl overflow-hidden" style={{minHeight:"500px",maxHeight:"560px"}}
-                  style={{ background: "#f2f2f7", boxShadow: "0 24px 60px rgba(0,0,0,0.45), 0 0 0 1px rgba(255,255,255,0.12)" }}
+                  className="rounded-3xl overflow-hidden"
+                  style={{ background: "#f2f2f7", boxShadow: "0 24px 60px rgba(0,0,0,0.45), 0 0 0 1px rgba(255,255,255,0.12)", minHeight:"500px", maxHeight:"560px" }}
                 >
                   <div className="flex items-center justify-between px-5 py-3.5" style={{ background: "#ffffff", borderBottom: "1px solid #e9e0ff" }}>
                     <div className="flex items-center gap-2.5">
