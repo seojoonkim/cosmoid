@@ -185,3 +185,22 @@ a {
   letter-spacing: -0.03em;
   color: var(--purple);
 }
+
+/* Logo float + wiggle animation */
+@keyframes logoFloat {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  25% { transform: translateY(-3px) rotate(-2deg); }
+  50% { transform: translateY(-5px) rotate(0deg); }
+  75% { transform: translateY(-3px) rotate(2deg); }
+}
+@keyframes logoClaw {
+  0%, 60%, 100% { transform: translateY(0px) rotate(0deg); }
+  65% { transform: translateY(-4px) rotate(-6deg); }
+  70% { transform: translateY(-6px) rotate(-4deg); }
+  75% { transform: translateY(-4px) rotate(4deg); }
+  80% { transform: translateY(0px) rotate(0deg); }
+}
+.logo-animate {
+  animation: logoClaw 3s ease-in-out infinite;
+  transform-origin: center bottom;
+}
