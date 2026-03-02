@@ -1,25 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" fill="none">
-  <!-- 말풍선 + 꼬리 하나의 path로 (끊김 없음) -->
+  <!-- 말풍선 + 꼬리 (rx=13 → 훨씬 둥글게) -->
   <path d="
-    M 13 3
-    L 27 3
-    Q 37 3 37 13
-    L 37 21
-    Q 37 31 27 31
-    L 26 31
-    L 30 40
-    L 18 31
-    L 13 31
-    Q 3 31 3 21
-    L 3 13
-    Q 3 3 13 3
+    M 16 3
+    L 26 3
+    Q 40 3 40 17
+    Q 40 31 26 31
+    L 25 31
+    L 30 41
+    L 17 31
+    L 16 31
+    Q 2 31 2 17
+    Q 2 3 16 3
     Z
   " fill="#7c3aed"/>
 
-  <!-- C (arc 기반, 부드럽게) -->
-  <path d="M 26.5 11 A 9 9 0 1 0 26.5 23" 
-        stroke="white" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+  <!-- C: butt linecap → 평평한 컷 터미널 (더 개성있는 로고 느낌) -->
+  <path d="M 24 9.5 A 9.5 9.5 0 1 0 24 24.5"
+        stroke="white" stroke-width="4.6" stroke-linecap="butt" fill="none"/>
 
-  <!-- C 오른쪽 점 -->
-  <circle cx="28.5" cy="17" r="2" fill="white"/>
+  <!-- 점 -->
+  <circle cx="27" cy="17" r="2.4" fill="white"/>
 </svg>
