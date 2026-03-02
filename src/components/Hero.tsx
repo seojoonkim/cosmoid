@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const H1_CASES = [
-  ["나만의 AI 에이전트를", "바로 만들어드려요"],
+  ["나만의 AI 에이전트", "바로 만들어드려요"],
   ["카카오·배민·쿠팡", "모두 연결해드려요"],
   ["코딩 없이", "5분이면 시작돼요"],
 ];
@@ -20,8 +20,8 @@ function TypingH1() {
 
   return (
     <h1 className="mt-6 font-black leading-[1.22] tracking-tight text-[var(--text)]"
-      style={{fontSize:"clamp(2.4rem, 6vw, 4rem)", wordBreak:"keep-all"}}>
-      <span style={{display:"block", color:"var(--purple)"}}>카톡 한 마디에</span>
+      style={{fontSize:"clamp(2.1rem, 5.5vw, 4rem)", wordBreak:"keep-all"}}>
+      <span style={{display:"block", color:"var(--purple)", whiteSpace:"nowrap"}}>카톡 한 마디에</span>
       <div style={{overflow:"hidden", minHeight:"2.4em"}}>
         <AnimatePresence mode="wait">
           <motion.div
@@ -31,8 +31,8 @@ function TypingH1() {
             exit={{ y: "-10%", opacity: 0, filter: "blur(8px)" }}
             transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
           >
-            <span style={{display:"block", color:"var(--text)"}}>{H1_CASES[caseIdx][0]}</span>
-            <span style={{display:"block", color:"var(--text)"}}>{H1_CASES[caseIdx][1]}</span>
+            <span style={{display:"block", color:"var(--text)", whiteSpace:"nowrap"}}>{H1_CASES[caseIdx][0]}</span>
+            <span style={{display:"block", color:"var(--text)", whiteSpace:"nowrap"}}>{H1_CASES[caseIdx][1]}</span>
           </motion.div>
         </AnimatePresence>
       </div>
