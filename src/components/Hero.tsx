@@ -183,7 +183,7 @@ export default function Hero() {
                   <div style={{ width: "8px", height: "8px", background: "#222", borderRadius: "50%" }} />
                 </div>
                 <div
-                  className="rounded-3xl overflow-hidden"
+                  className="rounded-3xl overflow-hidden" style={{minHeight:"500px",maxHeight:"560px"}}
                   style={{ background: "#f2f2f7", boxShadow: "0 24px 60px rgba(0,0,0,0.45), 0 0 0 1px rgba(255,255,255,0.12)" }}
                 >
                   <div className="flex items-center justify-between px-5 py-3.5" style={{ background: "#ffffff", borderBottom: "1px solid #e9e0ff" }}>
@@ -199,7 +199,7 @@ export default function Hero() {
                   </div>
                   <div
                     ref={chatRef}
-                    className="chat-scroll px-4 py-4 space-y-3 h-[460px] md:h-[540px] overflow-y-auto scroll-smooth"
+                    className="chat-scroll px-4 py-4 space-y-3 h-[460px] md:h-[540px] overflow-y-hidden"
                     style={{ background: "#f2f2f7" }}
                   >
                     <AnimatePresence>
