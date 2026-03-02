@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const H1_CASES = [
   ["나만의 AI 에이전트", "바로 만들어드려요"],
-  ["카카오·배민·쿠팡", "모두 연결해드려요"],
+  ["배민·쿠팡·금융계좌", "모두 연결해드려요"],
   ["코딩 없이", "5분이면 시작돼요"],
 ];
 
