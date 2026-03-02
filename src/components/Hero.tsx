@@ -189,7 +189,7 @@ export default function Hero() {
                   <div className="flex items-center justify-between px-5 py-3.5" style={{ background: "#ffffff", borderBottom: "1px solid #e9e0ff" }}>
                     <div className="flex items-center gap-2.5">
                       <div className="h-8 w-8 rounded-full overflow-hidden">
-                        <img src="/images/cosmoid-avatar.png" alt="커스모이드" className="h-full w-full object-cover" />
+                        <img src="/images/cosmoid-logo-v2.png" alt="커스모이드" className="h-full w-full object-cover" />
                       </div>
                       <p className="text-sm font-bold" style={{ color: "#1c1033" }}>커스모이드</p>
                     </div>
@@ -214,7 +214,7 @@ export default function Hero() {
                         >
                           {msg.from === "ai" && (
                             <div className="h-8 w-8 rounded-full overflow-hidden shrink-0 mb-0.5">
-                              <img src="/images/cosmoid-avatar.png" alt="커스모이드" className="h-full w-full object-cover" />
+                              <img src="/images/cosmoid-logo-v2.png" alt="커스모이드" className="h-full w-full object-cover" />
                             </div>
                           )}
                           <div
