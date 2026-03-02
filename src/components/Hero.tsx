@@ -68,7 +68,7 @@ export default function Hero() {
     if (chatRef.current) {
       chatRef.current.scrollTop = chatRef.current.scrollHeight;
     }
-  }, [typingText]);
+  }, [typingText, visible]);
 
   useEffect(() => {
     if (chatRef.current) {
@@ -198,7 +198,7 @@ export default function Hero() {
                   </div>
                   <div
                     ref={chatRef}
-                    className="chat-scroll px-4 py-4 space-y-3 h-[460px] md:h-[540px] overflow-y-hidden"
+                    className="chat-scroll px-4 pt-4 pb-6 space-y-3 h-[460px] md:h-[540px] overflow-y-scroll"
                     style={{ background: "#f2f2f7" }}
                   >
                     <AnimatePresence>
