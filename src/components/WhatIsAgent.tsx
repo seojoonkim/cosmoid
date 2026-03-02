@@ -34,8 +34,8 @@ export default function WhatIsAgent() {
             viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.2 }}
             className="mt-4 section-desc mx-auto reveal reveal-delay-2"
           >
-            그냥 대답만 하는 챗봇이 아니에요. 앱을 열고, 검색하고, 주문하고, 결제까지 — <strong style={{ color: "var(--text)" }}>실제로 행동하는 AI 비서</strong>예요.
-            Clawroid가 있으면 <strong style={{ color: "var(--text)" }}>누구나 1분 만에</strong> 이 AI 비서를 가질 수 있어요. 코딩도, 앱 설치도 필요 없어요.
+            OpenClaw 같은 AI 에이전트 — 이제 나만의 것으로 만들 수 있어요. 대화 한 마디에 <strong style={{ color: "var(--text)" }}>실제로 행동하는 AI 비서</strong>가 카카오·배달의민족·쿠팡·네이버 등 한국형 서비스에 바로 연결돼요.
+            코딩도, 앱 설치도 필요 없어요. <strong style={{ color: "var(--text)" }}>5분이면 시작</strong>할 수 있어요.
           </motion.p>
 
           <motion.div

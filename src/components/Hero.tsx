@@ -3,9 +3,9 @@ import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const H1_CASES = [
-  ["치킨 주문부터", "계좌 조회까지"],
-  ["배달 주문부터", "일정 등록까지"],
-  ["최저가 검색부터", "바로 결제까지"],
+  ["나만의 AI 에이전트를", "지금 바로 만들어드려요"],
+  ["카카오·배민·쿠팡", "모두 연결해드려요"],
+  ["코딩 없이 5분 만에", "AI 비서가 생겨요"],
 ];
 
 function TypingH1() {
@@ -130,7 +130,7 @@ export default function Hero() {
             </span>
             <TypingH1 />
             <p className="mt-6 max-w-lg text-base text-[var(--muted)] leading-relaxed">
-              개발자가 아니어도 괜찮아요. 카카오톡 친구 추가만 하면 — 1분 만에 나만의 AI 에이전트가 생겨요.
+              OpenClaw 같은 AI 에이전트, 이제 누구나 가질 수 있어요. 카카오·배민·쿠팡·네이버 등 한국 서비스에 바로 연결 — 설치도 코딩도 필요 없어요.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <a href="#cta"

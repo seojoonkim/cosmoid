@@ -14,7 +14,7 @@ export default function WhyCosmoid() {
         <motion.h2
           className="mt-4 max-w-2xl text-3xl font-extrabold leading-tight tracking-tight md:text-5xl section-title reveal reveal-delay-1"
         >
-          대화형 AI를 일상에서<br />진짜 쓰게 만드는 방식
+          OpenClaw 같은 AI 에이전트를<br />나만의 것으로, 한국 서비스에 바로
         </motion.h2>
 
         <div className="mt-10 grid gap-5 md:grid-cols-2">
