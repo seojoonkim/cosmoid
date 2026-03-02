@@ -14,7 +14,7 @@ function TypingH1() {
   useEffect(() => {
     const id = setInterval(() => {
       setCaseIdx(c => (c + 1) % H1_CASES.length);
-    }, 3500);
+    }, 4500);
     return () => clearInterval(id);
   }, []);
 
