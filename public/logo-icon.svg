@@ -7,7 +7,7 @@
   <rect x="3" y="10" width="38" height="33" rx="11" fill="#7c3aed"/>
 
   <!-- 왼쪽 눈 흰자 (타원형) -->
-  <ellipse cx="15.5" cy="26.5" rx="4" ry="6.5" fill="#c4b5fd">
+  <ellipse cx="15.5" cy="26.5" rx="4" ry="6.5" fill="white">
     <animate attributeName="ry" values="6.5;6.5;0.8;6.5;6.5" keyTimes="0;0.55;0.6;0.65;1" dur="4s" repeatCount="indefinite"/>
   </ellipse>
   <!-- 왼쪽 눈동자 -->
@@ -17,7 +17,7 @@
   </ellipse>
 
   <!-- 오른쪽 눈 흰자 (타원형) -->
-  <ellipse cx="28.5" cy="26.5" rx="4" ry="6.5" fill="#c4b5fd">
+  <ellipse cx="28.5" cy="26.5" rx="4" ry="6.5" fill="white">
     <animate attributeName="ry" values="6.5;6.5;0.8;6.5;6.5" keyTimes="0;0.55;0.6;0.65;1" dur="4s" repeatCount="indefinite"/>
   </ellipse>
   <!-- 오른쪽 눈동자 -->
