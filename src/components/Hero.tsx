@@ -124,7 +124,7 @@ export default function Hero() {
         <div className="grid gap-10 md:grid-cols-12 md:items-center">
 
           {/* 왼쪽 텍스트 */}
-          <div className="md:col-span-5">
+          <div className="md:col-span-6">
             <span className="inline-block rounded-xl border border-[var(--purple-mid)] bg-white/70 px-4 py-1.5 text-xs font-bold tracking-[0.08em] text-[var(--text)]">
               Private Beta
             </span>
@@ -157,7 +157,7 @@ export default function Hero() {
           </div>
 
           {/* 오른쪽 — 채팅창만 */}
-          <div className="md:col-span-7 md:pl-12">
+          <div className="md:col-span-6 md:pl-16 flex justify-end">
             <div className="relative mx-auto" style={{ maxWidth: "360px" }}>
               <div
                 style={{
