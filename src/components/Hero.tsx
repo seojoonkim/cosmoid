@@ -163,24 +163,24 @@ export default function Hero() {
                 style={{
                   background: "#1a1a1a",
                   borderRadius: "48px",
-                  padding: "14px",
+                  padding: "5px 10px 12px",
                   boxShadow:
                     "0 24px 80px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.08), inset 0 0 0 1px rgba(255,255,255,0.05)",
                 }}
               >
                 <div
                   style={{
-                    width: "120px",
-                    height: "34px",
+                    width: "90px",
+                    height: "22px",
                     background: "#000",
-                    borderRadius: "17px",
-                    margin: "0 auto 10px",
+                    borderRadius: "11px",
+                    margin: "0 auto 6px",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
                   }}
                 >
-                  <div style={{ width: "10px", height: "10px", background: "#222", borderRadius: "50%" }} />
+                  <div style={{ width: "8px", height: "8px", background: "#222", borderRadius: "50%" }} />
                 </div>
                 <div
                   className="rounded-3xl overflow-hidden"
@@ -199,7 +199,7 @@ export default function Hero() {
                   </div>
                   <div
                     ref={chatRef}
-                    className="chat-scroll px-4 py-4 space-y-3 h-[411px] md:h-[484px] overflow-y-auto scroll-smooth"
+                    className="chat-scroll px-4 py-4 space-y-3 h-[460px] md:h-[540px] overflow-y-auto scroll-smooth"
                     style={{ background: "#f2f2f7" }}
                   >
                     <AnimatePresence>
