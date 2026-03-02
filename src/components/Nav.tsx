@@ -22,16 +22,16 @@ export default function Nav() {
           transition={{ type: "spring", stiffness: 400, damping: 20 }}
         >
           <motion.img
-            src="/logo-1024.png" alt="clawroid" className="h-10 w-10 object-contain" style={{marginTop:"0px"}}
+            src="/logo-icon.svg" alt="clawroid" className="h-10 w-10 object-contain" style={{marginTop:"0px"}}
           />
           <motion.span
             style={{
-              fontWeight: 700,
-              fontSize: "1.45rem",
-              letterSpacing: "-0.03em",
+              fontWeight: 900,
+              fontSize: "1.6rem",
+              letterSpacing: "-0.025em",
               fontFamily: "inherit",
               color: "#7c3aed",
-              marginTop: "4px",
+              marginTop: "2px",
             }}
             animate={{}}
             transition={{}}
