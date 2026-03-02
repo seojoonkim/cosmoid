@@ -1,23 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" fill="none">
-  <!-- 말풍선: C에 딱 맞게 타이트, 거의 원형에 가깝게 (rx=15) -->
-  <path d="
-    M 17 3
-    L 25 3
-    Q 40 3 40 18
-    Q 40 31 25 31
-    L 26 31
-    L 29 37
-    L 19 31
-    L 17 31
-    Q 2 31 2 18
-    Q 2 3 17 3
-    Z
-  " fill="#7c3aed"/>
+  <!-- 안테나 (몸통 뒤에서 나오도록 먼저) -->
+  <line x1="27" y1="11" x2="33" y2="2"
+        stroke="#7c3aed" stroke-width="3.5" stroke-linecap="round"/>
 
-  <!-- C: 말풍선 안에 꽉 차게, 중심 조금 왼쪽 -->
-  <path d="M 24.5 9 A 9.5 9.5 0 1 0 24.5 25"
-        stroke="white" stroke-width="5" stroke-linecap="butt" fill="none"/>
+  <!-- 몸통 (squircle) -->
+  <rect x="3" y="10" width="38" height="33" rx="11" fill="#7c3aed"/>
 
-  <!-- 점 -->
-  <circle cx="27.5" cy="17" r="2.6" fill="white"/>
+  <!-- 왼쪽 눈 -->
+  <rect x="11.5" y="20" width="8" height="13" rx="4" fill="#e9d5ff" opacity="0.85"/>
+
+  <!-- 오른쪽 눈 -->
+  <rect x="24.5" y="20" width="8" height="13" rx="4" fill="#e9d5ff" opacity="0.85"/>
 </svg>

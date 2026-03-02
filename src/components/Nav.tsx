@@ -22,7 +22,7 @@ export default function Nav() {
           transition={{ type: "spring", stiffness: 400, damping: 20 }}
         >
           <motion.img
-            src="/logo-android.png" alt="cosmoid" className="h-11 w-11 object-contain"
+            src="/logo-icon.svg" alt="cosmoid" className="h-11 w-11 object-contain"
           />
           <motion.span
             style={{
