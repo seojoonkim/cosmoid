@@ -1,13 +1,25 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" fill="none">
-  <!-- 말풍선 배경 -->
-  <rect x="3" y="3" width="34" height="28" rx="10" fill="#7c3aed"/>
-  <!-- 말풍선 꼬리 -->
-  <path d="M24 31 L30 40 L18 34 Z" fill="#7c3aed"/>
-  <!-- C 레터 (굵고 스타일리시) -->
-  <path d="M27.5 11.5
-           C27.5 11.5 23 10 19 12
-           C15 14 13 17.5 13 17.5
-           C13 17.5 15 21 19 23
-           C23 25 27.5 23.5 27.5 23.5"
+  <!-- 말풍선 + 꼬리 하나의 path로 (끊김 없음) -->
+  <path d="
+    M 13 3
+    L 27 3
+    Q 37 3 37 13
+    L 37 21
+    Q 37 31 27 31
+    L 26 31
+    L 30 40
+    L 18 31
+    L 13 31
+    Q 3 31 3 21
+    L 3 13
+    Q 3 3 13 3
+    Z
+  " fill="#7c3aed"/>
+
+  <!-- C (arc 기반, 부드럽게) -->
+  <path d="M 26.5 11 A 9 9 0 1 0 26.5 23" 
         stroke="white" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+
+  <!-- C 오른쪽 점 -->
+  <circle cx="28.5" cy="17" r="2" fill="white"/>
 </svg>
