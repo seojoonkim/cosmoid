@@ -20,7 +20,7 @@ function TypingH1() {
 
   return (
     <h1 className="mt-6 font-black leading-[1.12] tracking-tight text-[var(--text)]"
-      style={{fontSize:"clamp(2.4rem, 5vw, 4rem)", wordBreak:"keep-all"}}>
+      style={{fontSize:"clamp(2.8rem, 6vw, 4rem)", wordBreak:"keep-all"}}>
       <span style={{display:"block", color:"var(--purple)"}}>카톡 한 마디에</span>
       <div style={{overflow:"hidden", minHeight:"2.4em"}}>
         <AnimatePresence mode="wait">
@@ -109,7 +109,7 @@ export default function Hero() {
   }, [visible]);
 
   return (
-    <section className="relative overflow-hidden py-20 md:py-28"
+    <section className="relative overflow-hidden pt-10 pb-20 md:pt-14 md:pb-28"
       style={{
         background: "linear-gradient(180deg, #faf8ff 0%, #ede9fe 40%, #ffffff 100%)",
       }}>
