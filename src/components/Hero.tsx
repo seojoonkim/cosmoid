@@ -20,7 +20,7 @@ function TypingH1() {
 
   return (
     <h1 className="mt-6 font-black leading-[1.22] tracking-tight text-[var(--text)]"
-      style={{fontSize:"clamp(1.9rem, 4.8vw, 3.5rem)", fontWeight:900, wordBreak:"keep-all"}}>
+      style={{fontSize:"clamp(2.2rem, 5.4vw, 4.0rem)", fontWeight:900, wordBreak:"keep-all"}}>
       <span style={{display:"block", color:"var(--purple)", whiteSpace:"nowrap"}}>카톡 한 마디에</span>
       <div style={{
         overflow:"hidden",
@@ -128,7 +128,7 @@ export default function Hero() {
               Private Beta
             </span>
             <TypingH1 />
-            <p className="mt-6 max-w-lg text-lg text-[var(--muted)] leading-relaxed" style={{ fontSize: "18px" }}>
+            <p className="mt-6 max-w-lg text-lg text-[var(--muted)] leading-relaxed" style={{ fontSize: "20px" }}>
               OpenClaw 같은 AI 에이전트, 이제 누구나 가질 수 있어요. 카카오·배민·쿠팡·네이버 등 한국 서비스에 바로 연결 — 설치도 코딩도 필요 없어요.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-4">
