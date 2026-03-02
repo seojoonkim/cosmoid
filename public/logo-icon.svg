@@ -1,29 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" fill="none">
-  <!-- 궤도 뒤쪽 -->
-  <ellipse cx="21" cy="21" rx="19.5" ry="6.5"
-    stroke="#818cf8" stroke-width="2.2" fill="none"
-    stroke-dasharray="25 34"
-    transform="rotate(-20 21 21)"/>
-
-  <!-- 행성 원 (살짝 더 크게) -->
-  <circle cx="21" cy="21" r="13.5" fill="#7c3aed"/>
-
-  <!-- 궤도 앞쪽 -->
-  <ellipse cx="21" cy="21" rx="19.5" ry="6.5"
-    stroke="#38bdf8" stroke-width="2.2" fill="none"
-    stroke-dasharray="25 34"
-    stroke-dashoffset="34"
-    transform="rotate(-20 21 21)"/>
-
-  <!-- 채팅 점 3개 (살짝 더 크게) -->
-  <circle cx="15" cy="22" r="2.4" fill="white"/>
-  <circle cx="21" cy="22" r="2.4" fill="white"/>
-  <circle cx="27" cy="22" r="2.4" fill="white"/>
-
-  <!-- 말풍선 꼬리 (짧고 두껍게) -->
-  <path d="M28 30 L34 36 L25 32 Z" fill="#7c3aed" stroke="#7c3aed" stroke-width="1.5" stroke-linejoin="round"/>
-
-  <!-- 위성 (귀엽게 작게) -->
-  <circle cx="4" cy="14" r="2.6" fill="#818cf8"/>
-  <circle cx="38" cy="11" r="1.6" fill="#38bdf8"/>
+  <circle cx="21" cy="20" r="15" fill="#7c3aed"/>
+  <circle cx="14.5" cy="20.5" r="2.2" fill="white"/>
+  <circle cx="21"   cy="20.5" r="2.2" fill="white"/>
+  <circle cx="27.5" cy="20.5" r="2.2" fill="white"/>
+  <path d="M26 31 L32 38 L20 33 Z" fill="#7c3aed"/>
 </svg>

@@ -26,15 +26,16 @@ export default function Nav() {
           />
           <motion.span
             style={{
-              fontWeight: 800,
-              fontSize: "1.7rem",
+              fontWeight: 700,
+              fontSize: "1.45rem",
               letterSpacing: "-0.03em",
-              fontFamily: "var(--font-nunito, 'Nunito', system-ui)",
-              background: "linear-gradient(90deg, #7c3aed 0%, #6d28d9 50%, #4f46e5 100%)",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-              backgroundClip: "text",
-              backgroundSize: "100% 100%",
+              fontFamily: "inherit",
+              color: "#7c3aed",
+              
+              
+              
+              
+              
             }}
             animate={{}}
             transition={{}}
