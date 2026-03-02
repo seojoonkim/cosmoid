@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 90" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-12 0 127 90" fill="none">
   <!-- 안테나 -->
-  <line x1="65" y1="17" x2="65" y2="6" stroke="#7c3aed" stroke-width="4" stroke-linecap="round"/>
+  <line x1="65" y1="17" x2="65" y2="6" stroke="#7c3aed" stroke-width="3.6" stroke-linecap="round"/>
   <circle cx="65" cy="3" r="5" fill="#7c3aed"/>
 
   <!-- 머리 -->
@@ -28,11 +28,11 @@
   </rect>
 
   <!-- 왼쪽 집게발 팔 -->
-  <line x1="28" y1="44" x2="18" y2="44" stroke="#7c3aed" stroke-width="5" stroke-linecap="round"/>
+  <line x1="28" y1="44" x2="18" y2="44" stroke="#7c3aed" stroke-width="4.5" stroke-linecap="round"/>
 
   <!-- 집게발 C형 (왼쪽) — 딸깍 애니메이션 -->
   <g>
-    <path d="M18 32 A14 14 0 1 0 18 56" stroke="#7c3aed" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <path d="M18 32 A14 14 0 1 0 18 56" stroke="#7c3aed" stroke-width="7.2" stroke-linecap="round" fill="none"/>
     <animateTransform attributeName="transform" type="rotate"
       values="0 18 44; 20 18 44; 20 18 44; 0 18 44; 0 18 44"
       keyTimes="0; 0.12; 0.35; 0.5; 1"
