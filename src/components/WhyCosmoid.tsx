@@ -9,7 +9,7 @@ export default function WhyCosmoid() {
         <motion.p
           className="section-label reveal"
         >
-          왜 Cosmoid인가요
+          왜 Clawroid인가요
         </motion.p>
         <motion.h2
           className="mt-4 max-w-2xl text-3xl font-extrabold leading-tight tracking-tight md:text-5xl section-title reveal reveal-delay-1"
@@ -42,10 +42,10 @@ export default function WhyCosmoid() {
             </div>
           </div>
 
-          {/* Cosmoid */}
+          {/* Clawroid */}
           <div className="card overflow-hidden flex flex-col reveal reveal-delay-3">
             <div className="p-6 md:p-8">
-              <p className="text-xl font-black text-[var(--purple)] mb-1">Cosmoid</p><p className="text-sm text-[var(--muted)] mb-5">대화 하나로 실행까지</p>
+              <p className="text-xl font-black text-[var(--purple)] mb-1">Clawroid</p><p className="text-sm text-[var(--muted)] mb-5">대화 하나로 실행까지</p>
               <ul className="mt-5 space-y-3 text-base leading-relaxed">
                 <li className="flex items-start gap-2">
                   <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[var(--purple)] shrink-0" />
@@ -62,7 +62,7 @@ export default function WhyCosmoid() {
               </ul>
             </div>
             <div className="mt-auto bg-[var(--purple-soft)] border-t border-[var(--border)]">
-              <img src="/images/2026-03-01-why-new.png" alt="Cosmoid 방식" className="w-full object-cover h-44 md:h-52" />
+              <img src="/images/2026-03-01-why-new.png" alt="Clawroid 방식" className="w-full object-cover h-44 md:h-52" />
             </div>
           </div>
         </div>

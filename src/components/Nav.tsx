@@ -22,7 +22,7 @@ export default function Nav() {
           transition={{ type: "spring", stiffness: 400, damping: 20 }}
         >
           <motion.img
-            src="/logo-icon.svg" alt="cosmoid" className="h-11 w-11 object-contain"
+            src="/logo-icon.svg" alt="clawroid" className="h-11 w-11 object-contain"
           />
           <motion.span
             style={{
@@ -39,7 +39,7 @@ export default function Nav() {
             }}
             animate={{}}
             transition={{}}
-          >cosmoid</motion.span>
+          >clawroid</motion.span>
         </motion.a>
         <div className="hidden md:flex items-center gap-7 text-base text-[var(--muted)] font-medium">
           <a href="#why" className="hover:text-[var(--text)] transition-colors">소개</a>

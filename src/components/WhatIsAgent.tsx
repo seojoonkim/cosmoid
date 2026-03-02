@@ -35,7 +35,7 @@ export default function WhatIsAgent() {
             className="mt-4 section-desc mx-auto reveal reveal-delay-2"
           >
             그냥 대답만 하는 챗봇이 아니에요. 앱을 열고, 검색하고, 주문하고, 결제까지 — <strong style={{ color: "var(--text)" }}>실제로 행동하는 AI 비서</strong>예요.
-            Cosmoid가 있으면 <strong style={{ color: "var(--text)" }}>누구나 1분 만에</strong> 이 AI 비서를 가질 수 있어요. 코딩도, 앱 설치도 필요 없어요.
+            Clawroid가 있으면 <strong style={{ color: "var(--text)" }}>누구나 1분 만에</strong> 이 AI 비서를 가질 수 있어요. 코딩도, 앱 설치도 필요 없어요.
           </motion.p>
 
           <motion.div
@@ -48,7 +48,7 @@ export default function WhatIsAgent() {
             <span style={{ opacity: 0.4 }}>→</span>
             <span style={{ color: "#fbbf24", fontWeight:700 }}>AI 에이전트</span>
             <span style={{ opacity: 0.4 }}>→</span>
-            <span style={{ color: "#ffffff", fontWeight:900, fontSize:"1.15rem", letterSpacing:"-0.01em" }}>내 손안의 Cosmoid ✦</span>
+            <span style={{ color: "#ffffff", fontWeight:900, fontSize:"1.15rem", letterSpacing:"-0.01em" }}>내 손안의 Clawroid ✦</span>
           </motion.div>
         </div>
 

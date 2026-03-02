@@ -23,11 +23,11 @@ export default function Comparison() {
           className="section-label reveal"
         >비교</motion.p>
         <h2 className="mt-4 section-h2 section-title reveal reveal-delay-1">
-          왜 Cosmoid인가요?
+          왜 Clawroid인가요?
         </h2>
         <p className="mt-4 text-base text-[var(--muted)] max-w-2xl reveal reveal-delay-2">
           OpenClaw를 직접 설치하거나, 해외 SaaS를 쓰는 것과 무엇이 다른지 비교해보세요.
-          Cosmoid는 <strong>누구나 1분 안에</strong> AI 에이전트를 최적의 환경으로 운영할 수 있도록 설계됐어요.
+          Clawroid는 <strong>누구나 1분 안에</strong> AI 에이전트를 최적의 환경으로 운영할 수 있도록 설계됐어요.
         </p>
 
         <div className="mt-10 rounded-2xl border border-[var(--border)] shadow-[0_4px_24px_rgba(0,0,0,0.08)] reveal reveal-delay-3 overflow-hidden">
@@ -44,7 +44,7 @@ export default function Comparison() {
                 <th className="py-3 px-3 md:py-4 md:px-5 text-left text-[11px] md:text-xs font-bold uppercase tracking-widest text-[var(--muted)]">항목</th>
                 <th className="py-3 px-3 md:py-4 md:px-5 text-center">
                   <span className="inline-block rounded-full px-2 py-0.5 md:px-3 md:py-1 text-[11px] md:text-xs font-bold text-white"
-                    style={{ background: "linear-gradient(90deg,#f59e0b,#d97706)" }}>Cosmoid ✦</span>
+                    style={{ background: "linear-gradient(90deg,#f59e0b,#d97706)" }}>Clawroid ✦</span>
                 </th>
                 <th className="py-3 px-3 md:py-4 md:px-5 text-center text-[11px] md:text-xs font-semibold text-[var(--muted)]">해외 AI SaaS</th>
                 <th className="hidden md:table-cell py-4 px-5 text-center text-xs font-semibold text-[var(--muted)]">OpenClaw 직접 설치</th>

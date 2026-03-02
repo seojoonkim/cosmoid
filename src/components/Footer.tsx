@@ -7,7 +7,7 @@ export default function Footer() {
         <div>
           <Link href="/" className="flex items-center gap-2">
             <img src="/logo-icon.svg" alt="" className="h-7 w-7" style={{ filter: "brightness(0) invert(1)" }} />
-            <span className="text-lg font-bold text-white tracking-tight">cosmoid</span>
+            <span className="text-lg font-bold text-white tracking-tight">clawroid</span>
           </Link>
           <p className="mt-2 text-sm text-white/70 md:text-base">AI assistant for real life</p>
         </div>
@@ -22,7 +22,7 @@ export default function Footer() {
             베타 신청
           </a>
         </div>
-        <p className="text-sm text-white/70 md:text-base">© 2026 Cosmoid. All rights reserved.</p>
+        <p className="text-sm text-white/70 md:text-base">© 2026 Clawroid. All rights reserved.</p>
       </div>
     </footer>
   );
