@@ -39,7 +39,7 @@ export default function Nav() {
             }}
             animate={{}}
             transition={{}}
-          >clawroid</motion.span>
+          >Clawroid</motion.span>
         </motion.a>
         <div className="hidden md:flex items-center gap-7 text-base text-[var(--muted)] font-medium">
           <a href="#why" className="hover:text-[var(--text)] transition-colors">소개</a>
