@@ -1,42 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 105" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 90" fill="none">
   <!-- 안테나 -->
-  <line x1="50" y1="21" x2="50" y2="10" stroke="#7c3aed" stroke-width="4" stroke-linecap="round"/>
-  <circle cx="50" cy="6" r="5.5" fill="#7c3aed"/>
+  <line x1="65" y1="17" x2="65" y2="6" stroke="#7c3aed" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="65" cy="3" r="5" fill="#7c3aed"/>
 
-  <!-- 머리 (외부) -->
-  <rect x="10" y="21" width="80" height="54" rx="22" fill="#7c3aed"/>
+  <!-- 머리 -->
+  <rect x="28" y="17" width="74" height="56" rx="20" fill="#7c3aed"/>
 
-  <!-- 양쪽 귀 bump -->
-  <circle cx="10" cy="48" r="8.5" fill="#7c3aed"/>
-  <circle cx="90" cy="48" r="8.5" fill="#7c3aed"/>
+  <!-- 귀 bump (좌우) -->
+  <circle cx="28" cy="45" r="8" fill="#7c3aed"/>
+  <circle cx="102" cy="45" r="8" fill="#7c3aed"/>
 
-  <!-- 얼굴 흰 창 (inner) -->
-  <rect x="19" y="29" width="62" height="38" rx="13" fill="white"/>
+  <!-- 얼굴 흰 창 -->
+  <rect x="37" y="26" width="56" height="39" rx="12" fill="white"/>
 
-  <!-- 왼쪽 눈 (어두운 보라 타원) -->
-  <rect x="27" y="32" width="17" height="28" rx="8.5" fill="#5b21b6">
-    <!-- 깜빡 -->
-    <animate attributeName="height" values="28;28;3;28;28" keyTimes="0;0.55;0.6;0.65;1" dur="4s" repeatCount="indefinite"/>
-    <animate attributeName="y" values="32;32;44.5;32;32" keyTimes="0;0.55;0.6;0.65;1" dur="4s" repeatCount="indefinite"/>
-    <!-- 좌우 보기 -->
-    <animate attributeName="x" values="27;30;30;27;24;24;27;27" keyTimes="0;0.15;0.3;0.4;0.5;0.65;0.75;1" dur="4s" repeatCount="indefinite"/>
+  <!-- 왼쪽 눈 -->
+  <rect x="44" y="29" width="15" height="27" rx="7.5" fill="#5b21b6">
+    <animate attributeName="height" values="27;27;3;27;27" keyTimes="0;0.55;0.6;0.65;1" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="y" values="29;29;41.5;29;29" keyTimes="0;0.55;0.6;0.65;1" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="x" values="44;47;47;44;41;41;44;44" keyTimes="0;0.15;0.3;0.4;0.5;0.65;0.75;1" dur="4s" repeatCount="indefinite"/>
   </rect>
 
   <!-- 오른쪽 눈 -->
-  <rect x="56" y="32" width="17" height="28" rx="8.5" fill="#5b21b6">
-    <animate attributeName="height" values="28;28;3;28;28" keyTimes="0;0.55;0.6;0.65;1" dur="4s" repeatCount="indefinite"/>
-    <animate attributeName="y" values="32;32;44.5;32;32" keyTimes="0;0.55;0.6;0.65;1" dur="4s" repeatCount="indefinite"/>
-    <animate attributeName="x" values="56;59;59;56;53;53;56;56" keyTimes="0;0.15;0.3;0.4;0.5;0.65;0.75;1" dur="4s" repeatCount="indefinite"/>
+  <rect x="71" y="29" width="15" height="27" rx="7.5" fill="#5b21b6">
+    <animate attributeName="height" values="27;27;3;27;27" keyTimes="0;0.55;0.6;0.65;1" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="y" values="29;29;41.5;29;29" keyTimes="0;0.55;0.6;0.65;1" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="x" values="71;74;74;71;68;68;71;71" keyTimes="0;0.15;0.3;0.4;0.5;0.65;0.75;1" dur="4s" repeatCount="indefinite"/>
   </rect>
 
-  <!-- 집게발 팔 연결 -->
-  <line x1="28" y1="75" x2="30" y2="85" stroke="#7c3aed" stroke-width="6" stroke-linecap="round"/>
+  <!-- 왼쪽 집게발 팔 -->
+  <line x1="28" y1="44" x2="18" y2="44" stroke="#7c3aed" stroke-width="5" stroke-linecap="round"/>
 
-  <!-- 집게발 C형 — 딸깍 애니메이션 -->
+  <!-- 집게발 C형 (왼쪽) — 딸깍 애니메이션 -->
   <g>
-    <path d="M40 83 A16 16 0 1 0 40 105" stroke="#7c3aed" stroke-width="9" stroke-linecap="round" fill="none"/>
+    <path d="M18 32 A14 14 0 1 0 18 56" stroke="#7c3aed" stroke-width="8" stroke-linecap="round" fill="none"/>
     <animateTransform attributeName="transform" type="rotate"
-      values="0 40 94; -22 40 94; -22 40 94; 0 40 94; 0 40 94"
+      values="0 18 44; 20 18 44; 20 18 44; 0 18 44; 0 18 44"
       keyTimes="0; 0.12; 0.35; 0.5; 1"
       calcMode="spline" keySplines="0.2 0 0.2 1; 0 0 1 1; 0.4 0 0.2 1; 0 0 1 1"
       dur="2.4s" repeatCount="indefinite"/>
