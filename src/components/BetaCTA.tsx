@@ -31,8 +31,8 @@ export default function BetaCTA() {
         <div className="mt-8 flex flex-col gap-3 sm:flex-row reveal reveal-delay-2">
           <a
             href="#"
-            className="flex items-center justify-center gap-2 rounded-full px-8 py-3.5 text-base font-bold"
-            style={{ background: "#FEE500", color: "#191919" }}
+            className="flex items-center justify-center gap-2 rounded-xl px-8 py-3.5 text-base font-bold text-white"
+            style={{ background: "var(--purple)" }}
           >
             <img src="/logos/kakaotalk.svg" alt="" className="h-5 w-5" />
             카카오톡으로 신청
@@ -47,7 +47,8 @@ export default function BetaCTA() {
           />
           <button
             type="submit"
-            className="h-12 rounded-full px-6 text-base font-semibold text-white transition-opacity hover:opacity-90 md:text-lg btn-amber" style={{background:"#f59e0b",border:"none"}}
+            className="h-12 rounded-xl px-6 text-base font-semibold text-white transition-opacity hover:opacity-90 md:text-lg"
+            style={{background:"var(--purple)",border:"none"}}
           >
             베타 신청
           </button>

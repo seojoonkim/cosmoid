@@ -41,8 +41,8 @@ export default function WhatIsAgent() {
           <motion.div
             initial={{ opacity: 0, y: 8 }} whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.3 }}
-            className="mt-6 inline-flex items-center gap-3 rounded-full px-6 py-3 text-base font-bold text-white"
-            style={{ background: "linear-gradient(90deg, #7c3aed, #6d28d9)", boxShadow: "0 4px 20px rgba(124,58,237,0.4)" }}
+            className="mt-6 inline-flex items-center gap-3 rounded-xl px-6 py-3 text-base font-bold text-white"
+            style={{ background: "var(--purple)", boxShadow: "0 4px 20px rgba(124,58,237,0.4)" }}
           >
             <span style={{opacity:0.65, fontWeight:500}}>챗봇</span>
             <span style={{ opacity: 0.4 }}>→</span>

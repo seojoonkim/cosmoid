@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
 @import "tailwindcss";
 
 html { scroll-behavior: smooth; }
@@ -17,7 +17,11 @@ html { scroll-behavior: smooth; }
   --purple-soft: #ede9fe;
   --purple-mid: #ddd6fe;
   --purple-deep: #4c1d95;
-  --cta: #6d28d9;
+  --brand: #6366f1;
+  --brand-light: #818cf8;
+  --brand-soft: #eef2ff;
+  --brand-deep: #3730a3;
+  --cta: #6366f1;
   --amber: #e09400;
   --amber-dark: #b87700;
   --amber-soft: #fef3c7;
@@ -36,7 +40,8 @@ body {
   padding: 0;
 }
 body {
-  font-family: "Inter", -apple-system, sans-serif;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 400;
   font-size: 16px;
   background: #ffffff;
   color: var(--text);
@@ -58,19 +63,18 @@ a {
   --label-border: rgba(109, 40, 217, 0.3);
 } /* WhyCosmoid — 유일한 보라 틴트 */
 .section-bg-3 { background: #ffffff; }           /* Features */
-.section-bg-4 { background: #fafafa; }
+.section-bg-4 { background: #f8fafc; }
 .section-bg-5 { background: #ffffff; }
-.section-bg-6 { background: #fafafa; }
+.section-bg-6 { background: #f8fafc; }
 .section-bg-7 { background: #ffffff; }
-.section-bg-8 { background: #fafafa; }
+.section-bg-8 { background: #f8fafc; }
 
 .section-label {
   display: inline-block;
   font-size: 13px;
   font-weight: 600;
   color: var(--purple);
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+  letter-spacing: 0.01em;
   background: none;
   border: none;
   padding: 0;
@@ -131,15 +135,6 @@ a {
 .input-blink:focus {
   animation: cursor-blink 1s step-end infinite;
   caret-color: white;
-}
-
-.btn-amber {
-  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.35);
-  transition: box-shadow 0.2s, transform 0.2s;
-}
-.btn-amber:hover {
-  box-shadow: 0 6px 20px rgba(245, 158, 11, 0.5);
-  transform: translateY(-1px);
 }
 
 .reveal {

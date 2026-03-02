@@ -6,10 +6,6 @@ const H1_CASES = [
   ["치킨 주문부터", "계좌 조회까지"],
   ["배달 주문부터", "일정 등록까지"],
   ["최저가 검색부터", "바로 결제까지"],
-  ["미팅 예약부터", "리마인더까지"],
-  ["택시 호출부터", "도착 알림까지"],
-  ["뉴스 요약부터", "환율 조회까지"],
-  ["병원 예약부터", "알림 설정까지"],
 ];
 
 function TypingH1() {
@@ -23,9 +19,9 @@ function TypingH1() {
   }, []);
 
   return (
-    <h1 className="mt-6 font-black leading-[1.12] tracking-tight text-white"
+    <h1 className="mt-6 font-black leading-[1.12] tracking-tight text-[var(--text)]"
       style={{fontSize:"clamp(2.4rem, 5vw, 4rem)", wordBreak:"keep-all"}}>
-      <span style={{display:"block", color:"#f59e0b"}}>카톡 한 마디에</span>
+      <span style={{display:"block", color:"var(--purple)"}}>카톡 한 마디에</span>
       <div style={{overflow:"hidden", minHeight:"2.4em"}}>
         <AnimatePresence mode="wait">
           <motion.div
@@ -35,8 +31,8 @@ function TypingH1() {
             exit={{ y: "-10%", opacity: 0, filter: "blur(8px)" }}
             transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
           >
-            <span style={{display:"block", color:"white"}}>{H1_CASES[caseIdx][0]}</span>
-            <span style={{display:"block", color:"white"}}>{H1_CASES[caseIdx][1]}</span>
+            <span style={{display:"block", color:"var(--text)"}}>{H1_CASES[caseIdx][0]}</span>
+            <span style={{display:"block", color:"var(--text)"}}>{H1_CASES[caseIdx][1]}</span>
           </motion.div>
         </AnimatePresence>
       </div>
@@ -115,36 +111,35 @@ export default function Hero() {
   return (
     <section className="relative overflow-hidden py-20 md:py-28"
       style={{
-        background:
-          "radial-gradient(ellipse 80% 60% at 20% 50%, rgba(109,40,217,0.18), transparent), radial-gradient(ellipse 60% 80% at 80% 20%, rgba(99,102,241,0.14), transparent), radial-gradient(ellipse 50% 50% at 50% 90%, rgba(224,148,0,0.06), transparent), linear-gradient(180deg, #0a0118 0%, #120728 100%)",
+        background: "linear-gradient(180deg, #faf8ff 0%, #ede9fe 40%, #ffffff 100%)",
       }}>
 
       {/* 보라 글로우 blob */}
       <div className="absolute top-[-80px] left-[-60px] h-72 w-72 rounded-full pointer-events-none"
-        style={{background:"radial-gradient(circle, rgba(139,92,246,0.25) 0%, transparent 70%)"}} />
+        style={{background:"radial-gradient(circle, rgba(139,92,246,0.12) 0%, transparent 70%)"}} />
       <div className="absolute bottom-[-40px] right-[-40px] h-64 w-64 rounded-full pointer-events-none"
-        style={{background:"radial-gradient(circle, rgba(6,182,212,0.15) 0%, transparent 70%)"}} />
+        style={{background:"radial-gradient(circle, rgba(99,102,241,0.1) 0%, transparent 70%)"}} />
 
       <div className="relative mx-auto max-w-6xl px-5 md:px-8">
         <div className="grid gap-10 md:grid-cols-12 md:items-center">
 
           {/* 왼쪽 텍스트 */}
           <div className="md:col-span-5">
-            <span className="inline-block rounded-full border border-white/30 bg-white/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-white">
+            <span className="inline-block rounded-xl border border-[var(--purple-mid)] bg-white/70 px-4 py-1.5 text-xs font-bold tracking-[0.08em] text-[var(--text)]">
               Private Beta
             </span>
             <TypingH1 />
-            <p className="mt-6 max-w-lg text-base text-white/70 leading-relaxed">
+            <p className="mt-6 max-w-lg text-base text-[var(--muted)] leading-relaxed">
               개발자가 아니어도 괜찮아요. 카카오톡 친구 추가만 하면 — 1분 만에 나만의 AI 에이전트가 생겨요.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <a href="#cta"
-                className="rounded-full px-8 py-4 text-base font-bold text-white hover:opacity-90 transition-opacity shadow-lg"
-                style={{background:"linear-gradient(135deg,#f59e0b,#f97316)",boxShadow:"0 8px 24px rgba(245,158,11,0.45)",color:"white"}}>
+                className="rounded-xl px-8 py-4 text-base font-bold hover:opacity-90 transition-opacity shadow-lg"
+                style={{background:"var(--purple)",boxShadow:"0 8px 24px rgba(109,40,217,0.28)",color:"white"}}>
                 카톡으로 30초 신청
               </a>
               <a href="#how"
-                className="rounded-full border-2 px-8 py-4 text-base font-bold hover:bg-white/10 transition-colors" style={{borderColor:"rgba(255,255,255,0.8)",color:"white"}}>
+                className="rounded-xl border-2 px-8 py-4 text-base font-bold hover:bg-white/70 transition-colors" style={{borderColor:"var(--purple-mid)",color:"var(--text)"}}>
                 작동 방식 보기
               </a>
             </div>
@@ -154,7 +149,7 @@ export default function Hero() {
                 { icon: "👤", text: "누구나 바로 시작" },
                 { icon: "🔒", text: "대화 내용 미저장" },
               ].map((b) => (
-                <span key={b.text} className="flex items-center gap-1.5 rounded-full border border-white/20 bg-white/10 px-3.5 py-1.5 text-sm font-medium text-white/80 backdrop-blur-sm">
+                <span key={b.text} className="flex items-center gap-1.5 rounded-xl border border-[var(--purple-mid)] bg-white/75 px-3.5 py-1.5 text-sm font-medium text-[var(--muted)] backdrop-blur-sm">
                   <span>{b.icon}</span>{b.text}
                 </span>
               ))}
@@ -223,12 +218,10 @@ export default function Hero() {
                             </div>
                           )}
                           <div
-                            className={`max-w-[72%] rounded-2xl px-4 py-2.5 text-sm leading-relaxed ${
-                              msg.from === "user" ? "text-white" : ""
-                            }`}
+                            className="max-w-[72%] rounded-2xl px-4 py-2.5 text-sm leading-relaxed"
                             style={
                               msg.from === "user"
-                                ? { background: "#7c3aed", borderRadius: "20px 20px 4px 20px" }
+                                ? { background: "#7c3aed", color: "#ffffff", borderRadius: "20px 20px 4px 20px" }
                                 : { background: "#ffffff", color: "#1c1033", borderRadius: "20px 20px 20px 4px", boxShadow: "0 1px 3px rgba(0,0,0,0.08)" }
                             }
                           >
@@ -249,7 +242,7 @@ export default function Hero() {
                   </div>
                 </div>
               </div>
-              <div style={{ width: "130px", height: "4px", background: "rgba(255,255,255,0.25)", borderRadius: "2px", margin: "10px auto 0" }} />
+              <div style={{ width: "130px", height: "4px", background: "rgba(15,13,21,0.2)", borderRadius: "2px", margin: "10px auto 0" }} />
             </div>
           </div>
 

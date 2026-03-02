@@ -73,7 +73,6 @@ export default function Pricing() {
                         background: "white",
                         border: "2px solid var(--purple)",
                         color: "var(--text)",
-                        transform: "scale(1.03)",
                         boxShadow: "0 8px 40px rgba(109,40,217,0.18)",
                       }
                     : { background: "white", border: "1px solid var(--border)", color: "var(--text)" }
@@ -114,7 +113,7 @@ export default function Pricing() {
                   ))}
                 </ul>
                 <button
-                  className="mt-8 w-full rounded-full px-4 py-3 text-base font-bold transition-opacity hover:opacity-90"
+                  className="mt-8 w-full rounded-xl px-4 py-3 text-base font-bold transition-opacity hover:opacity-90"
                   style={
                     isPro
                       ? { background: "var(--purple)", color: "white", border: "none" }

@@ -13,7 +13,7 @@ export default function Nav() {
   }, []);
 
   return (
-    <nav className={`sticky top-0 z-50 bg-[var(--bg)] border-b border-[var(--border)] transition-shadow ${scrolled ? "shadow-sm" : ""}`}>
+    <nav className={`sticky top-0 z-50 transition-all ${scrolled ? "bg-white/80 backdrop-blur border-b border-[var(--border)] shadow-sm" : "bg-white/0 border-b border-transparent"}`}>
       <div className="max-w-6xl mx-auto px-5 md:px-8 h-16 flex items-center justify-between">
         <motion.a
           href="/"
@@ -23,8 +23,6 @@ export default function Nav() {
         >
           <motion.img
             src="/logo-icon.svg" alt="cosmoid" className="h-11 w-11 object-contain"
-            animate={{ rotate: [0, 5, -5, 0] }}
-            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", repeatDelay: 3 }}
           />
           <motion.span
             style={{
@@ -49,7 +47,7 @@ export default function Nav() {
           <a href="#pricing" className="hover:text-[var(--text)] transition-colors">요금제</a>
         </div>
         <div className="hidden md:flex">
-          <a href="#cta" className="rounded-full px-5 py-2 text-base font-semibold text-white hover:opacity-90 transition-opacity" style={{background:"linear-gradient(135deg,#f59e0b,#f97316)",color:"white"}}>
+          <a href="#cta" className="rounded-xl px-5 py-2 text-base font-semibold text-white hover:opacity-90 transition-opacity" style={{background:"var(--purple)",color:"white"}}>
             베타 신청
           </a>
         </div>
@@ -74,7 +72,7 @@ export default function Nav() {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.22, ease: "easeOut" }}
-            className="md:hidden overflow-hidden border-b border-[var(--border)] bg-[var(--bg)]"
+            className="md:hidden overflow-hidden border-b border-[var(--border)] bg-white/95 backdrop-blur"
           >
             <div className="max-w-6xl mx-auto px-5 py-4 flex flex-col gap-3 text-[var(--muted)] font-medium">
               <a href="#why" className="py-1.5 hover:text-[var(--text)] transition-colors" onClick={() => setIsOpen(false)}>소개</a>
@@ -83,8 +81,8 @@ export default function Nav() {
               <a href="#pricing" className="py-1.5 hover:text-[var(--text)] transition-colors" onClick={() => setIsOpen(false)}>요금제</a>
               <a
                 href="#cta"
-                className="mt-2 inline-flex w-full items-center justify-center rounded-full px-5 py-2.5 text-base font-semibold text-white hover:opacity-90 transition-opacity"
-                style={{ background: "linear-gradient(135deg,#f59e0b,#f97316)" }}
+                className="mt-2 inline-flex w-full items-center justify-center rounded-xl px-5 py-2.5 text-base font-semibold text-white hover:opacity-90 transition-opacity"
+                style={{ background: "var(--purple)" }}
                 onClick={() => setIsOpen(false)}
               >
                 베타 신청
