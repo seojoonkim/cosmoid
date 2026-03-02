@@ -20,7 +20,7 @@ function TypingH1() {
 
   return (
     <h1 className="mt-6 font-black leading-[1.22] tracking-tight text-[var(--text)]"
-      style={{fontSize:"clamp(2.1rem, 5.5vw, 4rem)", wordBreak:"keep-all"}}>
+      style={{fontSize:"clamp(1.9rem, 4.8vw, 3.5rem)", wordBreak:"keep-all"}}>
       <span style={{display:"block", color:"var(--purple)", whiteSpace:"nowrap"}}>카톡 한 마디에</span>
       <div style={{overflow:"hidden", minHeight:"2.4em"}}>
         <AnimatePresence mode="wait">
