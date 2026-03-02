@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" fill="none">
+  <!-- 안테나 -->
+  <line x1="27" y1="11" x2="33" y2="2"
+        stroke="white" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- 몸통 -->
+  <rect x="3" y="10" width="38" height="33" rx="11" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.5"/>
+  <!-- 왼쪽 눈 -->
+  <rect x="11.5" y="20" width="8" height="13" rx="4" fill="white"/>
+  <!-- 오른쪽 눈 -->
+  <rect x="24.5" y="20" width="8" height="13" rx="4" fill="white"/>
+</svg>
