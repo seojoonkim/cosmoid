@@ -10,7 +10,7 @@ const examples = [
 
 export default function WhatIsAgent() {
   return (
-    <section className="section-bg-6 border-t border-[var(--border)] py-16 md:py-24">
+    <section className="section-bg-6 border-t border-[var(--border)] py-20 md:py-32">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
 
         {/* 헤더 — 다른 섹션과 동일 구조 */}

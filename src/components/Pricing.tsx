@@ -31,7 +31,7 @@ export default function Pricing() {
   const [annual, setAnnual] = useState(false);
 
   return (
-    <section id="pricing" className="section-bg-8 border-t border-[var(--border)] py-16 md:py-24">
+    <section id="pricing" className="section-bg-8 border-t border-[var(--border)] py-20 md:py-32">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <motion.p className="section-label reveal">
           요금제

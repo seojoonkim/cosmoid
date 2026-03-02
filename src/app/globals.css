@@ -12,10 +12,14 @@ html { scroll-behavior: smooth; }
   --text: #0f0d15;
   --muted: #6b7280;
   --subtle: #9ca3af;
-  --purple: #6d28d9;
+  --primary: #EA580C;
+  --primary-mid: #FB923C;
+  --primary-light: #FFF7ED;
+  --primary-hover: #C2410C;
+  --purple: #EA580C;
   --purple-light: #8b5cf6;
   --purple-soft: #ede9fe;
-  --purple-mid: #ddd6fe;
+  --purple-mid: #FB923C;
   --purple-deep: #4c1d95;
   --brand: #6366f1;
   --brand-light: #818cf8;
@@ -55,19 +59,32 @@ a {
 }
 
 
-.section-bg-1 { background: #ffffff; }           /* SocialProof */
+.section-bg-1 { background: #ffffff; padding-block: 5rem; }           /* SocialProof */
 .section-bg-2 {
-  background: linear-gradient(180deg, #f0ebfe 0%, #e8dffd 100%);
+  background: linear-gradient(180deg, #fffbf7 0%, #ffedd5 100%);
+  padding-block: 5rem;
   --label-bg: #ffffff;
-  --label-color: #5b21b6;
-  --label-border: rgba(109, 40, 217, 0.3);
+  --label-color: #92400E;
+  --label-border: rgba(146, 64, 14, 0.3);
 } /* WhyCosmoid — 유일한 보라 틴트 */
-.section-bg-3 { background: #ffffff; }           /* Features */
-.section-bg-4 { background: #f8fafc; }
-.section-bg-5 { background: #ffffff; }
-.section-bg-6 { background: #f8fafc; }
-.section-bg-7 { background: #ffffff; }
-.section-bg-8 { background: #f8fafc; }
+.section-bg-3 { background: #ffffff; padding-block: 5rem; }           /* Features */
+.section-bg-4 { background: #f8fafc; padding-block: 5rem; }
+.section-bg-5 { background: #ffffff; padding-block: 5rem; }
+.section-bg-6 { background: #f8fafc; padding-block: 5rem; }
+.section-bg-7 { background: #ffffff; padding-block: 5rem; }
+.section-bg-8 { background: #f8fafc; padding-block: 5rem; }
+@media (min-width: 768px) {
+  .section-bg-1,
+  .section-bg-2,
+  .section-bg-3,
+  .section-bg-4,
+  .section-bg-5,
+  .section-bg-6,
+  .section-bg-7,
+  .section-bg-8 {
+    padding-block: 8rem;
+  }
+}
 
 .section-label {
   display: inline-block;

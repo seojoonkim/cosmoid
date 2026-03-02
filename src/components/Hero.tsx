@@ -20,7 +20,7 @@ function TypingH1() {
 
   return (
     <h1 className="mt-6 font-black leading-[1.22] tracking-tight text-[var(--text)]"
-      style={{fontSize:"clamp(1.9rem, 4.8vw, 3.5rem)", wordBreak:"keep-all"}}>
+      style={{fontSize:"clamp(1.9rem, 4.8vw, 3.5rem)", fontWeight:900, wordBreak:"keep-all"}}>
       <span style={{display:"block", color:"var(--purple)", whiteSpace:"nowrap"}}>카톡 한 마디에</span>
       <div style={{overflow:"hidden", minHeight:"2.4em"}}>
         <AnimatePresence mode="wait">
@@ -111,7 +111,7 @@ export default function Hero() {
   return (
     <section className="relative overflow-hidden pt-10 pb-20 md:pt-14 md:pb-28"
       style={{
-        background: "linear-gradient(180deg, #faf8ff 0%, #ede9fe 40%, #ffffff 100%)",
+        background: "linear-gradient(180deg, #fffbf7 0%, #ffedd5 40%, #ffffff 100%)",
       }}>
 
       {/* 보라 글로우 blob */}
@@ -129,13 +129,13 @@ export default function Hero() {
               Private Beta
             </span>
             <TypingH1 />
-            <p className="mt-6 max-w-lg text-base text-[var(--muted)] leading-relaxed">
+            <p className="mt-6 max-w-lg text-lg text-[var(--muted)] leading-relaxed" style={{ fontSize: "18px" }}>
               OpenClaw 같은 AI 에이전트, 이제 누구나 가질 수 있어요. 카카오·배민·쿠팡·네이버 등 한국 서비스에 바로 연결 — 설치도 코딩도 필요 없어요.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <a href="#cta"
                 className="rounded-xl px-8 py-4 text-base font-bold hover:opacity-90 transition-opacity shadow-lg"
-                style={{background:"var(--purple)",boxShadow:"0 8px 24px rgba(109,40,217,0.28)",color:"white"}}>
+                style={{background:"#EA580C",boxShadow:"0 8px 24px rgba(194,65,12,0.28)",color:"white"}}>
                 카톡으로 30초 신청
               </a>
               <a href="#how"
