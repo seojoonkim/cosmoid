@@ -16,7 +16,7 @@ export default function SocialProof() {
           <motion.h2
             className="mt-3 text-3xl md:text-4xl font-black tracking-tight whitespace-nowrap section-title reveal reveal-delay-1"
           >
-            1,247명 얼리어답터 대기 중
+            지금 베타 신청하세요
           </motion.h2>
 
         </div>
