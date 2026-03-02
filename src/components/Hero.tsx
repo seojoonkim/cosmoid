@@ -22,13 +22,18 @@ function TypingH1() {
     <h1 className="mt-6 font-black leading-[1.22] tracking-tight text-[var(--text)]"
       style={{fontSize:"clamp(1.9rem, 4.8vw, 3.5rem)", fontWeight:900, wordBreak:"keep-all"}}>
       <span style={{display:"block", color:"var(--purple)", whiteSpace:"nowrap"}}>카톡 한 마디에</span>
-      <div style={{overflow:"hidden", minHeight:"2.4em"}}>
+      <div style={{
+        overflow:"hidden",
+        minHeight:"2.4em",
+        maskImage:"linear-gradient(to bottom, transparent 0%, black 18%, black 75%, transparent 100%)",
+        WebkitMaskImage:"linear-gradient(to bottom, transparent 0%, black 18%, black 75%, transparent 100%)",
+      }}>
         <AnimatePresence mode="wait">
           <motion.div
             key={caseIdx}
-            initial={{ y: "10%", opacity: 0, filter: "blur(8px)" }}
+            initial={{ y: "15%", opacity: 0, filter: "blur(6px)" }}
             animate={{ y: "0%", opacity: 1, filter: "blur(0px)" }}
-            exit={{ y: "-10%", opacity: 0, filter: "blur(8px)" }}
+            exit={{ y: "-15%", opacity: 0, filter: "blur(6px)" }}
             transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
           >
             <span style={{display:"block", color:"var(--text)", whiteSpace:"nowrap"}}>{H1_CASES[caseIdx][0]}</span>
