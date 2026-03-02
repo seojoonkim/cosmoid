@@ -1,7 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" fill="none">
-  <circle cx="21" cy="20" r="15" fill="#7c3aed"/>
-  <circle cx="14.5" cy="20.5" r="2.2" fill="white"/>
-  <circle cx="21"   cy="20.5" r="2.2" fill="white"/>
-  <circle cx="27.5" cy="20.5" r="2.2" fill="white"/>
-  <path d="M26 31 L32 38 L20 33 Z" fill="#7c3aed"/>
+  <!-- 말풍선 배경 -->
+  <rect x="3" y="3" width="34" height="28" rx="10" fill="#7c3aed"/>
+  <!-- 말풍선 꼬리 -->
+  <path d="M24 31 L30 40 L18 34 Z" fill="#7c3aed"/>
+  <!-- C 레터 (굵고 스타일리시) -->
+  <path d="M27.5 11.5
+           C27.5 11.5 23 10 19 12
+           C15 14 13 17.5 13 17.5
+           C13 17.5 15 21 19 23
+           C23 25 27.5 23.5 27.5 23.5"
+        stroke="white" stroke-width="3.2" stroke-linecap="round" fill="none"/>
 </svg>
