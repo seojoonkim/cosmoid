@@ -23,11 +23,11 @@
   <path d="M46 32 C50 40 57 45 63 42 C59 37 52 33 46 29 Z"
         fill="#7c3aed"/>
 
-  <!-- 위 집게 안쪽 갈퀴 (흰 이빨 2개) -->
-  <polygon points="55,20 58,17 57,21" fill="white" opacity="0.9"/>
-  <polygon points="50,25 53,22 52,26" fill="white" opacity="0.9"/>
+  <!-- 위 집게 이빨 (크고 선명하게) -->
+  <polygon points="57,18 61,14 60,20" fill="white"/>
+  <polygon points="51,24 55,20 54,27" fill="white"/>
 
-  <!-- 아래 집게 안쪽 갈퀴 (흰 이빨 2개) -->
-  <polygon points="55,36 58,39 57,35" fill="white" opacity="0.9"/>
-  <polygon points="50,31 53,34 52,30" fill="white" opacity="0.9"/>
+  <!-- 아래 집게 이빨 (크고 선명하게) -->
+  <polygon points="57,38 61,42 60,36" fill="white"/>
+  <polygon points="51,32 55,36 54,29" fill="white"/>
 </svg>
