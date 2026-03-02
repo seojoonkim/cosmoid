@@ -82,8 +82,8 @@ export default function Nav() {
               <a href="#pricing" className="py-1.5 hover:text-[var(--text)] transition-colors" onClick={() => setIsOpen(false)}>요금제</a>
               <a
                 href="#cta"
-                className="mt-2 inline-flex w-full items-center justify-center rounded-xl px-5 py-2.5 text-base font-semibold text-white hover:opacity-90 transition-opacity"
-                style={{ background: "var(--purple)" }}
+                className="mt-2 inline-flex w-full items-center justify-center rounded-xl px-5 py-2.5 text-base font-semibold hover:opacity-90 transition-opacity"
+                style={{ background: "#ffffff", color: "var(--purple)", border: "2px solid var(--purple)" }}
                 onClick={() => setIsOpen(false)}
               >
                 베타 신청
