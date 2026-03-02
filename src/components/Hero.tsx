@@ -158,7 +158,7 @@ export default function Hero() {
 
           {/* 오른쪽 — 채팅창만 */}
           <div className="md:col-span-6 md:pl-16 flex justify-end">
-            <div className="relative mx-auto" style={{ maxWidth: "360px" }}>
+            <div className="relative mx-auto" style={{ width: "360px", maxWidth: "360px", minWidth: "360px" }}>
               <div
                 style={{
                   background: "#1a1a1a",
