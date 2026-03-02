@@ -17,12 +17,12 @@ export default function Nav() {
       <div className="max-w-6xl mx-auto px-5 md:px-8 h-16 flex items-center justify-between">
         <motion.a
           href="/"
-          className="flex items-center gap-1.5"
+          className="flex items-center gap-0.5"
           whileHover={{ scale: 1.04 }}
           transition={{ type: "spring", stiffness: 400, damping: 20 }}
         >
           <motion.img
-            src="/logo-icon.svg" alt="clawroid" className="h-11 w-auto object-contain logo-animate" style={{marginTop:"0px"}}
+            src="/logo-icon.svg" alt="clawroid" className="h-12 w-auto object-contain logo-animate" style={{marginTop:"0px"}}
           />
           <motion.span
             style={{
