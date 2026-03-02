@@ -221,7 +221,7 @@ export default function Hero() {
                             className="max-w-[72%] rounded-2xl px-4 py-2.5 text-sm leading-relaxed"
                             style={
                               msg.from === "user"
-                                ? { background: "#7c3aed", color: "#ffffff", borderRadius: "20px 20px 4px 20px" }
+                                ? { background: "#EA580C", color: "#ffffff", borderRadius: "20px 20px 4px 20px" }
                                 : { background: "#ffffff", color: "#1c1033", borderRadius: "20px 20px 20px 4px", boxShadow: "0 1px 3px rgba(0,0,0,0.08)" }
                             }
                           >
@@ -234,7 +234,7 @@ export default function Hero() {
                       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="flex justify-start">
                         <div className="px-4 py-3 flex gap-1" style={{ background: "#ffffff", borderRadius: "20px 20px 20px 4px", boxShadow: "0 1px 3px rgba(0,0,0,0.08)" }}>
                           {[0, 1, 2].map((i) => (
-                            <span key={i} className="h-1.5 w-1.5 rounded-full animate-bounce" style={{ background: "#a78bfa", animationDelay: `${i * 0.15}s` }} />
+                            <span key={i} className="h-1.5 w-1.5 rounded-full animate-bounce" style={{ background: "#FB923C", animationDelay: `${i * 0.15}s` }} />
                           ))}
                         </div>
                       </motion.div>

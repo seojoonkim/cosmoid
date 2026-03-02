@@ -42,7 +42,7 @@ export default function WhatIsAgent() {
             initial={{ opacity: 0, y: 8 }} whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.3 }}
             className="mt-6 inline-flex items-center gap-3 rounded-xl px-6 py-3 text-base font-bold text-white"
-            style={{ background: "var(--purple)", boxShadow: "0 4px 20px rgba(124,58,237,0.4)" }}
+            style={{ background: "var(--purple)", boxShadow: "0 4px 20px rgba(234,88,12,0.4)" }}
           >
             <span style={{opacity:0.65, fontWeight:500}}>챗봇</span>
             <span style={{ opacity: 0.4 }}>→</span>

@@ -30,7 +30,7 @@ export default function Nav() {
               fontSize: "1.6rem",
               letterSpacing: "-0.025em",
               fontFamily: "inherit",
-              color: "#7c3aed",
+              color: "#EA580C",
               marginTop: "2px",
             }}
             animate={{}}

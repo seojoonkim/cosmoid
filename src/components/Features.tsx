@@ -54,7 +54,7 @@ function FeaturePreview({ title }: { title: string }) {
         <div className="text-[11px] text-[var(--muted)] mb-2">쿠팡 검색 결과</div>
         <div className="grid grid-cols-2 gap-2 h-[calc(100%-20px)]">
           <div className="rounded-xl bg-white shadow-sm p-2 flex flex-col">
-  <div className="h-14 rounded-md bg-purple-50 flex items-center justify-center text-3xl">🔌</div>
+  <div className="h-14 rounded-md bg-orange-50 flex items-center justify-center text-3xl">🔌</div>
             <p className="mt-2 text-xs font-semibold text-[var(--text)]">애플 충전기</p>
             <p className="mt-0.5 text-[11px] text-[var(--muted)]">★4.8</p>
             <div className="mt-auto flex items-center gap-1">
@@ -63,7 +63,7 @@ function FeaturePreview({ title }: { title: string }) {
             </div>
           </div>
           <div className="rounded-xl bg-white shadow-sm p-2 flex flex-col">
-  <div className="h-14 rounded-md bg-purple-50 flex items-center justify-center text-3xl">🎧</div>
+  <div className="h-14 rounded-md bg-orange-50 flex items-center justify-center text-3xl">🎧</div>
             <p className="mt-2 text-xs font-semibold text-[var(--text)]">무선이어폰</p>
             <p className="mt-0.5 text-[11px] text-[var(--muted)]">★4.6</p>
             <p className="mt-auto text-xs font-bold text-[var(--text)]">₩32,000</p>
