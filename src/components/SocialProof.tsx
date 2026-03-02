@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function SocialProof() {
   return (
-    <section className="bg-white border-y border-[var(--border)] py-10">
+    <section className="bg-[#f8fafc] py-10">
       <div className="mx-auto max-w-6xl px-5 md:px-8 flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
         <div>
           <motion.p

@@ -214,7 +214,7 @@ function FeaturePreview({ title }: { title: string }) {
 
 export default function Features() {
   return (
-    <section id="features" className="section-bg-7 border-t border-[var(--border)] py-20 md:py-32">
+    <section id="features" className="bg-white border-t border-transparent py-20 md:py-32">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <motion.p
           className="section-label reveal"

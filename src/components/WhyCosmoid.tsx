@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function WhyCosmoid() {
   return (
-    <section id="why" className="section-bg-2 border-t border-[var(--border)] py-20 md:py-32">
+    <section id="why" className="bg-white border-t border-transparent py-20 md:py-32">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <motion.p
           className="section-label reveal"

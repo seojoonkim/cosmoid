@@ -24,7 +24,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section id="how" className="section-bg-7 border-t border-[var(--border)] py-20 md:py-32">
+    <section id="how" className="bg-[#f8fafc] border-t border-transparent py-20 md:py-32">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <motion.p
           className="section-label reveal"

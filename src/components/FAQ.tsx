@@ -58,7 +58,7 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className="section-bg-1 border-t border-[var(--border)] py-20 md:py-32">
+    <section className="bg-white border-t border-transparent py-20 md:py-32">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <motion.p
           className="section-label reveal"
