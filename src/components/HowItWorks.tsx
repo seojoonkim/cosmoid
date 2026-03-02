@@ -40,7 +40,7 @@ export default function HowItWorks() {
           <strong style={{color:"#1a1a2e"}}>AI 에이전트</strong>란, 사용자 대신 앱을 조작하고 업무를 처리해주는 AI 비서예요. 주문, 예약, 검색, 결제까지 — 카카오톡에서 말 한마디로 지시하면 알아서 처리해줘요. 코딩도, 새 앱 설치도 필요 없어요.
         </p>
         <div className="relative mt-10">
-          <div className="absolute top-5 left-[calc(16.67%+20px)] right-[calc(16.67%+20px)] h-px bg-gradient-to-r from-[var(--purple-mid)] to-[var(--purple-mid)] hidden md:block" />
+
           <div className="grid gap-5 md:grid-cols-3">
           {steps.map((step) => (
             <article key={step.number} className="card overflow-hidden flex flex-col reveal">
